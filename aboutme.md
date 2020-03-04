@@ -4,7 +4,7 @@ title: About me
 subtitle: Get to know me
 ---
 
-My name is Mark-James McDougall, and I'm a creative professional and freelance developer from Montreal, Canada. I have experience with:
+My name is Mark-James McDougall, and I'm a creative professional from Montreal, Canada. I work as a Webmaster for McGill University and have experience in:
 
 - UI/UX
 - Digital Marketing (SEO & SEM)
@@ -15,4 +15,4 @@ To see some of the neat stuff I've worked on, check out my [projects page.](/pro
 
 ### Fun fact
 
-My alter ego is a music producer who goes by the name of [Zhund](https://zhundmusic.com).
+I'm passionate about music and release tracks as [Zhund](https://zhundmusic.com).
