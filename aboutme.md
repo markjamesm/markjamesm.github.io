@@ -11,8 +11,8 @@ My name is Mark-James McDougall, and I'm a creative professional and freelance d
 - iOS Development (Swift, SwiftUI)
 - Information Architecture
 
-To see some of the neat projects I've worked on, check out my [projects page.](/projects)
+To see some of the neat stuff I've worked on, check out my [projects page.](/projects)
 
-### Other fun stuff
+### Fun fact
 
 My alter ego is a music producer who goes by the name of [Zhund](https://zhundmusic.com).
