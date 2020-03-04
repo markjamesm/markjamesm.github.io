@@ -15,4 +15,4 @@ To see some of the neat projects I've worked on, check out my [projects page.](/
 
 ### Other fun stuff
 
-In my spare time, I'm a music producer who goes by the name of [Zhund](https://zhundmusic.com).
+My alter ego is a music producer who goes by the name of [Zhund](https://zhundmusic.com).
