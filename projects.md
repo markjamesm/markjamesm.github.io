@@ -9,20 +9,12 @@ This page contains a list of my current and past projects. I haven't listed ever
 
 ## Current Projects
 
-- [CU Libraries](https://github.com/markjamesm/CU-Libraries) is an iOS app to check the status of various resources at the Concordia University libraries. Built using the Concordia Open Data API.  
+- [CU Libraries](https://github.com/markjamesm/CU-Libraries), an iOS app to check the status of various resources at the Concordia University libraries. Built using the Concordia Open Data API.  
+
 <br />
 
 ## Past Projects
 
-### Interuniversity PhD in Art history
+- In 2019, I created a new website for the [Interuniversity PhD in Art history program](http://docinterhar.org) run by Concordia University, Université de Montréal, and Université du Québec à Montréal. This involved regular meetings with the stakeholder throughout the development process to ensure that the functionality of the site aligned with the program's goals.  
 
-In 2019, I created a new website for the [Interuniversity PhD in Art history program](http://docinterhar.org) run by Concordia University, Université de Montréal, and Université du Québec à Montréal. This involved regular meetings with the stakeholder throughout the development process to ensure that the functionality of the site aligned with the program's goals.  
-
-- Oversaw the project's development to completion, managing small team using an agile methodology.  
-<br />
-
-### VaporBlog
-
-I founded a highly popular vaporizer reviews website which I ran for six years before selling the website in 2018. 
-
-- Between 2012-2018, VaporBlog received over 3.4 million organic pageviews and began to generate consistent monthly income after the second month of launch.
+- I founded a highly popular vaporizer reviews website called VaporBlog which I ran for six years before selling the website in 2018. Between 2012-2018, VaporBlog received over 3.4 million organic pageviews and began to generate consistent monthly income after the second month of launch.
