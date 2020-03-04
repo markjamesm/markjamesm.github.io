@@ -11,7 +11,6 @@ This page contains a list of my current and past projects. I haven't listed ever
 
 - [CU Libraries](https://github.com/markjamesm/CU-Libraries), an iOS app to check the status of various resources at the Concordia University libraries. Built using the Concordia Open Data API.  
 
-<br />
 
 ## Past Projects
 
