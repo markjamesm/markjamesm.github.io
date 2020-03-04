@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: A brief bio
+subtitle: Get to know me
 ---
 
 My name is Mark-James McDougall, and I'm a creative professional and freelance developer from Montreal, Canada. I have experience with:
