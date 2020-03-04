@@ -25,4 +25,4 @@ In 2019, I created a new website for the [Interuniversity PhD in Art history pro
 
 I founded a highly popular vaporizer reviews website which I ran for six years before selling the website in 2018. 
 
--Between 2012-2018, VaporBlog received over 3.4 million organic pageviews and began to generate consistent monthly income after the second month of launch. 
+- Between 2012-2018, VaporBlog received over 3.4 million organic pageviews and began to generate consistent monthly income after the second month of launch. 
