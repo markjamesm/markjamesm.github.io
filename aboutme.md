@@ -18,4 +18,4 @@ If ever you need professional help with a project, I offer consulting for a rang
 
 ### Fun fact
 
-I'm passionate about music and release tracks under the name [Zhund](https://open.spotify.com/artist/04h01WGkLNuHzSzCBGbjCR). My favorite instrument is the [Linnstrument](http://linnstrument.com), an expressive MIDI controller created by Roger Linn. For more information as to why I love this note layout, be sure to read Mr. Linn's design rationale [here](http://www.rogerlinndesign.com/piano-vs.-grid.html).
+I'm passionate about music and release tracks under the name [Zhund](https://open.spotify.com/artist/04h01WGkLNuHzSzCBGbjCR). My favorite instrument is the [Linnstrument](http://linnstrument.com), an expressive MIDI controller created by Roger Linn.
