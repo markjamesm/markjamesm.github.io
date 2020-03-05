@@ -4,11 +4,11 @@ title: About me
 subtitle: Get to know me
 ---
 
-My name is Mark-James McDougall, and I'm a creative professional from Montreal, Canada. I work as a Webmaster for McGill University and have experience with:
+My name is Mark-James McDougall, and I'm a creative professional from Montreal, Canada. I work as a Webmaster at McGill University and have experience with:
 
-- iOS Development (Swift, SwiftUI)
 - Digital Marketing (SEO & SEM)
 - UI/UX
+- iOS Development (Swift, SwiftUI)
 - Information Architecture
 - Audio Production (Podcasting, Soundtracks) 
 
