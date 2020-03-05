@@ -14,6 +14,10 @@ Feel free to get in touch with me using the contact form below.
             <label for="exampleInputEmail1" required="required">Email address</label>
             <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
           </div>
+          <div class="form-group">
+            <label for="subject" required="required">Subject</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
           <hr>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
