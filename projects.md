@@ -9,7 +9,9 @@ This page contains a list of my current and past projects. I haven't listed ever
 
 ## Current Projects
 
-- [CU Libraries](https://github.com/markjamesm/CU-Libraries), an open source iOS app to check the status of various resources at the Concordia University libraries in Montréal, Canada. Built using realtime data sourced from the Concordia University Open Data API.  
+- [CU Libraries](https://github.com/markjamesm/CU-Libraries), an open source iOS app to check the status of various resources at the Concordia University libraries in Montréal, Canada. Built using realtime data sourced from the Concordia University Open Data API.
+
+- [zSynth](https://github.com/markjamesm/ZSynth), a simple terminal based music synthsizer with support for MIDI controllers. Written in Swift using Audiokit as a proof of concept, I'm currently working on a new, more in depth version for iOS. 
 
 
 ## Past Projects
