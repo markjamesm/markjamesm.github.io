@@ -20,6 +20,9 @@ __Available now on the [App Store!](https://apps.apple.com/app/id1500109652)__
 * Realtime computer availability of Webster & Vanier libraries (Computer labs, laptops, and tablets)
 
 ## Screenshots
+
+<img src="https://user-images.githubusercontent.com/20845425/75114187-002c4700-5622-11ea-99a2-3c853b534e40.png" width="300"/> <img src="https://user-images.githubusercontent.com/20845425/75078147-db758980-54d2-11ea-9110-26cea3062be2.png" width="300"/>
+
 <p float="left">
 <img src="https://user-images.githubusercontent.com/20845425/75114187-002c4700-5622-11ea-99a2-3c853b534e40.png" alt="CU-Libraries iOS app screenshot"
 	title="CU Libraries App" width="255" height="500" />
