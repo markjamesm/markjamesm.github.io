@@ -2,11 +2,13 @@
 layout: post
 title: Making the Best of Physical Distancing
 ---
-With Canada practicing aggressive physical distancing due to the ongoing pandemic, I’ve been finding myself with a lot of free time indoors lately which I’ve been devoting towards a few different personal projects.   Just yesterday, I finished updating my iOS app [CU Libraries](https://markjames.dev/cu-libraries) to be compliant with the latest version of iOS 13. After the latest iOS update, I had noticed that the app UI wouldn’t properly render on devices with a notch (like my iPhone XS Max). Fortunately the fix was to comment out a single line of code: 
+With Canada practicing aggressive physical distancing due to the ongoing pandemic, I’ve been finding myself with a lot of free time indoors lately which I’ve been devoting towards a few different personal projects. Just yesterday, I finished updating my iOS app [CU Libraries](https://markjames.dev/cu-libraries) to be compliant with the latest version of iOS 13. After the latest iOS update, I had noticed that the app UI wouldn’t properly render on devices with a notch (like my iPhone XS Max). Fortunately the fix was to comment out a single line of code: 
 
 <code>.edgesIgnoringSafeArea(.top)</code>
 
-This code tells SwiftUI to ignore the safe area (the area around the notch of your device), which was a workaround I used to render the top indigo section of my CU Libraries UI here:  <img src="https://user-images.githubusercontent.com/20845425/75114187-002c4700-5622-11ea-99a2-3c853b534e40.png" width="350"/>
+This code tells SwiftUI to ignore the safe area (the area around the notch of your device), which was a workaround I used to render the top indigo section of my CU Libraries UI here:
+
+<img src="![Screen Shot 2020-04-17 at 11 47 32 PM](https://user-images.githubusercontent.com/20845425/79627392-cfd6c580-8105-11ea-9c5d-38349580bba2.png)" width="450"/>
 
 However, in the latest version of iOS, It seems that area around the notch is now handled automatically by SwiftUI, and if your app code ignores the safe area it won’t render properly, but only on notch devices (using the above code worked fine running on the iPhone 8 simulator). This was the first update I’ve pushed to the first app I’ve ever published on the App Store, and so I was pretty excited when I received an email from Apple earlier today approving the update! 
 
