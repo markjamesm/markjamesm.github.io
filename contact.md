@@ -16,7 +16,7 @@ Feel free to get in touch with me using the contact form below.
           </div>
           <div class="form-group">
             <label for="subject" required="required">Subject</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea name="subject" type="subject" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
           <hr>
           <button type="submit" class="btn btn-primary">Submit</button>
