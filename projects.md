@@ -4,7 +4,7 @@ title: Projects
 subtitle: Cool projects from the past and present.
 ---
 
-This page contains a list of my current and past projects. I haven't listed every project I've worked on, just some I think are of note. If you're looking for my CV, check out my [Linkedin page](https://www.linkedin.com/in/markjamesm/).
+This page contains a list of my current and past projects. I haven't listed every project I've worked on, just some I think are of note. If you're looking for my CV, check out my [Linkedin](https://www.linkedin.com/in/markjamesm/).
 
 
 ## Current Projects
