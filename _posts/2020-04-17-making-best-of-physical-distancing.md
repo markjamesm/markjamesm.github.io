@@ -8,7 +8,7 @@ With Canada practicing aggressive physical distancing due to the ongoing pandemi
 
 This code tells SwiftUI to ignore the safe area (the area around the notch of your device), which was a workaround I used to render the top indigo section of my CU Libraries UI here:
 
-<img src="![Screen Shot 2020-04-17 at 11 47 32 PM](https://user-images.githubusercontent.com/20845425/79627392-cfd6c580-8105-11ea-9c5d-38349580bba2.png)" width="520"/>
+<img src="https://user-images.githubusercontent.com/20845425/79627392-cfd6c580-8105-11ea-9c5d-38349580bba2.png" width="520"/>
 
 However, in the latest version of iOS, It seems that area around the notch is now handled automatically by SwiftUI, and if your app code ignores the safe area it won’t render properly, but only on notch devices (using the above code worked fine running on the iPhone 8 simulator). This was the first update I’ve pushed to the first app I’ve ever published on the App Store, and so I was pretty excited when I received an email from Apple earlier today approving the update! 
 
