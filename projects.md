@@ -16,4 +16,4 @@ This page contains a list of my current and past projects. I haven't listed ever
 
 ## Past Projects
 
-- In 2019, I created a new website for the [Interuniversity PhD in Art History Program](http://docinterhar.org) run by Concordia University, Université de Montréal, and Université du Québec à Montréal. This involved regular meetings with the stakeholder throughout the development process to ensure that the functionality of the site aligned with the program's goals.
+- In 2019, I developed a new website for the [Interuniversity PhD in Art History Program](http://docinterhar.org) run by Concordia University, Université de Montréal, and Université du Québec à Montréal. This involved regular meetings with the stakeholder throughout the development process to ensure that the functionality of the site aligned with the program's goals.
