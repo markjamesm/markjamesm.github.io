@@ -91,7 +91,7 @@
   {% elsif site.avatar and page.header-img %}
   <meta property="og:image" content="{{ site.url }}/{{ page.header-img }}" />
   {% endif %}
-  {% elseif site.avatar and page.header-img == false %}}
+  {% elsif site.avatar and page.header-img == false %}}
   <meta property="og:image" content="{{ site.avatar | absolute_url }}" />
   {% endif %}
 
