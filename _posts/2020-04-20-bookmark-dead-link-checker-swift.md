@@ -7,7 +7,7 @@ Having spent the past few months devoting a significant amount of time learning 
 
 For roughly twelve years now, I've been collecting and saving bookmarks on my browsers and keeping them synced across my computers, and as I read the wiki page, I started thinking how it would be interesting to create a broken link checker for bookmarks in Swift and documenting the process. According to the program I ended up writing called [Bookmark Tester](https://github.com/markjamesm/bookmark-tester), I have 1,078 bookmarks and am eager to see how many of them are still live!
 
-The first step in creating Bookmark Tester was to export my bookmarks as an HTML file, whichs seems to be the only export option supported in Chrome. For the sake of example code in this article, I'm going to be working with an example bookmarks file ([sourcecode](https://markjames.dev/samplebookmarks.html)) that I created. The link analysis comes from my actual collection of bookmarks however. 
+The first step in creating Bookmark Tester was to export my bookmarks as an HTML file, which seems to be the only export option supported in Chrome. For the sake of example code in this article, I'm going to be working with an example bookmarks file ([sourcecode](https://markjames.dev/samplebookmarks.html)) that I created. The link analysis comes from my actual collection of bookmarks however. 
 
 Looking though the HTML, I could see the bookmark links nested inside a description list as description tags along with their corresponding favicons and descriptions, with each bookmark entry looking something like this:
 
