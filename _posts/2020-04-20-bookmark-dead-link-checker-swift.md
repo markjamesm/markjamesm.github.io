@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building a dead link checker in Swift to analyze my bookmarks
+title: Building a broken link checker in Swift to analyze my bookmarks
 header-img: "img/posts/link-checker.png"
 tags: [swift, programming projects, tutorials]
 ---
