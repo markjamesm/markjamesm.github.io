@@ -2,7 +2,7 @@
 layout: post
 title: Making the Best of Physical Distancing
 ---
-With Canada practicing aggressive physical distancing due to the ongoing pandemic, I’ve been finding myself with a lot of free time indoors lately which I’ve been devoting towards a few different personal projects. Just yesterday, I finished updating my iOS app [CU Libraries](https://markjames.dev/cu-libraries) to be compliant with the latest version of iOS 13. After the latest iOS update, I had noticed that the app UI wouldn’t properly render on devices with a notch (like my iPhone XS Max). Fortunately the fix was to comment out a single line of code: 
+With Canada practicing aggressive physical distancing due to the ongoing pandemic, I’ve been finding myself with a lot of free time indoors lately which I’ve been devoting towards a few different personal projects. Just yesterday, I finished updating my iOS app [CU Libraries](https://markjames.dev/cu-libraries) to be compliant with the latest version of iOS 13. After the latest iOS update, I had noticed that the app UI wouldn’t properly render on devices with a notch (like my iPhone XS Max). After doing some debugging, I discovered a fix which involved commenting out a single line of code: 
 
 <code>.edgesIgnoringSafeArea(.top)</code>
 
