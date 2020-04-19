@@ -87,10 +87,8 @@
 
   {% if page.share-img %}
   <meta property="og:image" content="{{ page.share-img }}" />
-  {% endif %}
   {% elsif site.avatar and page.header-img %}
   <meta property="og:image" content="{{ site.url }}/{{ page.header-img }}" />
-  {% endif %}
   {% elsif site.avatar and page.header-img == false %}}
   <meta property="og:image" content="{{ site.avatar | absolute_url }}" />
   {% endif %}
