@@ -76,8 +76,7 @@ func checkLink(link: String) {
          }
        }
     }.resume()
-  semaphore.wait()
-           
+  semaphore.wait()     
  }
 ```
 
