@@ -11,7 +11,7 @@ My name is Mark-James McDougall, and I'm a creative professional from Montreal, 
 - Digital Marketing (SEO & SEM)
 - Information Architecture
 - Audio Production (Podcasting, Soundtracks) 
-- Linux server administation
+- Linux Server Administation
 
 To see some of the neat stuff I'm working on, check out my [projects page.](/projects)
 
