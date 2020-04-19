@@ -87,13 +87,13 @@
 
   {% if page.share-img %}
   <meta property="og:image" content="{{ page.share-img }}" />
-  {% elsif site.avatar && page.header-img %}
+  {% elsif site.avatar and page.header-img %}
   <meta property="og:image" content="{{ site.url }}/{{ page.header-img }}" />
-  {% else %}}
+  {% elseif site.avatar and page.header-img == false %}}
   <meta property="og:image" content="{{ site.avatar | absolute_url }}" />
   {% endif %}
 
-  
+
   <!-- Twitter summary cards -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@{{ site.author.twitter }}" />
