@@ -21,4 +21,4 @@ Linnstrument Helper is an [open source](https://github.com/markjamesm/linnstrume
 
 ## Screenshots
 
-<img src="https://user-images.githubusercontent.com/20845425/80164594-680df800-85a7-11ea-81e4-b70c22a2eb38.png"/>
+<a href="https://user-images.githubusercontent.com/20845425/75114187-002c4700-5622-11ea-99a2-3c853b534e40.png"><img src="https://user-images.githubusercontent.com/20845425/80164594-680df800-85a7-11ea-81e4-b70c22a2eb38.png"/></a>
