@@ -10,7 +10,7 @@ This page contains a list of my current and past projects. I haven't listed ever
 
 - [CU Libraries](https://markjames.dev/cu-libraries), an open source iOS app to check the status of various resources at the Concordia University libraries in Montréal, Canada. Built using realtime data sourced from the Concordia University Open Data API. Now available on the [App Store](https://apps.apple.com/ca/app/cu-libraries/id1500109652)!
 
-- [Linnstrument Helper](https://github.com/markjamesm/linnstrument-helper), a SwiftUI app for Mac OS to help make learning the Linnstrument layout a breeze. Currently in an an early alpha stage, Linnstrument helper makes use of the AudioKit and SwiftUI Grid frameworks.
+- [Linnstrument Helper](https://markjames.dev/linnstrument-helper), a SwiftUI app for Mac OS to help make learning the Linnstrument layout a breeze. Currently in an an early alpha stage, Linnstrument Helper is being actively developed.
 
 
 ## Previous
