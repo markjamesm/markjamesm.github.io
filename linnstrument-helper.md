@@ -10,8 +10,8 @@ Linnstrument Helper is an [open source](https://github.com/markjamesm/linnstrume
 
 ## Features
 
-- Basic synth engine
-- Displays current note played along with velocity 
+- Basic polyphonic sound engine
+- Displays current notes played along with velocity 
 - Support for both the original model as well as the Linnstrument 128
 
 
@@ -21,4 +21,4 @@ Linnstrument Helper is an [open source](https://github.com/markjamesm/linnstrume
 
 ## Screenshots
 
-<a href="https://user-images.githubusercontent.com/20845425/80164594-680df800-85a7-11ea-81e4-b70c22a2eb38.png"><img src="https://user-images.githubusercontent.com/20845425/80164594-680df800-85a7-11ea-81e4-b70c22a2eb38.png"/></a>
+<a href="https://user-images.githubusercontent.com/20845425/81113716-aaf89580-8eee-11ea-8732-0b1a486deceb.png"/></a>
