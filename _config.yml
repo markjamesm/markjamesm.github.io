@@ -24,18 +24,7 @@ navbar-links:
     - All Projects: "projects"
     - CU Libraries: "https://markjames.dev/cu-libraries"
     - Linnstrument Helper: "https://markjames.dev/linnstrument-helper"
-  #Author's home: "https://markjames.dev"
-
-# List of links in the navigation bar
-#navbar-links:
-#  About Me: "aboutme"
-#  Projects: "projects"
-#    - CU Libraries: "https://markjames.dev/cu-libraries"
-#    - Linnstrument Helper: "https://markjames.dev/linnstrument-helper"
-#  Contact: "contact"
-#  Resources:
-#    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-#    - Learn markdown: "http://www.markdowntutorial.com/"
+    - Contact: "contact"
   #Author's home: "https://markjames.dev"
 
 # Image to show in the navigation bar - image must be a square (width = height)
