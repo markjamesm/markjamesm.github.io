@@ -22,8 +22,8 @@ description: My little corner of the web
 navbar-links:
   About Me: "aboutme"
   Projects: "projects"
-    - CU Libraries: "https://markjames.dev/cu-libraries"
-    - Linnstrument Helper: "https://markjames.dev/linnstrument-helper"
+ #   - CU Libraries: "https://markjames.dev/cu-libraries"
+ #   - Linnstrument Helper: "https://markjames.dev/linnstrument-helper"
   Contact: "contact"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
