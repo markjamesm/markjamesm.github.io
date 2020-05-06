@@ -16,6 +16,8 @@ One thing I was always wished I had when I had just started learning was a graph
 
 <img width="750" alt="Linnstrument Helper app finished version" src="https://user-images.githubusercontent.com/20845425/81113716-aaf89580-8eee-11ea-8732-0b1a486deceb.png">
 
+Aside from displaying the notes pressed, I also implemented a basic synthesis engine so that the app plays actual notes when keys are pressed!  
+
 There's two models of Linnstrument, the 128 (four octaves) and the 200 (five octaves). Both use [all fourths tuning](https://en.wikipedia.org/wiki/All_fourths_tuning), but for the purposes of this guide I'm going to outline the process for only the LS 128 (the LS 200 code is essentially the same, except mapped to a 200 note grid). To best follow along, I suggest taking a look at the [project sourcecode](https://github.com/markjamesm/linnstrument-helper) for reference while you read. 
 
 Step one was to determine the basic app design. Because I find music production to be a pain on iOS devices (for a multitude of reasons), I use my Macbook Pro instead and so I decided to go with a Mac SwiftUI app. With a platform in mind, I needed a framework to receive MIDI note messages from the Linnstrument, and for this I chose [AudioKit](https://github.com/AudioKit/AudioKit). AudioKit is an audio synthesis, processing, and analysis platform for iOS, macOS, and tvOS. The underlying architecture of AudioKit is CSound, and so aside from offering MIDI IO it also has great audio synthesis capabilities. 
@@ -133,6 +135,37 @@ self.notesHeld.remove(noteNumber)
 ```
 
 Now anytime more than one note is pressed, each note will appear in the notesHeld set. This will come in handy later on for chords and displaying notes on screen.
+
+## Creating the Sound Engine
+
+Creating the sound engine was fairly simple, as I made use of AudioKit's synthesizer. Just below my midiEngine instance in my Conductor class, I added the following line to create a new synth with some reasonable presets:
+```
+let synth = AKSynth(masterVolume: 0.5, pitchBend: 0.0, vibratoDepth: 0.0, filterCutoff: 2.0, filterStrength: 0.5, filterResonance: 0.0, attackDuration: 0.1, decayDuration: 0.0, sustainLevel: 1.0, releaseDuration: 0.2, filterEnable: true)
+```
+
+Next, I added the synth engine methods to the bottom of my conductor class:
+
+```
+func playNote(noteNumber: UInt8, velocity: UInt8) {
+         synth.play(noteNumber: noteNumber, velocity: velocity)
+       }
+
+       func stopNote(noteNumber: UInt8) {
+         synth.stop(noteNumber: noteNumber)
+       }
+```
+
+I then wired up the synth to my MIDI input by adding the following line to my receivedMIDINoteOn() method:
+```
+self.playNote(noteNumber: noteNumber, velocity: velocity)
+```
+and then the equivalent stop note in receivedMIDINoteOff():
+
+```
+self.stopNote(noteNumber: noteNumber)
+```
+
+Now when I ran the program, I was able to get sound whenever I pressed a note!
 
 ## Building a Grid in SwiftUI
 
