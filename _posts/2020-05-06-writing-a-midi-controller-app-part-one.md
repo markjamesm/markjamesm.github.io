@@ -231,4 +231,4 @@ The next step turned out to be the hardest of all, and I was completely blocked 
  
  <img width="500" alt="Linnstrument Helper app notes pressed" src="https://user-images.githubusercontent.com/20845425/81235206-65a89680-8fc8-11ea-8263-c4213f40e66c.png"> 
  
- In order to see how I discovered a solution, you can check out [part two here!](https://markjames.dev/blog/2020-05-06-writing-a-midi-controller-app-part-two)
+ In order to see how I discovered a solution, you can check out [part two here!](https://markjames.dev/2020-05-06-writing-a-midi-controller-app-part-two)
