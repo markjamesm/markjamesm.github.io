@@ -4,8 +4,7 @@ title: Writing a Linnstrument Companion App with SwiftUI and AudioKit (Part 1)
 header-img: "/img/posts/linnstrument-helper-app.png"
 tags: [swift, programming projects, tutorials, linnstrument helper]
 ---
-
-After recently writing a [broken link checker](https://markjames.dev/2020-04-20-bookmark-dead-link-checker-swift/) in Swift to analyze my browser bookmarks, I started thinking of another project which could both solve a practical problem as well as challenge myself by going a little outside of my coding comfort zone (the best way to learn!). Fortunately, I was able to combine my passion for programming with my other passion - music!
+After recently writing a [broken link checker](https://markjames.dev/blog/2020-04-20-bookmark-dead-link-checker-swift/) in Swift to analyze my browser bookmarks, I started thinking of another project which could both solve a practical problem as well as challenge myself by going a little outside of my coding comfort zone (the best way to learn!). Fortunately, I was able to combine my passion for programming with my other passion - music! Note: this is part one of the guide. You can find [part two here](https://markjames.dev/2020-05-06-writing-a-midi-controller-app-part-two)
 
 For the past two years, I've been learning the [Linnstrument](https://www.rogerlinndesign.com/linnstrument), an expressive MIDI controller for musical performance. To best explain the Linnstrument, here's a video of me playing some jazz on my Linnstrument:
 
@@ -134,7 +133,7 @@ As well as this line to receivedMIDINoteOff():
 self.notesHeld.remove(noteNumber)
 ```
 
-Now anytime more than one note is pressed, each note will appear in the notesHeld set. This will come in handy later on for chords and displaying notes on screen.
+Now anytime more than one note is pressed, each note will appear in the notesHeld set. I later used this same functionality to capture velocity display it onscreen.
 
 ## Creating the Sound Engine
 
@@ -228,4 +227,8 @@ Looking good so far!
 
 ## Part Two
 
-The next step turned out to be the hardest of all, and I was completely blocked for about a week while I searched for a solution. What I wanted to do was highlight each note pressed by the user to the corresponding elements on the grid. In order to see how I discovered a solution, stay tuned for part two!  
+The next step turned out to be the hardest of all, and I was completely blocked for about a week while I searched for a solution. What I wanted to do was highlight each note pressed by the user to the corresponding elements on the grid. Like so:
+ 
+ <img width="500" alt="Linnstrument Helper app notes pressed" src="https://user-images.githubusercontent.com/20845425/81235206-65a89680-8fc8-11ea-8263-c4213f40e66c.png"> 
+ 
+ In order to see how I discovered a solution, you can check out [part two here!](https://markjames.dev/blog/2020-05-06-writing-a-midi-controller-app-part-two)
