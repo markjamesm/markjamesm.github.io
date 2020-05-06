@@ -5,7 +5,7 @@ header-img: "img/posts/linnstrument-helper-app.png"
 tags: [swift, programming projects, tutorials, linnstrument helper]
 ---
 
-Welcome to part two of my Linnstrument Helper build guide! If you're looking for part one, you can [find it here](https://markjames.dev/blog/2020-05-06-writing-a-midi-controller-app-part-one). I also recommend checking out the project's [Github repository](https://github.com/markjamesm/linnstrument-helper) to follow along with the code examples.
+Welcome to part two of my Linnstrument Helper build guide! If you're looking for part one, you can [find it here](https://markjames.dev/2020-05-06-writing-a-midi-controller-app-part-one/). I also recommend checking out the project's [Github repository](https://github.com/markjamesm/linnstrument-helper) to follow along with the code examples.
 
 In part two of this series, I discuss how I was able to highlight pressed notes on the Linnstrument grid by using Anchor Preferences. For those who haven't heard of it, Anchor Preferences is a way to pass layout data such as coordinates and element bounds to a parent view while using SwiftUI.
 
