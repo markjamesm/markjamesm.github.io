@@ -14,10 +14,20 @@ Linnstrument Helper is an [open source](https://github.com/markjamesm/linnstrume
 - Displays current notes played along with velocity 
 - Support for both the original model as well as the Linnstrument 128
 
+## System Requirements
 
-## Binaries
+- Mac OS Catalina (10.15)
 
-- Binaries will be provided as soon as I finish mapping the notes to the Linnstrument 200 (the Linnstrument 128 board is currently fully supported). You can always build the project from the [repo](https://github.com/markjamesm/linnstrument-helper) however!
+## Download Link
+
+- [Linnstrument Helper 1.0](https://github.com/markjamesm/linnstrument-helper/releases/download/1.0/LinnstrumentHelper-1.0.zip)
+
+## Installation Instructions
+
+- Download Linnstrument Helper 1.0 and unzip.
+- Connect your Linnstrument to your computer and power it on.
+- Set the octave to be in the middle.
+- Run Linnstrument Helper and have fun!
 
 ## Screenshots
 
