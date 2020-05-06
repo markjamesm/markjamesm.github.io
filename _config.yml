@@ -20,10 +20,11 @@ description: My little corner of the web
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Projects:
+    - All Projects: "projects"
+    - CU Libraries: "https://markjames.dev/cu-libraries"
+    - Linnstrument Helper: "https://markjames.dev/linnstrument-helper"
+  Author's home: "https://markjames.dev"
 
 # List of links in the navigation bar
 #navbar-links:
@@ -51,7 +52,7 @@ avatar: "/img/avatar-icon.png"
 
 navbar-col: "#0C7C59"
 navbar-text-col: "#ffffff"
-navbar-children-col: "#F5F5F5"
+navbar-children-col: "#ffffff"
 page-col: "#FFFFFF"
 link-col: "#5800ff"
 hover-col: "#FF5B32"
