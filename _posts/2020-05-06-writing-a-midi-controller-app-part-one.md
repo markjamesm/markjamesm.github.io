@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building a Linnstrument Learning App in SwiftUI (Part 1)
+title: Writing a Linnstrument Companion App with SwiftUI and AudioKit (Part 1)
 header-img: "/img/posts/linnstrument-helper-app.png"
 tags: [swift, programming projects, tutorials, linnstrument helper]
 ---
