@@ -1,15 +1,22 @@
 ---
 layout: post
-title: Building a Linnstrument MIDI Companion App in Swift Part 1
+title: Building a Linnstrument Learning App in SwiftUI (Part 1)
 header-img: "/img/posts/linnstrument-helper-app.png"
 tags: [swift, programming projects, tutorials, linnstrument helper]
 ---
 
 After recently writing a [broken link checker](https://markjames.dev/2020-04-20-bookmark-dead-link-checker-swift/) in Swift to analyze my browser bookmarks, I started thinking of another project which could both solve a practical problem as well as challenge myself by going a little outside of my coding comfort zone (the best way to learn!). Fortunately, I was able to combine my passion for programming with my other passion - music!
 
-For the past two years, I've been learning the [Linnstrument](https://www.rogerlinndesign.com/linnstrument), an expressive MIDI controller for musical performance. One thing I was always wished I had when I had just started learning was a graphical tool to display the notes I was pressing on the Linnstrument on my computer screen so that I could see exactly what note or chord I was pressing. Now with my newfound Swift skills, I decided to make this a reality! There's two models of Linnstrument, the 128 (four octaves) and the 200 (five octaves), but for the purposes of this guide I'm going to outline the process for the LS 128. To best follow along, I suggest taking a look at the [project sourcecode](https://github.com/markjamesm/linnstrument-helper) for reference while you read. For the curious, here's me playing some jazz on my Linnstrument:
+For the past two years, I've been learning the [Linnstrument](https://www.rogerlinndesign.com/linnstrument), an expressive MIDI controller for musical performance. To best explain the Linnstrument, here's a video of me playing some jazz on my Linnstrument:
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/ExLpYB8VNhw' frameborder='0' allowfullscreen></iframe></div>
+
+
+One thing I was always wished I had when I had just started learning was a graphical tool to display the notes I was pressing on the Linnstrument on my computer screen so that I could see exactly what note or I was pressing. Now with my newfound Swift skills, I decided to make this a reality! Here's what the finished product looks like so far with three notes pressed at once:
+
+<img width="750" alt="Linnstrument Helper app finished version" src="https://user-images.githubusercontent.com/20845425/81113716-aaf89580-8eee-11ea-8732-0b1a486deceb.png">
+
+There's two models of Linnstrument, the 128 (four octaves) and the 200 (five octaves). Both use [all fourths tuning](https://en.wikipedia.org/wiki/All_fourths_tuning), but for the purposes of this guide I'm going to outline the process for only the LS 128 (the LS 200 code is essentially the same, except mapped to a 200 note grid). To best follow along, I suggest taking a look at the [project sourcecode](https://github.com/markjamesm/linnstrument-helper) for reference while you read. 
 
 Step one was to determine the basic app design. Because I find music production to be a pain on iOS devices (for a multitude of reasons), I use my Macbook Pro instead and so I decided to go with a Mac SwiftUI app. With a platform in mind, I needed a framework to receive MIDI note messages from the Linnstrument, and for this I chose [AudioKit](https://github.com/AudioKit/AudioKit). AudioKit is an audio synthesis, processing, and analysis platform for iOS, macOS, and tvOS. The underlying architecture of AudioKit is CSound, and so aside from offering MIDI IO it also has great audio synthesis capabilities. 
 
@@ -182,10 +189,10 @@ I also placed the following state variables at the top of the struct in order to
 
 With this code in place, I was able to generate the following grid:
 
-<img width="600" alt="Linnstrument Helper app screenshot" src="https://user-images.githubusercontent.com/20845425/81126794-6bd83d80-8f0a-11ea-9f0d-9e6248c6359f.png">
+<img width="750" alt="Linnstrument Helper app screenshot" src="https://user-images.githubusercontent.com/20845425/81126794-6bd83d80-8f0a-11ea-9f0d-9e6248c6359f.png">
 
 Looking good so far!
 
 ## Part Two
 
-The next step turned out to be the hardest of all, and I was completely blocked for about a week while I searched for a solution. What I wanted to do was highlight each note pressed by the user on the grid. In order to see how I discovered a solution, stay tuned for part two!  
+The next step turned out to be the hardest of all, and I was completely blocked for about a week while I searched for a solution. What I wanted to do was highlight each note pressed by the user to the corresponding elements on the grid. In order to see how I discovered a solution, stay tuned for part two!  
