@@ -24,6 +24,7 @@ navbar-links:
     - CU Libraries: "https://markjames.dev/cu-libraries"
     - Linnstrument Helper: "https://markjames.dev/linnstrument-helper"
   Contact: "contact"
+  Author's home: "https://markjames.dev"
 
 # List of links in the navigation bar
 #navbar-links:
