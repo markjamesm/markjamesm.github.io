@@ -24,7 +24,7 @@ navbar-links:
     - All Projects: "projects"
     - CU Libraries: "https://markjames.dev/cu-libraries"
     - Linnstrument Helper: "https://markjames.dev/linnstrument-helper"
-  Author's home: "https://markjames.dev"
+  #Author's home: "https://markjames.dev"
 
 # List of links in the navigation bar
 #navbar-links:
@@ -52,7 +52,7 @@ avatar: "/img/avatar-icon.png"
 
 navbar-col: "#0C7C59"
 navbar-text-col: "#ffffff"
-navbar-children-col: "#ffffff"
+navbar-children-col: "#404040"
 page-col: "#FFFFFF"
 link-col: "#5800ff"
 hover-col: "#FF5B32"
