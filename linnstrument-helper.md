@@ -21,12 +21,12 @@ Linnstrument Helper is an [open source](https://github.com/markjamesm/linnstrume
 
 ## Download Link
 
-- [Linnstrument Helper 1.0](https://github.com/markjamesm/linnstrument-helper/releases/download/1.0/LinnstrumentHelper-1.0.zip)
+- [Linnstrument Helper 1.1](https://github.com/markjamesm/linnstrument-helper/releases/tag/1.1)
 
 ## Installation Instructions
 
-- Download Linnstrument Helper 1.0 and unzip.
-- Connect your Linnstrument to your computer and power it on.
+- Download Linnstrument-Helper-1.1.zip and extract.
+- Connect your Linnstrument to your computer and power it on (you can alternatively power it on with the app running).
 - Set the octave to be in the middle.
 - Run Linnstrument Helper and have fun!
 
