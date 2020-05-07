@@ -20,8 +20,8 @@ description: My little corner of the web
 
 navbar-links:
   About Me: "aboutme"
-  Projects:
-    - All Projects: "projects"
+  Projects: "projects"
+  Software:
     - CU Libraries: "https://markjames.dev/cu-libraries"
     - Linnstrument Helper: "https://markjames.dev/linnstrument-helper"
   Contact: "contact"
