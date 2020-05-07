@@ -2,7 +2,7 @@
 layout: page
 title: Linnstrument Helper
 subtitle: Mac OS app to help make learning the Linnstrument a breeze
-header-img: "img/posts/linnstrument-helper-graph.png"
+header-img: "img/posts/linnstrument-helper-og.jpg"
 ---
 
 [![Platforms](https://img.shields.io/badge/platforms-macos-teal.svg)](https://apple.com/macos) [![Swift](https://img.shields.io/badge/Swift-5.2-orange.svg)](https://swift.org) [![License](https://img.shields.io/badge/License-GPL-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
