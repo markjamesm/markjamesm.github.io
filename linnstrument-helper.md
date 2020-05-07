@@ -11,7 +11,7 @@ Linnstrument Helper is an [open source](https://github.com/markjamesm/linnstrume
 
 ## Features
 
-- Basic polyphonic sound engine
+- Polyphonic sound engine
 - Displays current notes played along with velocity 
 - MIDI support for both the original model as well as the Linnstrument 128
 
