@@ -23,7 +23,7 @@ Although its fairly easy to implement a single anchor preference, things are a b
 
 The first thing that I needed to do, was create a NoteBorder() view which contained the Anchor Preference code needed to build my border overlay. The code ended up looking like this:
 
-```
+```swift
 struct NoteBorder: View {
     let color: Color
     let rect: CGRect
@@ -48,7 +48,7 @@ Next, I needed a way to map the MIDI notes to their respective locations on the 
 
 The last thing I needed to do was to create a .overlayPreferenceValue() inside my smallSurfaceView(). Using Foreach, I was able to create NoteBorder() instances for each element passed from my mapSmallGridNotes() method (notice how I use a different color for each distinct MIDI note):
 
-```
+```swift
 .overlayPreferenceValue(GridItemBoundsPreferencesKey.self) { preferences in
      ZStack {
          ForEach(self.midiEngine.mapSmallGridNotes(note: self.conductor.note1), id: \.self) { note in
@@ -80,7 +80,7 @@ Success!
 
 As the grid ranges from 0-127, we need to handle cases when no notes are pressed, and the best way to do so is to use optionals. Inside my Conductor class' receivedMIDINoteOff() method, I added the following code for each note pressed inside of the method's DispatchQueue:
 
-```
+```swift
 DispatchQueue.main.async {
     self.note1 = nil
 ```

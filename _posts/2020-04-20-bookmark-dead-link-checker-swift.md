@@ -13,14 +13,14 @@ The first step in creating Bookmark Tester was to export my bookmarks as an HTML
 
 Looking though the HTML, I could see the bookmark links nested inside a description list as description tags along with their corresponding favicons and descriptions, with each bookmark entry looking something like this:
 
- ```
+ ```html
  <DT><A HREF="https://www.wikipedia.org/" ADD_DATE="1587262550" ICON="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABO0lEQVQ4jaWTMaoCMRCG/wnvDtELmHaxdAmIXcheZA9hYeMNxNZqsc81lu0X+2VLTzBj8V5C8uQ9UAcG5k+YP5kvhPATzCx4IZRSBAD0TnNuQu82J5NPmgFADcMAay2UUjifzwAA733S8zzDWgtrLeZ5xvV6xXK5hPcet9vte/5pmoSIJIQgURtj5HQ6CTOLc06maRJmFmaWuq5TjVg454qNrutEay0hBDkej8V6NC4M+r4XANL3fdo0xogxJul4UK4TxPV6Decc9vt9ArTb7XC/35MehgFVVZUUc7cQghCRjOOYTtNaS9d1wszStm3BgpnlKzfz3mO1WuFyuWCz2aBpGlhrcTgcsN1uAQCLxeLvG0RIRJRmjS9U13XB5wlinlrrgnTbtk/w/jWIDPL8PXvMzz9TzuLVZgB4AExRsO8ga8hoAAAAAElFTkSuQmCC">Wikipedia</A>
 ```
  
  Since I only needed to grab the URLs and nothing else, the next step was to create a new XCode project and use an HTML parsing library to isolate the bookmark URLs. After some cursory Googling, I found [SwiftSoup](https://github.com/scinfu/SwiftSoup) which looked to be the perfect parsing solution. After a quick and painless install using the Swift Package Manager, I started thinking about how I would grab the HTMLs. 
  
  First, I created two structs, BrowserBookmarks and BookmarkParser. The BrowserBookmarks struct was simple enough and had only one element, a string variable containing my entire bookmarks file. This string can be ingested by the SwiftSoup parser, which is exactly what happens inside BrowserParser's getBookmarksLinks() method, which consists of the following code:
- 
+ ```swift
      mutating func getBookmarkLinks() {
              
         let html = BrowserBookmarks().bookmarkHTML
@@ -31,7 +31,7 @@ Looking though the HTML, I could see the bookmark links nested inside a descript
            self.bookmarkURLS.insert(cleanLink ?? "Error")
         }
      }   
-
+```
 In this code, I get each URL and then store it in a set. To make sure the function worked as intended, I created a simple method called listBookmarks() to print each element in the set. Calling this method on my test bookmarks yielded the following console output:
 
 ````
@@ -50,7 +50,7 @@ Everything working so far! In case you haven't tried each of the links, some of 
 
 With a set of clean bookmark URLs, the next step was to create the checkLink() method, which takes one parameter (a URL) and checks the link by using URLSession to download the response codes. I put this method inside a class called LinkChecker, to which I also added three properties which keep track of the clean, broken and unknown link statuses. In order to give URLSession enough time to properly download the HTTP headers, Because we need to wait for the URL session task to finish downloading the response codes, I made use of semaphores to start and stop the code from executing at the right points. When I finished writing the method, this is what I had:
 
-```
+```swift
 func checkLink(link: String) {
            
    // Create a semaphore to wait until URLSession finishes downloading
@@ -84,7 +84,7 @@ func checkLink(link: String) {
 
 I then tested the method on the test bookmarks file I created earlier, using the following code in my main.swift file:
 
-``` 
+``` swift
 var parser = BookmarkParser()
 var checker = LinkChecker()
 
@@ -109,7 +109,7 @@ There were a total of 8 test links in my [sample bookmarks file](https://markjam
 
 With the program now operational, the final step was to run my full list of bookmarks through and see what happened. With 1078 bookmarks, I expected the process to take a little while and so to add some verbosity, I added the following line to my main.swift for loop:
 
-``
+``swift
     print("checking \(bookmark)")
 ``
 
@@ -123,13 +123,13 @@ checking https://news.ycombinator.com/
 
 However after running my full bookmarks list for the first time, my program crashed about halfway through the list of URLs to check. Some debugging showed me that this line of code was the culprit:
 
-```
+```swift
 let request = URLRequest(url: URL(string: link)!)
 ```
 
 By force unwrapping the URLRequest, my code was throwing an error when it came across a nil value in my list of parsed URLs. I suspect that this is due to some of the bookmark URLs having weird characters in them. Fortunately, I was able to solve the problem by making use of a guard statement:
 
-```
+```swift
 guard let url = URL(string: link) else { return }
 let request = URLRequest(url: url)
 URLSession.shared.dataTask(with: request) { (data, response, error) in

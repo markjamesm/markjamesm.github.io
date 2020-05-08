@@ -27,7 +27,7 @@ Once I setup a fresh Xcode, the next step was to use AudioKit to listen for MIDI
 
 Keeping in line with AudioKit naming conventions, I created a [Conductor class](https://github.com/markjamesm/linnstrument-helper/blob/master/LinnstrumentHelper/Model/Conductor.swift) using the singleton pattern and got to work implementing MIDI input. To do so, I needed to first make the Conductor class conform to the AKMIDIListener protocol and then adding a listener, which I did here in the Conductor init method:
 
-```
+```swift
 init() {
         midi.openInput(name: "Session 1")
         midi.addListener(self)
@@ -38,7 +38,7 @@ This code opens MIDI input listening under the name "Session 1" and then adds a 
 
 Next, I needed to implement two methods, receivedMIDINoteOn() and receivedMIDINoteOff(). These methods listen for MIDI input and then perform an action. Following the AudioKit developer documentation, I came up with the following:
 
-```
+```swift
 
  func receivedMIDINoteOn(noteNumber: MIDINoteNumber,
     velocity: MIDIVelocity,
@@ -59,7 +59,7 @@ func receivedMIDINoteOff(noteNumber: MIDINoteNumber,
 
 Now, with the minimum amount of functionality needed for IO, I ran the program and checked the output in the console as I pressed buttons on my connected Linnstrument:
 
-```
+```swift
 LinnstrumentHelper[82050:4105308] [midi] AKMIDI.swift:init():53:Initializing MIDI (AKMIDI.swift:init():53)
 
 LinnstrumentHelper[82050:4105308] [plugin] AddInstanceForFactory: No factory registered for id <CFUUID 0x60000025bb60> F8BB1C28-BAE8-11D6-9C31-00039315CD46
@@ -71,13 +71,13 @@ Playing note number: 72
 
 Looks like the MIDI input feature is now working, yay! However, although MIDI input is now working, the receivedMIDINoteOn() function is only set to print the note numbers to the console. As I'm using SwiftUI for the UI elements of the app, another solution would be needed, and fortunately Apple provided the tools to do just that through the Combine Framework to handle asynchronous events. Fortunately, writing the [CU Libraries](https://markjames.dev/cu-libraries) iOS app gave me some experience using the combine framework. To get my model to update my SwiftUI view, I implemented the ObservableObject protocol in my Conductor class and added in the following variable to keep track of the current note pressed:
 
-```
+```swift
 @Published var noteNumber: UInt8 = 0
 ```
 
 Next, In my ContentView, I created a new EnvironmentObject and then added a text entry
 
-```
+```swift
   struct ContentView: View {
            
       @EnvironmentObject var conductor: Conductor
@@ -94,7 +94,7 @@ Next, In my ContentView, I created a new EnvironmentObject and then added a text
 
 Because we cannot update our published variable noteNumber from a background thread, we need to make use of the dispatch queue to push the changes to the main thread. We need to both assign and unassign a MIDI number when a button is pressed or depressed:
 
-```
+```swift
  func receivedMIDINoteOn(noteNumber: MIDINoteNumber,
         velocity: MIDIVelocity,
         channel: MIDIChannel,
@@ -123,13 +123,13 @@ After running the code and pressing a button on my linnstrument, I saw the follo
 
 Success! However, what happens when a user presses multiple buttons at the same time? Unfortunately, using a single variable won't work here, so instead I added some functionality to the receivedMIDINoteOn(), adding all currently pressed numbers to a set, as well as remove them afterwards. I did so by adding the followingline  to the receivedMIDINoteOn() dispatch queue:
  
-```
+```swift
 self.notesHeld.insert(noteNumber)
 ```
 
 As well as this line to receivedMIDINoteOff():
 
-``` 
+```swift
 self.notesHeld.remove(noteNumber)
 ```
 
@@ -138,13 +138,13 @@ Now anytime more than one note is pressed, each note will appear in the notesHel
 ## Creating the Sound Engine
 
 Creating the sound engine was fairly simple, as I made use of AudioKit's synthesizer. Just below my midiEngine instance in my Conductor class, I added the following line to create a new synth with some reasonable presets:
-```
+```swift
 let synth = AKSynth(masterVolume: 0.5, pitchBend: 0.0, vibratoDepth: 0.0, filterCutoff: 2.0, filterStrength: 0.5, filterResonance: 0.0, attackDuration: 0.1, decayDuration: 0.0, sustainLevel: 1.0, releaseDuration: 0.2, filterEnable: true)
 ```
 
 Next, I added the synth engine methods to the bottom of my conductor class:
 
-```
+```swift
 func playNote(noteNumber: UInt8, velocity: UInt8) {
          synth.play(noteNumber: noteNumber, velocity: velocity)
        }
@@ -155,12 +155,12 @@ func playNote(noteNumber: UInt8, velocity: UInt8) {
 ```
 
 I then wired up the synth to my MIDI input by adding the following line to my receivedMIDINoteOn() method:
-```
+```swift
 self.playNote(noteNumber: noteNumber, velocity: velocity)
 ```
 and then the equivalent stop note in receivedMIDINoteOff():
 
-```
+```swift
 self.stopNote(noteNumber: noteNumber)
 ```
 
@@ -170,7 +170,7 @@ Now when I ran the program, I was able to get sound whenever I pressed a note!
 
 With MIDI IO now working and the Conductor class passing data to our View through ObservableObjects, it was now time to start thinking about the note layout. The Linnstrument is available in two models, a 200 note 5 octave version, and a more portable 128 note version. As I wanted to support both Linnstrument models, I created a tabview in my ContentView for both versions linking to two newly created views:  
 
-```
+```swift
  TabView {
         
     PlayingSurfaceView()
@@ -187,7 +187,7 @@ With MIDI IO now working and the Conductor class passing data to our View throug
 
 Within each of these views, I needed to find a way to create a grid layout. My initial thought was to use a loop to generate rectangles, but I found a much better solution using [SwiftUI Grid](https://github.com/spacenation/swiftui-grid). After installing the library, I created some new structs to implement a modular grid. The first was called Item, and it contained the necessary information for each element of the grid. This included an ID, color, and number:
 
-```
+```swift
 struct Item: Identifiable {
 
     let number: Int
@@ -201,7 +201,7 @@ I also added an array of note names so that MIDI notes would display on each ele
 
 Next, I needed to generate the grid. For the 128-note Linnstrument grid, I added a ScrollView with the following code inside my SmallPlayingSurfaceView. The ScrollView isn't entirely necessary, but allows scrolling should the window be too small to display all the grid elements: 
 
-```
+```swift
  ScrollView(style.axes) {
     Grid(items) { item in
         Card(title: "\(item.number)", color: item.color)
@@ -214,7 +214,7 @@ Next, I needed to generate the grid. For the 128-note Linnstrument grid, I added
 
 I also placed the following state variables at the top of the struct in order to keep track of how many cards should be generated, as well as the rules for generating the rows and columns:
 
-```
+```swift
 @State var items: [Item] = (0...127).map { Item(number: $0) 
 @State var style = ModularGridStyle(columns: 20, rows: .fixed(60))
 ```
