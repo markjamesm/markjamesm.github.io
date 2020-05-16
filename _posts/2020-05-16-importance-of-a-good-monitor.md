@@ -16,7 +16,7 @@ Last year, I purchased a Macbook Pro and have been loving the experience (despit
  
  ![Photo of my computer desk setup](https://markjames.dev/img/posts/new-setup.jpg "Computer desk")
  
- Just to the right of this desk, I have a second desk where my Linnstrument, Maschine, and Audio Interface sit along with the USB hub and the current setup really lets me transition between creativity and productivity seamlessly.
+ Just to the right of this desk, I have a second desk where my Linnstrument, Maschine, and audio interface sit along with the USB hub and the current setup really lets me transition between creativity and productivity seamlessly.
  
  Moreover, despite being two inches smaller than my previous monitor, the larger resolution makes this monitor feel much bigger. As I no longer need to move my head to see any part of the monitor (only my eyes!), I find I have less neck strain these days. Since I can see more lines of code, I find its easier to understand whats going on in longer files, and I don't feel cramped for space when running XCode with multiple tabs open.
  
