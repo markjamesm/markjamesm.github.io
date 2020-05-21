@@ -105,7 +105,7 @@ QuickGenerators.GenerateDungeonMazeMap(tempMap, minRooms: 800, maxRooms: 140, ro
 
 The following two changes were simple to make, and also give the game a bit of character. In the Player.cs file, I changed the Player() constructor color like so:
 
-```
+```csharp
 public Player(Coord position) : base(Color.LightGreen, Color.Black, '@', position, (int)MapLayer.PLAYER, isWalkable: false, isTransparent: true) => FOVRadius = 10;
 ```
 Aside from changing the colors, you can also change the player symbol, FOV radius, and clipping layers.
