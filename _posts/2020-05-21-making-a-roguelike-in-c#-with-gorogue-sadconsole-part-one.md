@@ -109,6 +109,8 @@ public Player(Coord position) : base(Color.LightGreen, Color.Black, '@', positio
 ```
 Aside from changing the colors, you can also change the player symbol, FOV radius, and clipping layers.
 
+For the curious, you can see my entire codebase [here on Github](https://github.com/markjamesm/runic-quest)
+
 ## Part One Conclusion
 
 In part one of the article, we did a whole lot of stuff that may take several days to digest. Firstly, we installed the GoRogue integration template and then laid the groundwork for our own game by changing the map size, centering the player, and changing a few colors.
