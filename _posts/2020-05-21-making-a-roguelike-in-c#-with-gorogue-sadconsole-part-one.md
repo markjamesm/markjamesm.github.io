@@ -22,9 +22,7 @@ In past projects, I've used Git in a superficial manner by relying on the XCode 
 
 ## Setting up the SadConSole.GoRogueHelpers Template
 
-On Nuget, there's a [handy template](https://www.nuget.org/packages/TheSadRogue.GoRogueSadConsole.Templates/) 
-
-Created by Chris3606 (Go Rogue's creator) which starts you off with a simple game template which supports:
+On Nuget, there's a [handy template](https://www.nuget.org/packages/TheSadRogue.GoRogueSadConsole.Templates/)  Created by Chris3606 (Go Rogue's creator) which starts you off with a simple game template which supports:
 * Map generation
 * Player movement
 * Static enemy spawning
@@ -55,7 +53,7 @@ After running the commands, I was left with a folder which contained the followi
 
 Running the template project produced this game window:
 
-![Running the GoRogue template build](https://markjames.dev/img/posts/gorogue-template-build "Screenshot of the GoRogue template")
+![Running the GoRogue template build](https://markjames.dev/img/posts/gorogue-template-build.jpg "Screenshot of the GoRogue template")
 
 Awesome, We now have a base template to build off of!
 
@@ -109,7 +107,7 @@ public Player(Coord position) : base(Color.LightGreen, Color.Black, '@', positio
 ```
 Aside from changing the colors, you can also change the player symbol, FOV radius, and clipping layers.
 
-For the curious, you can see my entire codebase [here on Github](https://github.com/markjamesm/runic-quest)
+For the curious, you can see (and fork!) my entire codebase [here on Github](https://github.com/markjamesm/runic-quest).
 
 ## Part One Conclusion
 
