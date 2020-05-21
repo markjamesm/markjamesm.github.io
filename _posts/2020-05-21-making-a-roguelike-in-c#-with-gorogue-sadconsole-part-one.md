@@ -98,7 +98,7 @@ Now that the map size is larger than the viewport, the player remains centered o
 After adjusting the map and viewport sizes, its a good idea to modify the GenerateDungeonMazeMap() argument parameters inside MapScreen.cs in order to be more suitable for a 500x500 map. I'm not sure what the ideal parameters are for a room of this size is, and so I recommend playing around until you find something that works for you. For me, the following settings worked well for now:
 
 ```csharp
-QuickGenerators.GenerateDungeonMazeMap(tempMap, minRooms: 800, maxRooms: 140, roomMinSize: 12, roomMaxSize: 24);
+QuickGenerators.GenerateDungeonMazeMap(tempMap, minRooms: 80, maxRooms: 140, roomMinSize: 12, roomMaxSize: 24);
 ```
 
 ## Change the player and wall colors
