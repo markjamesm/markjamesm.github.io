@@ -116,6 +116,6 @@ For the curious, you can see (and fork!) my entire codebase [here on Github](htt
 
 In part one of the article, we did a whole lot of stuff that may take several days to digest. Firstly, we installed the GoRogue integration template and then laid the groundwork for our own game by changing the map size, centering the player, and changing a few colors.
 
-If at any time you find yourself stuck, I suggest leaving a comment below and I'll do my best to help answer! Moreover, there's a terrific community on the [SadConsole](https://discord.com/invite/mttxqAs) Discord Server that I highly recommend checking out. The devs of both Sadconsole and Go Rogue are very active (and super helpful!) there, and there's also a friendly dev community with other members eager to help out.
+If at any time you find yourself stuck, I suggest leaving a comment below and I'll do my best to help answer! Moreover, there's a terrific community on the [SadConsole Discord Server](https://discord.com/invite/mttxqAs) that I highly recommend checking out. The devs of both Sadconsole and Go Rogue are very active (and super helpful!) there, and there's also a friendly dev community with other members eager to help out.
 
 Stay tuned for the upcoming part two where we'll implement even more features to Runic Quest!
