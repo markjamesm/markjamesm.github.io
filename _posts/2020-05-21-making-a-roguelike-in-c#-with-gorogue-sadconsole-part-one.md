@@ -58,7 +58,7 @@ Running the template project produced this game window:
 
 ![Running the GoRogue template build](https://markjames.dev/img/posts/gorogue-template-build.jpg "Screenshot of the GoRogue template")
 
-Awesome, We now have a base template to build off of!
+Awesome, we now have a base template to build off of!
 
 ## Adjusting the Map size
 
