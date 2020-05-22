@@ -215,8 +215,10 @@ Since a lot of action will be happening in our game, we need a way to handle str
 
 ![Runic Quest scrollbar](https://markjames.dev/img/posts/runic-quest/runic-quest-scrollbar.jpg "Runic Quest with Sadconsole scrollbar implemented")
 
+The scrollbar looks great! Not only does it display status messages it also lets us save space. Going forward, its likely that I'll customize the colors of the window, but this will come later on when I have more base functionality in place.
+
+As an aside, at this point I created a [Github workflow](https://github.com/markjamesm/runic-quest/blob/master/.github/workflows/dotnetcore.yml) in order to setup continuous integration through Github actions. With CI now setup, the next step is to write some unit tests (which I'll be covering in a future post!). 
+
 ## Conlusion
 
 In this part of the roguelike tutorial, we extended the functionality of our game significantly by creating a window manager and then adding both the game map and a scrolling message log! With a basic UI in place now, we can now start to think about the gameplay a bit more, and in the next step of the tutorial we'll look into creating a basic combat system!
-
-As an aside, at this point I created a [Github workflow](https://github.com/markjamesm/runic-quest/blob/master/.github/workflows/dotnetcore.yml) in order to setup continuous integration through Github actions. With CI now setup, the next step is to write some unit tests (which I'll be covering in a future post!). 
