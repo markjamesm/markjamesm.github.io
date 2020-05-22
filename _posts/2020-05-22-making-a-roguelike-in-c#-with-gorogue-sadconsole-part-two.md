@@ -115,7 +115,11 @@ At this point, if you save and run the code you should see the following window 
 
 ![Runic Quest UI Manager](https://markjames.dev/img/posts/runic-quest/runic-quest-ui-manager.jpg "Runic Quest roguelike using a UI Manager")
 
-Success! The GoRogue template map generator is now hooked into our freshly minted UIManager class! Although this is a great first step, now is a good time to make an attempt at hooking in a basic message log. Again, I'm going to be borowing code from Ansiware, this time from [Part 9](https://ansiware.com/tutorial-part-9-message-log-v8/)
+Success! The GoRogue template map generator is now hooked into our freshly minted UIManager class! 
+
+## Implement a Message Logger
+
+Although this is a great first step, now is a good time to make an attempt at hooking in a basic message log. Again, I'm going to be borowing code from Ansiware, this time from [Part 9](https://ansiware.com/tutorial-part-9-message-log-v8/)
 
 Creating MessageLogWindow.cs, I filled it with the following code:
 
@@ -188,12 +192,19 @@ Next, I declared my MessageLogWindow inside my UIManager class, and then added t
             MessageLog.Show();
             MessageLog.Position = new Point(0, 20);
 
-            // Print a test method
+            // Print a test message
             MessageLog.Add("Testing 123");
             
+Much like we did with the MapScreen, we create a MessageLog and then add it as a child of the UIManager. We then display the message log at position (0, 20) and finally display a test message. I played around with the size parameters of the MessageLog for a bit, and I liked how this looked through trial and error.
+
 Running my code at this point produces the following result:
 
 ![Runic Quest MessageLogger](https://markjames.dev/img/posts/runic-quest/runic-quest-message-log-window.jpg "Runic Quest roguelike with message log")
 
+Looking good! 
 
+## Add Scrolling to the Message Logger
 
+Since a lot of action will be happening in our game, we need a way to handle streams of text by adding a Scrollbar to our MessageLogWindow. In order to do so, take a look at [Part 9](https://ansiware.com/tutorial-part-9-message-log-v8/) of Ansiware's tutorial, and integrate the code he provides into your MessageLog.cs. His explanation of the MessagerLogger is terrific, and there's no point in reinventing the wheel! Should you get stuck, you can take a look at my [commit here](https://github.com/markjamesm/runic-quest/commit/5583c895b7c8d8e822b88cfcfcf607b6e5c4ce08). Building the code at this stage looks like this: 
+
+![Runic Quest scrollbar](https://markjames.dev/img/posts/runic-quest/runic-quest-scrollbar.jpg "Runic Quest with Sadconsole scrollbar implemented")
