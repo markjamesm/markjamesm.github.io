@@ -118,4 +118,4 @@ In part one of the article, we did a whole lot of stuff that may take several da
 
 If at any time you find yourself stuck, I suggest leaving a comment below and I'll do my best to help answer! Moreover, there's a terrific community on the [SadConsole Discord Server](https://discord.gg/TagZMGg) that I highly recommend checking out. The devs of both Sadconsole and Go Rogue are very active (and super helpful!) there, and there's also a friendly dev community with other members eager to help out.
 
-Stay tuned for the upcoming part two where we'll implement even more features to Runic Quest!
+In [Part 2](https://markjames.dev/2020-05-22-making-a-roguelike-in-c-with-gorogue-sadconsole-part-two/) of this series, we create a UIManager and implement a scrolling message logger into our game!

@@ -5,13 +5,15 @@ header-img: "img/posts/runic-quest-part-one-final.jpg"
 tags: [tutorials, programming projects, c#] 
 ---
 
-After setting up the GoRogue Helpers template and making a few basic changes to it in [Part One](https://markjames.dev/2020-05-21-making-a-roguelike-in-c-with-gorogue-sadconsole-part-one/) of this tutorial series, Part Two looks to dig into the code even deeper and implement some additional features to make our game feel more like a game. Assuming that you completed part one, you should have a basic game which compiles and lets you explore a fairly big dungeon map which contains static enemies which you can't attack. 
+After setting up the GoRogue Helpers template and making a few basic changes to it in [Part One](https://markjames.dev/2020-05-21-making-a-roguelike-in-c-with-gorogue-sadconsole-part-one/) of this tutorial series, Part Two looks to dig even deeper into the code and implement two additional features which will help manage the game's lifecycle; a UIManager class as well as MessageLogger which will display status messages in a scrollable window. 
+
+Assuming that you completed part one, you should now have a basic game which compiles and lets you explore a fairly big dungeon map which contains static enemies that you can't attack (yet!). From here, I created a new Git branch called "feat/ui-manager" which I used to track my changes. 
 
 ## Creating a UI Manager
 
-The first thing that I wanted to do going forward, was to implement a proper UI manager. Fortunately, [Part 8](https://ansiware.com/tutorial-part-8-user-interface-manager-v8/) of the Ansiware tutorial explains how to implement a UI manager. 
+The first thing that I wanted to do going forward, was to implement a proper UI manager. Fortunately, [Part 8](https://ansiware.com/tutorial-part-8-user-interface-manager-v8/) of the Ansiware tutorial explains how to implement a UI manager in SadConsole, and we can use this code as a foundation for our UIManager class (yay open source!).
 
-The first thing I did was to create a class called UIManager.cs, and I copied and pasted the Ansiware code to use as a blueprint, modifying it for my game name:
+In your project directory, create a class called UIManager.cs and copy the the Ansiware code to use as a blueprint. Here I've modified the namespace to match my game name:
 
 ```csharp
 using Microsoft.Xna.Framework;
@@ -48,7 +50,11 @@ namespace RunicQuest
 }
 ```
 
-Here we have a lot of great base code! The next step is to hook in the UI Manager to our MapScreen class. Currently, the MapScreen.cs file contains the following line of code:
+This is a lot of great base code! <i>Note:</i> For improved readability, I renamed Program.cs to GameLoop.cs moving forward.
+
+The next step is to hook in the UI Manager to our MapScreen class. In the GoRogue template, the MapScreen class is called directly from our Main loop. Now, we're going to change things around so that our UI Manager calls the MapScreen. 
+
+Currently, the MapScreen.cs file contains the following line of code:
 
 ```csharp
 internal class MapScreen : ContainerConsole
@@ -60,7 +66,7 @@ Since our UIManager extends the ContainerConsole base class, I wired it up to UI
 internal class MapScreen : UIManager
 ```
 
-Keeping in line with Ansiware's theme of encapsulation, the next step was to move the map generation code outside of GameLoop.cs (previously named Program.cs, but I renamed it for readability) and into the UIManager. In order to do so, I removed the references to the Map Height and Width, as well as the details and added the followingt code inside UIManager.cs:
+Keeping in line with Ansiware's theme of encapsulation, the next step was to move the map generation code outside of GameLoop.cs and into the UIManager. In order to do so, I removed the references to the Map and viewport dimensions and added them to UIManager.cs instead:
 
 ```csharp
     public class UIManager : ContainerConsole
@@ -73,7 +79,7 @@ Keeping in line with Ansiware's theme of encapsulation, the next step was to mov
         private const int MapHeight = 500;
 ```
 
-Note that the ViewPort height and width are set to a public constant, this is because we still need to use them inside our GameLoop.cs to create the main window: 
+Note that the ViewPort height and width are set to a public constant. This is because we still need to use them inside our GameLoop.cs to create the main window like this: 
 
 ```csharp
         private static void Main()
@@ -82,7 +88,7 @@ Note that the ViewPort height and width are set to a public constant, this is be
             SadConsole.Game.Create(UIManager.ViewPortWidth, UIManager.ViewPortHeight);
 ```
 
-Now we need to create the Map inside of our UIManager class, and we do so inside of the CreateConsoles() method like this:
+Next, we need to create the Map inside of our UIManager class, and we do so inside of the CreateConsoles() method like this:
 
 ```csharp
         public void CreateConsoles()
@@ -92,7 +98,7 @@ Now we need to create the Map inside of our UIManager class, and we do so inside
         }
 ```
 
-CreateConsoles() creates all the child consoles to be managed, and makes sure that they are added as children, updated, and drawn.
+CreateConsoles() creates all the SadConsole consoles to be managed, and makes sure that they are added as children, updated, and drawn.
 
 Now we need to wire up the UIManager to our GameLoop. Firstly, we declare our UIManager:
 
@@ -115,13 +121,13 @@ At this point, if you save and run the code you should see the following window 
 
 ![Runic Quest UI Manager](https://markjames.dev/img/posts/runic-quest/runic-quest-ui-manager.jpg "Runic Quest roguelike using a UI Manager")
 
-Success! The GoRogue template map generator is now hooked into our freshly minted UIManager class! 
+Success! Although it doesn't look any different, the GoRogue template map generator is now hooked into our freshly minted UIManager class! This will make the next step of implementing the MessageLogger class much easier. The final step was to merge my UIManager Git branch back into master and then off to the next step!
 
 ## Implement a Message Logger
 
-Although this is a great first step, now is a good time to make an attempt at hooking in a basic message log. Again, I'm going to be borowing code from Ansiware, this time from [Part 9](https://ansiware.com/tutorial-part-9-message-log-v8/)
+Now that we have a working UIManger, now is a good time to setup message logger functionality. Again, I'm going to be borowing code from Ansiware, this time from [Part 9](https://ansiware.com/tutorial-part-9-message-log-v8/) of the guide. Before diving in, I took a moment to switch to a new Git branch using ```git checkout -b feat/message-logger```.
 
-Creating MessageLogWindow.cs, I filled it with the following code:
+Next, I created a new MessageLogWindow class amd inserted the following code:
 
 ```csharp
 using System.Collections.Generic;
@@ -184,7 +190,7 @@ namespace RunicQuest
 }
 ```
 
-Next, I declared my MessageLogWindow inside my UIManager class, and then added the following code to the CreateConsoles() method just below the other code:
+The following step was to declare the MessageLogWindow inside my UIManager class, and then add the following code to the CreateConsoles() method just below the map generation code:
 
             // Create the message log window and set its position.
             MessageLog = new MessageLogWindow(ViewPortWidth, ViewPortHeight / 4, "Message Log");
@@ -195,7 +201,7 @@ Next, I declared my MessageLogWindow inside my UIManager class, and then added t
             // Print a test message
             MessageLog.Add("Testing 123");
             
-Much like we did with the MapScreen, we create a MessageLog and then add it as a child of the UIManager. We then display the message log at position (0, 20) and finally display a test message. I played around with the size parameters of the MessageLog for a bit, and I liked how this looked through trial and error.
+Much like we did with the MapScreen, we create a MessageLog and then add it as a child of the UIManager. We then display the message log at position (0, 20), and finish display a test message. I played around with the size parameters of the MessageLog for a bit, and I liked how this looked through trial and error.
 
 Running my code at this point produces the following result:
 
@@ -205,7 +211,7 @@ Looking good! The great part about the UI Manager is that we can move the messag
 
 ## Add Scrolling to the Message Logger
 
-Since a lot of action will be happening in our game, we need a way to handle streams of text by adding a Scrollbar to our MessageLogWindow. In order to do so, take a look at [Part 9](https://ansiware.com/tutorial-part-9-message-log-v8/) of Ansiware's tutorial, and integrate the code he provides into your MessageLog.cs. His explanation of the MessagerLogger is terrific, and there's no point in reinventing the wheel! Should you get stuck, you can take a look at my [commit here](https://github.com/markjamesm/runic-quest/commit/5583c895b7c8d8e822b88cfcfcf607b6e5c4ce08). Building the code at this stage looks like this: 
+Since a lot of action will be happening in our game, we need a way to handle streams of event text, and the best way to do so is to add a Scrollbar to our MessageLogWindow. In order to do so, take a look at [Part 9](https://ansiware.com/tutorial-part-9-message-log-v8/) of Ansiware's tutorial, and integrate the code he provides into your MessageLog.cs. His explanation of the MessagerLogger is terrific, and there's no point in reinventing the wheel! This is also a great little challenge to help you stray from the tutorial a bit (and avoid [tutorial purgatory](https://medium.com/terraformmedia/stuck-in-tutorial-purgatory-how-i-finally-got-out-of-it-and-how-you-can-too-c387fae8b6d9)! Should you get stuck, you can take a look at my [commit here](https://github.com/markjamesm/runic-quest/commit/5583c895b7c8d8e822b88cfcfcf607b6e5c4ce08) which was when I merged my feat/messager-logger branch into the master. Building the code at this stage looks like this: 
 
 ![Runic Quest scrollbar](https://markjames.dev/img/posts/runic-quest/runic-quest-scrollbar.jpg "Runic Quest with Sadconsole scrollbar implemented")
 
