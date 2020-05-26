@@ -147,7 +147,7 @@ Dead Links: 122
 
 Putting that data into a graph, here's a breakdown of the status of my bookmarks: 
 
-<center><img src="https://user-images.githubusercontent.com/20845425/79681463-76939280-81e8-11ea-9b77-2c5b6ed534f9.png" /></center>
+<center><img src="https://user-images.githubusercontent.com/20845425/79681463-76939280-81e8-11ea-9b77-2c5b6ed534f9.png" alt="Pie chart showing the breakdown of clean vs broken links" /></center>
 
 Out of the 1,078 bookmarks I exported, the parser was able to successfully read and analyze 1,036 of them, which is a great sampling. 30.7% of those bookmarks are no longer functional, with 18,9% of them being broken and 11.8% completely dead. As I mentioned earlier, these bookmarks date start from about 2008 until the present, although these days, thanks to other solutions I save a lot less traditional bookmarks than I used to. In fact, I think I've bookmarked maybe 5 links in the past year. Aside from the coding element, its an interesting exercise seeing how much content churn happens on the web. When I think back to how many websites I've created and then taken down for various reasons over the years, it does make sense how this can happen.
 
