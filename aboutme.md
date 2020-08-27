@@ -6,14 +6,13 @@ subtitle: Get to know me
 
 My name is Mark-James McDougall, and I'm a creative professional from Montreal, Canada with a wide skillset. I work as a Webmaster at [McGill University](https://mcgill.ca) (BA'15) and have experience with:
 
-- Swift Programming (Linux, MacOS)
-- iOS Development (SwiftUI)
+- Swift/SwiftUI (iOS, MacOS)
 - Digital Marketing (SEO & SEM)
 - Information Architecture
 - Audio Engineering (Podcasting, Soundtrack production) 
 - Linux Server Administation
 
-To see some of the neat stuff I'm working on, check out my [projects page.](/projects)
+To see some of the neat stuff I'm working on, check out my [projects page.](/projects) Recently I've been focusing on learning C# and .NET Core.
 
 If ever you need professional help with a project, I offer consulting for a range of services. Don't hesitate to [contact me](/contact) to inquire about my availabilities and rates.
 
