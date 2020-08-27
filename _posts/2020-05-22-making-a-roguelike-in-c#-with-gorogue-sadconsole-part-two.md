@@ -119,7 +119,7 @@ and then hook in UIManager inside our init method:
 
 At this point, if you save and run the code you should see the following window appear:
 
-![Runic Quest UI Manager](https://markjames.dev/img/posts/runic-quest/runic-quest-ui-manager.jpg "Runic Quest roguelike using a UI Manager")
+![Runic Quest UI Manager](/img/posts/runic-quest/runic-quest-ui-manager.jpg "Runic Quest roguelike using a UI Manager")
 
 Success! Although it doesn't look any different, the GoRogue template map generator is now hooked into our freshly minted UIManager class! This will make the next step of implementing the MessageLogger class much easier. The final step was to merge my UIManager Git branch back into master and then off to the next step!
 
@@ -205,7 +205,7 @@ Much like we did with the MapScreen, we create a MessageLog and then add it as a
 
 Running my code at this point produces the following result:
 
-![Runic Quest MessageLogger](https://markjames.dev/img/posts/runic-quest/runic-quest-message-log-window.jpg "Runic Quest roguelike with message log")
+![Runic Quest MessageLogger](/img/posts/runic-quest/runic-quest-message-log-window.jpg "Runic Quest roguelike with message log")
 
 Looking good! The great part about the UI Manager is that we can move the message logger window around by dragging it should we so choose.
 
@@ -213,7 +213,7 @@ Looking good! The great part about the UI Manager is that we can move the messag
 
 Since a lot of action will be happening in our game, we need a way to handle streams of event text, and the best way to do so is to add a Scrollbar to our MessageLogWindow. In order to do so, take a look at [Part 9](https://ansiware.com/tutorial-part-9-message-log-v8/) of Ansiware's tutorial, and integrate the code he provides into your MessageLog.cs. His explanation of the MessagerLogger is terrific, and there's no point in reinventing the wheel! This is also a great little challenge to help you stray from the tutorial a bit (and avoid [tutorial purgatory](https://medium.com/terraformmedia/stuck-in-tutorial-purgatory-how-i-finally-got-out-of-it-and-how-you-can-too-c387fae8b6d9)! Should you get stuck, you can take a look at my [commit here](https://github.com/markjamesm/runic-quest/commit/5583c895b7c8d8e822b88cfcfcf607b6e5c4ce08) which was when I merged my feat/messager-logger branch into the master. Building the code at this stage looks like this: 
 
-![Runic Quest scrollbar](https://markjames.dev/img/posts/runic-quest/runic-quest-scrollbar.jpg "Runic Quest with Sadconsole scrollbar implemented")
+![Runic Quest scrollbar](/img/posts/runic-quest/runic-quest-scrollbar.jpg "Runic Quest with Sadconsole scrollbar implemented")
 
 The scrollbar looks great! Not only does it display status messages it also lets us save space. Going forward, its likely that I'll customize the colors of the window, but this will come later on when I have more base functionality in place.
 

@@ -14,7 +14,7 @@ Last year, I purchased a Macbook Pro and have been loving the experience (despit
  
  So far, I've experienced a number of great benefits having switched to the new Dell Monitor. Firstly, getting to remove both the HDMI dongle and charger from my MBP, I've been able to siginificantly de-clutter my desk. Now I have the monitor/charging cable connected, as well as a powered USB-C hub where I connect all my devices. Here's how my main desk now looks:
  
- ![Photo of my computer desk setup](https://markjames.dev/img/posts/new-setup.jpg "My computer desk")
+ ![Photo of my computer desk setup](/img/posts/new-setup.jpg "My computer desk")
  
  Just to the right of this desk, I have a second desk where my Linnstrument, Maschine, and audio interface sit along with the USB hub and the current setup really lets me transition between creativity and productivity seamlessly.
  

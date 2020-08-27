@@ -9,7 +9,7 @@ After having completed several projects using Swift over the past four months (m
 
 As my programming projects have increased in complexity (I've now written both console and GUI apps for MacOS and iOS), I have discovered that the more projects you complete, the better you get at being able to roughly estimate how much work might be involved in a project. With so many different things to keep track of (even for a simple roguelike), I knew that this project would be my biggest undertaking so far. I don't expect to create a roguelike with the depth of something like DCSS or [Nethack](https://www.nethack.org/), but I have set a medium-term goal of creating something which would hold the interest of both my brothers for at least thirty minutes when I eventually have them try it out. As I find that I learn better while writing about a subject, this series is intended as being a build log/tutorial of my experience. By the end of Part One of this tutorial, you should have a basic game which looks something like the following:
 
-![Runic Quest tutorial part one build](https://markjames.dev/img/posts/runic-quest-build-one.jpg "Screenshot of the end of Part One")
+![Runic Quest tutorial part one build](/img/posts/runic-quest-build-one.jpg "Screenshot of the end of Part One")
 
 ## Cross-Platform Considerations
 
@@ -56,7 +56,7 @@ After running the commands, I was left with a folder which contained the followi
 
 Running the template project produced this game window:
 
-![Running the GoRogue template build](https://markjames.dev/img/posts/gorogue-template-build.jpg "Screenshot of the GoRogue template")
+![Running the GoRogue template build](/img/posts/gorogue-template-build.jpg "Screenshot of the GoRogue template")
 
 Awesome, we now have a base template to build off of!
 
@@ -91,7 +91,7 @@ MapScreen = new MapScreen(MapWidth, MapHeight, ViewPortWidth, ViewPortHeight);
 
 After compiling the game, I was now greeted with the following screen:
 
-![Runic Quest initial commit screenshot](https://markjames.dev/img/posts/runic-quest-center-map.jpg "Runic Quest screenshot")
+![Runic Quest initial commit screenshot](/img/posts/runic-quest-center-map.jpg "Runic Quest screenshot")
 
 Now that the map size is larger than the viewport, the player remains centered on the map as we explore it!
 
