@@ -3,7 +3,7 @@ layout: post
 title: Late Summer Updates
 ---
 
-Today has been my first week back after a two week vacation from work, and during that time I took some time away from computer related activities. Summer is traditionally a time where I focus less on side projects and more on outdoor activities, and this summer was no exception. 
+This has been my first week back after a two week vacation from work, and during that time I took some time away from computer related activities and pursue other interests. Summer is traditionally a time where I focus less on side projects and more on outdoor activities, and this summer was no exception. 
 
 I purchased a bike in June (a 2019 Kona Dew), and since then I've managed to ride just over 1,100kms according to Strava. With a pannier for day trips, biking has been a great way to see a large area around my city while COVID shutdowns remain in effect.     
 
