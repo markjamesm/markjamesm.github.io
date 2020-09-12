@@ -4,12 +4,12 @@ title: About me
 subtitle: Get to know me
 ---
 
-My name is Mark-James McDougall, and I'm a Web Developer from Montreal, Canada. I work as a Webmaster at [McGill University](https://mcgill.ca) (BA'15) and have experience with:
+My name is Mark-James McDougall, and I'm a Web Developer from Montreal, Canada. I work as a Webmaster at [McGill University](https://mcgill.ca) (BA'15) and have experience with a range of technologies including:
 
+- Javascript (ES6, Nodejs, Svelte) HTML & CSS
+- HTML & CSS
 - Swift/SwiftUI (iOS, MacOS)
-- Javascript (ES6, React), HTML & CSS
 - Linux Server Administration
-- Digital Marketing (SEO & SEM)
 
 To see some of the neat stuff I'm working on, check out my [projects page].(/projects) 
 
