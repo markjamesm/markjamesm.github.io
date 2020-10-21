@@ -24,4 +24,3 @@ Feel free to get in touch with me using the contact form below.
 
 <br />
 <br />
-<br />
