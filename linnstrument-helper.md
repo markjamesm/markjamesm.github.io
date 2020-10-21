@@ -7,7 +7,9 @@ header-img: "img/posts/linnstrument-helper-og.jpg"
 
 [![Platforms](https://img.shields.io/badge/platforms-macos-teal.svg)](https://apple.com/macos) [![Swift](https://img.shields.io/badge/Swift-5.2-orange.svg)](https://swift.org) [![License](https://img.shields.io/badge/License-GPL-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html) [![License](https://img.shields.io/github/stars/markjamesm/linnstrument-helper?style=social)](https://github.com/markjamesm/linnstrument-helper) 
 
-Linnstrument Helper is an [open source](https://github.com/markjamesm/linnstrument-helper) Mac OS app I'm actively developing to help people learn the Linnstrument layout quickly and efficiently. Just like a bass guitar, the Linnstrument uses [all fourths tuning](https://en.wikipedia.org/wiki/All_fourths_tuning). Linnstrument Helper is still in a beta stage, and if you'd like to help contribute to the project, please take a look at the [issues page](https://github.com/markjamesm/linnstrument-helper/issues). For the curious, here's my [build log](https://markjames.dev/2020-05-06-writing-a-midi-controller-app-part-one/) for the project.
+Linnstrument Helper is an <a href="https://github.com/markjamesm/linnstrument-helper" target="_blank">open source</a> Mac OS app I developed to help people learn the Linnstrument layout quickly and efficiently. Just like a bass guitar, the Linnstrument uses <a href="https://github.com/markjamesm/linnstrument-helper" target="_blank">all fourths tuning</a>. If you'd like to help contribute to the project, please take a look at the <a href="https://github.com/markjamesm/linnstrument-helper" target="_blank">issues page</a>. 
+
+For the curious, here's my [build log](https://markjames.dev/2020-05-06-writing-a-midi-controller-app-part-one/) for the project.
 
 ## Features
 
@@ -22,7 +24,7 @@ Linnstrument Helper is an [open source](https://github.com/markjamesm/linnstrume
 
 ## Download Link
 
-- [Linnstrument Helper 1.1](https://github.com/markjamesm/linnstrument-helper/releases/tag/1.1)
+- <a href="https://github.com/markjamesm/linnstrument-helper/releases/tag/1.1" target="_blank">Linnstrument Helper 1.1</a>
 
 ## Installation Instructions
 
