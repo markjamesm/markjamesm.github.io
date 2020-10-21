@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Late Summer Updates
+tags: [blog]
 ---
 
 This has been my first week back after a two week vacation from work, and during that time I took some time away from computer related activities and pursue other interests. Summer is traditionally a time where I focus less on side projects and more on outdoor activities, and this summer was no exception. 
