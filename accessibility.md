@@ -14,6 +14,4 @@ The website was tested using the following technologies:
 - Google Chrome WAVE Evaluation Tool
 - Google Chrome WCAG Color contrast checker
 
-I welcome your feedback regarding the accessibility of the website. Please let me know if you encounter any barriers to accessibility.
-
-E-mail: <a href="mailto:contact@markjames.dev?subject=Website accessibility">contact@markjames.dev</a> 
+I welcome your feedback regarding the accessibility of the website. Please [contact me](/contact) if you encounter any barriers to accessibility.
