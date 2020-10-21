@@ -10,6 +10,7 @@ My name is Mark-James McDougall, and I'm a Web Developer from Montreal, Canada. 
 - HTML & CSS
 - Linux Server Administration
 - Information Architecture
+- Website accessibility auditing (WCAG, SGQRI)
 - Swift/SwiftUI (iOS, MacOS)
 
 To see some of the neat stuff I'm working on, check out my [projects page](/projects). 
