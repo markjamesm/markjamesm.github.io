@@ -1,6 +1,7 @@
 ---
 layout: post
 title: New Website using Jekyll
+tags: [blog]
 ---
 
 After being inspired by a post on Hacker News, I finally decided to stop putting things off and setup my website. I've been meaning for a while to setup a simple professional site and blog but just haven't had the time due to other commitments. Fortunately my schedule has freed up somewhat in the past several weeks and I've gotten around to setting things up just to my liking.   

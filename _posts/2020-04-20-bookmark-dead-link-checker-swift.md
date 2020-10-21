@@ -2,7 +2,7 @@
 layout: guide
 title: Writing a broken link checker in Swift to analyze my bookmarks
 header-img: "img/posts/link-checker.png"
-tags: [swift, programming projects, tutorials]
+tags: [swift, programming projects, guides]
 ---
 
 Having spent the past few months devoting a significant amount of time learning to code with Apple's Swift, I'm slowly becoming more and more confident in my abilities to implement ideas in code. Much like music production, the programming learning curve can be very steep at the start, but as you keep at it and take things day by day, you start to see real results. As I continue to learn through a range of sources including LinkedIn Learning and [SwiftBySundell](https://swiftbysundell.com), I'm always looking to try new things to expand my burgeoning skillset. Fortunately, just the other day an interesting experiment popped into my head. While perusing Wikipedia like I often do, I came across a topic on [link rot](https://en.wikipedia.org/wiki/Link_rot) which piqued my interest. 

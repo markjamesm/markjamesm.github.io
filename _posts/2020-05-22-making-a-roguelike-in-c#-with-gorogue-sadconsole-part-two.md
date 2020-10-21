@@ -2,7 +2,7 @@
 layout: guide
 title: Making a roguelike in C# using GoRogue and SadConsole (Part Two)
 header-img: "img/posts/runic-quest-part-one-final.jpg"
-tags: [tutorials, programming projects, c#] 
+tags: [guides, programming projects, c#] 
 ---
 
 After setting up the GoRogue Helpers template and making a few basic changes to it in [Part One](https://markjames.dev/2020-05-21-making-a-roguelike-in-c-with-gorogue-sadconsole-part-one/) of this tutorial series, Part Two looks to dig even deeper into the code and implement two additional features which will help manage the game's lifecycle; a UIManager class as well as MessageLogger which will display status messages in a scrollable window. 

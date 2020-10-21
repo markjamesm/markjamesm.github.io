@@ -2,7 +2,7 @@
 layout: guide
 title: Making a roguelike in C# using GoRogue and SadConsole (Part One)
 header-img: "img/posts/runic-quest-part-one-final.jpg"
-tags: [tutorials, programming projects, c#] 
+tags: [guides, programming projects, c#] 
 ---
 
 After having completed several projects using Swift over the past four months (my latest and most ambitious being [Linnstrument Helper](https://markjames.dev/linnstrument-helper), I started to look for other projects which would pique my interest and improve my coding skills. Earlier this week, I was speaking to my brother who is currently playing an aRPG known as Grim Dawn. I started thinking back to my old days of playing [Dungeon Crawl Stone Soup](https://crawl.develz.org/) on an underpowered laptop as a student and decided to try creating my own simplistic roguelike. 

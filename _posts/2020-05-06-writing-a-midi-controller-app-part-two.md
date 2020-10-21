@@ -2,7 +2,7 @@
 layout: guide
 title: Writing a Linnstrument Companion App with SwiftUI and AudioKit (Part 2)
 header-img: "img/posts/linnstrument-helper-og.jpg"
-tags: [swift, programming projects, tutorials, linnstrument helper]
+tags: [swift, programming projects, guides, linnstrument helper]
 ---
 
 Welcome to part two of my Linnstrument Helper build guide! If you're looking for part one, you can [find it here](https://markjames.dev/2020-05-06-writing-a-midi-controller-app-part-one/). I also recommend checking out the project's [Github repository](https://github.com/markjamesm/linnstrument-helper) to follow along with the code examples.

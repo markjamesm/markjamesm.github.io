@@ -2,7 +2,7 @@
 layout: guide
 title: Writing a Linnstrument Companion App with SwiftUI and AudioKit (Part 1)
 header-img: "img/posts/linnstrument-helper-og.jpg"
-tags: [swift, programming projects, tutorials, linnstrument helper]
+tags: [swift, programming projects, linnstrument helper, guides]
 ---
 After recently writing a [broken link checker](https://markjames.dev/2020-04-20-bookmark-dead-link-checker-swift/) in Swift to analyze my browser bookmarks, I started thinking of another project which could both solve a practical problem as well as challenge myself by going a little outside of my coding comfort zone (the best way to learn!). Fortunately, I was able to combine my passion for programming with my other passion - music! Note: this is part one of the guide. You can find [part two here](https://markjames.dev/2020-05-06-writing-a-midi-controller-app-part-two)
 
