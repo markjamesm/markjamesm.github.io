@@ -22,13 +22,9 @@ For the curious, here's my [build log](https://markjames.dev/2020-05-06-writing-
 
 - Mac OS Catalina (10.15)
 
-## Download Link
-
-- <a href="https://github.com/markjamesm/linnstrument-helper/releases/tag/1.1" target="_blank">Linnstrument Helper 1.1</a>
-
 ## Installation Instructions
 
-- Download Linnstrument-Helper-1.1.zip and extract.
+- <a href="https://github.com/markjamesm/linnstrument-helper/releases/download/1.1/Linnstrument-Helper-1.1.zip" target="_blank">Download Linnstrument-Helper-1.1.zip</a> and extract.
 - Connect your Linnstrument to your computer and power it on (you can alternatively power it on with the app running).
 - Set the octave to be in the middle.
 - Run Linnstrument Helper and have fun!
