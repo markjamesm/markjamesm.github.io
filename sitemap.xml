@@ -9,87 +9,92 @@
 
 <url>
   <loc>https://markjames.dev/</loc>
-  <lastmod>2020-05-26T14:45:03+00:00</lastmod>
+  <lastmod>2020-10-21T01:58:45+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://markjames.dev/aboutme/</loc>
-  <lastmod>2020-05-26T14:45:03+00:00</lastmod>
+  <lastmod>2020-10-21T01:58:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://markjames.dev/projects/</loc>
-  <lastmod>2020-05-26T14:45:03+00:00</lastmod>
+  <lastmod>2020-10-21T01:58:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://markjames.dev/cu-libraries/</loc>
-  <lastmod>2020-05-26T14:45:03+00:00</lastmod>
+  <lastmod>2020-10-21T01:58:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://markjames.dev/linnstrument-helper/</loc>
-  <lastmod>2020-05-26T14:45:03+00:00</lastmod>
+  <lastmod>2020-10-21T01:58:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://markjames.dev/contact/</loc>
-  <lastmod>2020-05-26T14:45:03+00:00</lastmod>
+  <lastmod>2020-10-21T01:58:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://markjames.dev/2020-08-26-late-summer-updates/</loc>
+  <lastmod>2020-10-21T01:58:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://markjames.dev/2020-05-22-making-a-roguelike-in-c-with-gorogue-sadconsole-part-two/</loc>
-  <lastmod>2020-05-26T14:45:03+00:00</lastmod>
+  <lastmod>2020-10-21T01:58:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://markjames.dev/tags/</loc>
-  <lastmod>2020-05-26T14:45:03+00:00</lastmod>
+  <lastmod>2020-10-21T01:58:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://markjames.dev/2020-05-21-making-a-roguelike-in-c-with-gorogue-sadconsole-part-one/</loc>
-  <lastmod>2020-05-26T14:45:03+00:00</lastmod>
+  <lastmod>2020-10-21T01:58:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://markjames.dev/2020-05-16-importance-of-a-good-monitor/</loc>
-  <lastmod>2020-05-26T14:45:03+00:00</lastmod>
+  <lastmod>2020-10-21T01:58:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://markjames.dev/2020-05-06-writing-a-midi-controller-app-part-two/</loc>
-  <lastmod>2020-05-26T14:45:03+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://markjames.dev/2020-05-06-writing-a-midi-controller-app-part-one/</loc>
-  <lastmod>2020-05-26T14:45:03+00:00</lastmod>
+  <lastmod>2020-10-21T01:58:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://markjames.dev/page2/</loc>
-  <lastmod>2020-05-26T14:45:03+00:00</lastmod>
+  <lastmod>2020-10-21T01:58:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://markjames.dev/2020-05-06-writing-a-midi-controller-app-part-one/</loc>
+  <lastmod>2020-10-21T01:58:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://markjames.dev/2020-04-20-bookmark-dead-link-checker-swift/</loc>
-  <lastmod>2020-05-26T14:45:03+00:00</lastmod>
+  <lastmod>2020-10-21T01:58:45+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://markjames.dev/2020-04-17-making-best-of-physical-distancing/</loc>
-  <lastmod>2020-05-26T14:45:03+00:00</lastmod>
+  <lastmod>2020-10-21T01:58:45+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://markjames.dev/2020-03-04-new-website/</loc>
-  <lastmod>2020-05-26T14:45:03+00:00</lastmod>
+  <lastmod>2020-10-21T01:58:45+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://markjames.dev/samplebookmarks.html</loc>
-  <lastmod>2020-05-26T14:44:57+00:00</lastmod>
+  <lastmod>2020-10-21T01:58:40+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 
