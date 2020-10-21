@@ -20,7 +20,7 @@ Feel free to get in touch with me using the contact form below.
           </div>
           <hr>
           <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+  </form>
 
 <br />
 <br />
