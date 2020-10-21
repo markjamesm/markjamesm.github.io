@@ -782,7 +782,7 @@ pre {
 }
 
 #full-tags-list .tag-entry .entry-date {
-  color: #808080;
+  color: #000000;
   font-style: italic;
   font-size: 16px;
 }

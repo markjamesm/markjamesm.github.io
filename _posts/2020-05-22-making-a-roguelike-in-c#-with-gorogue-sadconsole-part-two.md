@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: guide
 title: Making a roguelike in C# using GoRogue and SadConsole (Part Two)
 header-img: "img/posts/runic-quest-part-one-final.jpg"
 tags: [tutorials, programming projects, c#] 

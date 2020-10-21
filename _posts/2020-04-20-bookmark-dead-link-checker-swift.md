@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: guide
 title: Writing a broken link checker in Swift to analyze my bookmarks
 header-img: "img/posts/link-checker.png"
 tags: [swift, programming projects, tutorials]

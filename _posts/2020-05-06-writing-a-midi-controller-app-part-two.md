@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: guide
 title: Writing a Linnstrument Companion App with SwiftUI and AudioKit (Part 2)
 header-img: "img/posts/linnstrument-helper-og.jpg"
 tags: [swift, programming projects, tutorials, linnstrument helper]
