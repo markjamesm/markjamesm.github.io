@@ -6,17 +6,17 @@ subtitle: Get to know me
 
 My name is Mark-James McDougall, and I'm a Web Developer from Montreal, Canada. I work as a Webmaster at [McGill University](https://mcgill.ca) (BA'15) and have experience with a range of technologies including:
 
-- Javascript (ES6, Nodejs, Svelte) HTML & CSS
+- Javascript (ES6, Nodejs)
 - HTML & CSS
-- Swift/SwiftUI (iOS, MacOS)
 - Linux Server Administration
 - Information Architecture
+- Swift/SwiftUI (iOS, MacOS)
 
 To see some of the neat stuff I'm working on, check out my [projects page](/projects). 
 
 If ever you need professional help with a project, I offer consulting for a range of services. Don't hesitate to [contact me](/contact) to inquire about my availabilities and rates.
 
-### Fun fact
+## Fun fact
 
 I'm passionate about music and release tracks under the name [Zhund](https://open.spotify.com/artist/04h01WGkLNuHzSzCBGbjCR). My favorite instrument is the [Linnstrument](http://linnstrument.com), an expressive MIDI controller created by the legendary Roger Linn. Here's a clip of me playing some improv jazz on Linnstrument:
 
