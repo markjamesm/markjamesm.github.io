@@ -8,6 +8,7 @@ My name is Mark-James McDougall, and I'm a Web Developer from Montreal, Canada. 
 
 - Javascript (ES6, Nodejs), HTML, & CSS
 - Swift/SwiftUI (iOS, MacOS)
+- C# (Dotnet Core)
 - CMSes (Drupal, Adobe AEM, Wordpress, iModules)
 - Devops (Azure, Github)
 - Google Analytics
