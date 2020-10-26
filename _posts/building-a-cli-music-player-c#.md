@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: post
 title: Developing a Cross-Platform CLI Music Player in C# using NAudio and Terminal.gui (Part One)
 header-img: "img/posts/music-sharp/MusicSharp.png"
 tags: [guides, programming projects, c#] 

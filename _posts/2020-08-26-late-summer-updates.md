@@ -17,7 +17,3 @@ In late May, my 2018 Macbook Pro Battery swelled up and caused the case to bend 
 With the positive experiences I've been having building the roguelike, I've taking an interest in bleeding-edge cross-platform .net Core technologies, particularly [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor) and the recently announced [.net MAUI](https://devblogs.microsoft.com/dotnet/introducing-net-multi-platform-app-ui/) (Multi-Platform App UI) which Microsoft claims is "a single stack that supports all modern workloads: Android, iOS, macOS, and Windows. The native features of each platform and UI control are within reach in a simple, cross-platform API for you to deliver no-compromise user experiences while sharing even more code than before." 
 
 Although I do enjoy developing in Swift, cross-platform is a big feature for me and so if MAUI delivers what it promises, I can see myself getting behind it. However, the release is still a ways off and so I plan to dip my toes in slowly. Until then I have been slowly sketching out some ideas for a Blazor powered app sometime in the new future!
-
-
-
-
