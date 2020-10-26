@@ -3,7 +3,7 @@ layout: page
 title: Contact
 ---
 
-Feel free to get in touch with me using the contact form below. 
+Feel free to get in touch with me using the contact form below, or send me an email at <a href="mailto:contact@markjames.dev">contact@markjames.dev</a>. I look forward to hearing from you!   
 
 <form accept-charset="UTF-8" action="https://getform.io/f/c18dd10d-84f1-4913-a386-38bccdb5163e" method="POST" enctype="multipart/form-data" target="_blank">
           <div class="form-group">
