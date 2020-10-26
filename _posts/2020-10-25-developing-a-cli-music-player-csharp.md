@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Developing a Cross-Platform CLI Music Player in C# using Terminal.gui (Part One)
+title: Developing a CLI Music Player in C# using Terminal.gui (Part One)
 header-img: "img/posts/music-sharp/MusicSharp.png"
 tags: [guides, programming projects, c#] 
 ---
