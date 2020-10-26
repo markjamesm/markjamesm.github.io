@@ -148,7 +148,7 @@ public static class Player
     /// </summary>
     public static void PlayAudioFile()
     {
-         string file = @"C:\MusicSharp\Zhund-Dusty.mp3";
+        string file = @"C:\MusicSharp\Zhund-Dusty.mp3";
 
         // Load the audio file and select an output device.
         using var audioFile = new AudioFileReader(file);
