@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: guide
 title: Developing a Cross-Platform CLI Music Player in C# using NAudio and Terminal.gui (Part One)
 header-img: "img/posts/music-sharp/MusicSharp.png"
 tags: [guides, programming projects, c#] 
@@ -127,7 +127,7 @@ Here, I did a few things. Firstly, I created a new MenuBar which will house the 
 
 And a neat looking about dialog:
 
-![Screenshot of the MusicSharp about dialog](/img/posts/music-sharp/MusicSharp-menu.png "Screenshot of the MusicSharp about dialog")
+![Screenshot of the MusicSharp about dialog](/img/posts/music-sharp/MusicSharp-about-dialog.png "Screenshot of the MusicSharp about dialog")
 
 Although I still need to add some additional menu items (such as save/load playlist functionality), this gives us a great jumping off point for the next part, getting basic audio functionality working! 
 
