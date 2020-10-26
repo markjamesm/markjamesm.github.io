@@ -12,7 +12,7 @@ Recently, I've been listening to a lot of <a href="https://somafm.com" target="_
 - Be lightweight
 - Be CLI-based
 
-Moreover, I also wanted to make sure that I made use of Test Driven Development and code linting within the project. For this project, I'm making use of Stylecop to enfore proper code style. For the curious, you can view the entire MusicSharp code repository in its current state <a href="https://github.com/markjamesm/MusicSharp" target="_blank">on Github</a>.
+Moreover, I also wanted to make sure that I made use of Test Driven Development and code linting within the project. For this project, I'm making use of Stylecop to enfore proper code style. For the curious, you can view the entire MusicSharp code repository in its current state <a href="https://github.com/markjamesm/MusicSharp" target="_blank">on Github</a>. I highly recommend following it to keep up to date with the latest commits!
 
 ## Getting Started
 
