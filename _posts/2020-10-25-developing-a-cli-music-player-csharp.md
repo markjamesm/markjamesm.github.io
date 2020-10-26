@@ -5,7 +5,7 @@ header-img: "img/posts/music-sharp/musicsharp-og.jpg"
 tags: [guides, programming projects, c#] 
 ---
 
-Recently, I've been listening to a lot of <a href="https://soma.fm" target="_blank">Soma.fm</a> internet radio streams while I work as they have a lot of terrific commercial-free programming. One day while being creatively inspired by the Sonic Universe station's offerings, I had the idea of creating my own music player with support for streaming. Not only would this be a great project for continuing to learn C# and Dotnet Core, but it would also allow me to build a simple, lightweight player customized to my liking! After a brainstorming session, I came up with the name MusicSharp and a core list of features I planned to implement:
+Recently, I've been listening to a lot of <a href="https://somafm.com" target="_blank">SomaFM</a> internet radio streams while I work as they have a lot of terrific commercial-free programming. One day while being creatively inspired by the Sonic Universe station's offerings, I had the idea of creating my own music player with support for streaming. Not only would this be a great project for continuing to learn C# and Dotnet Core, but it would also allow me to build a simple, lightweight player customized to my liking! After a brainstorming session, I came up with the name MusicSharp and a core list of features I planned to implement:
 
 - Play audio files and streams
 - Save and load playlists
