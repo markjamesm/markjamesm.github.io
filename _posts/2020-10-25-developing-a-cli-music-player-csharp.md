@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Developing a CLI Music Player in C# using Terminal.gui (Part One)
+title: Developing a CLI Music Player in C# using Terminal.Gui (Part One)
 header-img: "img/posts/music-sharp/MusicSharp.png"
 tags: [guides, programming projects, c#] 
 ---
