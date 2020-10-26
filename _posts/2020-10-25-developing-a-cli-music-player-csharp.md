@@ -183,8 +183,10 @@ Although these features were missing, I still find it quite exciting whenever I'
 
 # Closing thoughts
 
-In Part One of this guide, we learned how to implement a simple UI using Terminal.Gui and then use it to play an audio file with NAudio. I would have liked to make MusicSharp cross-platform, but unfortunately NAudio relies heavily on Windows libraries and is not compatible with other operating systems. Curious, I tested MusicSharp on my Macbook Pro (running Catalina) and the program ran but crashed once I tried to open an MP3:
+In Part One of this guide, we learned how to implement a simple UI using Terminal.Gui and then use it to play an audio file with NAudio. I would have liked to make MusicSharp cross-platform, but unfortunately According to NAudio creator <a href="Mark Heath" target="_blank">Mark Heath</a>, "A large part of the [NAudio] codebase consists of P/Invoke or COM interop wrappers around the various Windows audio APIs. So even if a .NET Standard build were to be created, much of the functionality would fail to work if you tried to use it in a .NET Core app running on Linux.". 
+
+Curious, I tested MusicSharp on my Macbook Pro (running Catalina) and the program ran but crashed once I tried to open an MP3:
 
 ![MusicSharp first build running on macOS Catalina](/img/posts/music-sharp/MusicSharp-macOS-Catalina.png "MusicSharp first build running on macOS Catalina")
 
-In these early stages of testing, MusicSharp is currently consuming 15mb of memory and negligible CPU usage while running in debug mode, and it'll be interesting to see where the number ends up as the player functionality gets more fleshed out. Be sure to stay tuned for part two of this guide, as we will continue to work on the UI and player elements!
+In these early stages of testing, MusicSharp is currently consuming 15mb of memory and negligible CPU usage while running in debug mode, and it'll be interesting to see where the performance numbers end up as the player functionality gets more fleshed out. Be sure to stay tuned for part two of this guide, as we will continue to work on the UI and player elements!
