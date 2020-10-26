@@ -99,26 +99,26 @@ Success! We now have a top level window which dynamically resizes while leaving 
 The next step was to implement a top level menu, and fortunately this was easy to do with Terminal.Gui. Just aboce top.Add(win), I created the following code:
 
 ```csharp
-            // Create the menubar.
-            var menu = new MenuBar(new MenuBarItem[]
-            {
-            new MenuBarItem("_File", new MenuItem[]
-            {
-                new MenuItem("_Open", "Open a music file", () => Application.RequestStop()),
+// Create the menubar.
+var menu = new MenuBar(new MenuBarItem[]
+{
+    new MenuBarItem("_File", new MenuItem[]
+    {
+        new MenuItem("_Open", "Open a music file", () => Application.RequestStop()),
 
-                new MenuItem("_Open Stream", "Open a stream", () => Application.RequestStop()),
+        new MenuItem("_Open Stream", "Open a stream", () => Application.RequestStop()),
 
-                new MenuItem("_Quit", "Exit MusicSharp", () => Application.RequestStop()),
-            }),
+        new MenuItem("_Quit", "Exit MusicSharp", () => Application.RequestStop()),
+    }),
 
-            new MenuBarItem("_Help", new MenuItem[]
-            {
-                new MenuItem("_About", string.Empty, () =>
-                {
-                MessageBox.Query("Music Sharp 0.2.0", "\nMusic Sharp is a lightweight CLI\n music player written in C#.\n\nDeveloped by Mark-James McDougall\nand licensed under the GPL v3.\n ", "Close");
-                }),
-            }),
-            });
+    new MenuBarItem("_Help", new MenuItem[]
+    {
+        new MenuItem("_About", string.Empty, () =>
+        {
+            MessageBox.Query("Music Sharp 0.2.0", "\nMusic Sharp is a lightweight CLI\n music player written in C#.\n\nDeveloped by Mark-James McDougall\nand licensed under the GPL v3.\n ", "Close");
+        }),
+    }),
+});
 ```
 
 Here, I did a few things. Firstly, I created a new MenuBar which will house the Menu Bar Items. Next, I created each menu item (File and Help), and populated them with handy child items that we'll need in our UI. These children take a name, optional descriptor, and a method as arguments, and for now I'm calling Application.RequestStop() on each of them to exit the application (Later I'll be replacing these with the actual methods once I write them). In addition, I also created a simple about dialog box as a way to familiarize myself with Terminal.Gui. Compiling our code up to this point produces the following menu:  
@@ -138,32 +138,32 @@ Now that a very simple UI had been created, my next order of business was to tes
 Inside the Player class, I created a PlayAudioFile() method which read an MP3 file from a static location on my PC and then played it using NAudio. The code looked like this:
 
 ```csharp
+/// <summary>
+/// The Player class handles audio playback.
+/// </summary>
+public static class Player
+{
     /// <summary>
-    /// The Player class handles audio playback.
+    /// Method that implements audio playback from a file.
     /// </summary>
-    public static class Player
+    public static void PlayAudioFile()
     {
-        /// <summary>
-        /// Method that implements audio playback from a file.
-        /// </summary>
-        public static void PlayAudioFile()
+         string file = @"C:\MusicSharp\Zhund-Dusty.mp3";
+
+        // Load the audio file and select an output device.
+        using var audioFile = new AudioFileReader(file);
+        using var outputDevice = new WaveOutEvent();
+
+        outputDevice.Init(audioFile);
+        outputDevice.Play();
+
+        // Sleep until playback is finished.
+        while (outputDevice.PlaybackState == PlaybackState.Playing)
         {
-            string file = @"C:\MusicSharp\Zhund-Dusty.mp3";
-
-            // Load the audio file and select an output device.
-            using var audioFile = new AudioFileReader(file);
-            using var outputDevice = new WaveOutEvent();
-
-            outputDevice.Init(audioFile);
-            outputDevice.Play();
-
-            // Sleep until playback is finished.
-            while (outputDevice.PlaybackState == PlaybackState.Playing)
-            {
-                Thread.Sleep(1000);
-            }
+            Thread.Sleep(1000);
         }
     }
+}
 ```
 
 The last order of business was to wire up the PlayAudioFile() method to the UI, and I did so by replacing the Open menu line of code in Gui.cs to the following:
