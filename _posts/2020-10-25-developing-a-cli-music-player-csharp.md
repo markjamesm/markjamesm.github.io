@@ -43,12 +43,12 @@ namespace MusicSharp
     /// <summary>
     /// The Gui class houses the CLI elements of MusicSharp.
     /// </summary>
-    public static class Gui
+    public class Gui
     {
         /// <summary>
         /// The Start method builds the user interface.
         /// </summary>
-        public static void Start()
+        public void Start()
         {
             // Creates a instance of MainLoop to process input events, handle timers and other sources of data.
             Application.Init();
@@ -84,7 +84,8 @@ Inside my Program.cs file, I called the Start method like so:
     public static void Main()
     {
         // Start MusicSharp.
-        Gui.Start();
+        Gui gui = new Gui();
+        gui.Start();
     }
 ```
 
@@ -133,7 +134,7 @@ Although I still need to add some additional menu items (such as save/load playl
 
 ## Playing Audio
 
-Now that a very simple UI had been created, my next order of business was to test out NAudio and see how I could play an MP3 file as a simple proof of concept. In order to do so, I created a new file called Player.cs to house the audio playing related functions. I used a singleton pattern for the Player class as most audio processing happens on a loop and we don't need multiple audio streams playing at once. 
+Now that a very simple UI had been created, my next order of business was to test out NAudio and see how I could play an MP3 file as a simple proof of concept. In order to do so, I created a new file called Player.cs to house the audio playing related functions.
 
 Inside the Player class, I created a PlayAudioFile() method which read an MP3 file from a static location on my PC and then played it using NAudio. The code looked like this:
 
@@ -189,4 +190,4 @@ Curious, I tested MusicSharp on my Macbook Pro (running Catalina) and the progra
 
 ![MusicSharp first build running on macOS Catalina](/img/posts/music-sharp/MusicSharp-macOS-Catalina.png "MusicSharp first build running on macOS Catalina")
 
-In these early stages of testing, MusicSharp is currently consuming 15mb of memory and negligible CPU usage while running in debug mode, and it'll be interesting to see where the performance numbers end up as the player functionality gets more fleshed out. Be sure to stay tuned for part two of this guide, as we will continue to work on the UI and player elements!
+In these early stages of testing, MusicSharp is currently consuming 15mb of memory and negligible CPU usage while running in debug mode, and it'll be interesting to see where the performance numbers end up as the player functionality gets more fleshed out. Be sure to stay tuned for part two of this guide, as we will refactor our current code to make it easier to test and more loosely coupled using Interfaces and Dependency Injection!
