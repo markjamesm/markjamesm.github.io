@@ -29,7 +29,7 @@ With some of the preliminary items out of the way, my next step was to work on s
 
 I sketched out a few different UI layouts until I came up with the following which I felt would work for a first iteration:
 
-![MusicSharp UI Mockup](/img/posts/music-sharp/MusicSharp-ui-mockup.png "MusicSharp UI mockup")
+<img src="/img/posts/music-sharp/MusicSharp-ui-mockup.png" width="366" height="302" alt="MusicSharp UI mockup">
 
 ## Building the Main Window
 
@@ -91,7 +91,7 @@ Inside my Program.cs file, I called the Start method like so:
 
 Running the program in this state produced the following result:
 
-![MusicSharp first build screenshot](/img/posts/music-sharp/MusicSharp-first-build.png "MusicSharp first build screenshot")
+<img src="/img/posts/music-sharp/MusicSharp-first-build.png" width="750" height="402" alt="MusicSharp first build screenshot">
 
 Success! We now have a top level window which dynamically resizes while leaving space on the top and bottom of the screen for statusbars. 
 
@@ -124,11 +124,11 @@ var menu = new MenuBar(new MenuBarItem[]
 
 Here, I did a few things. Firstly, I created a new MenuBar which will house the Menu Bar Items. Next, I created each menu item (File and Help), and populated them with handy child items that we'll need in our UI. These children take a name, optional descriptor, and a method as arguments, and for now I'm calling Application.RequestStop() on each of them to exit the application (Later I'll be replacing these with the actual methods once I write them). In addition, I also created a simple about dialog box as a way to familiarize myself with Terminal.Gui. Compiling our code up to this point produces the following menu:  
 
-![Screenshot of the MusicSharp menu bar](/img/posts/music-sharp/MusicSharp-menu.png "Screenshot of the MusicSharp menu bar")
+<img src="/img/posts/music-sharp/MusicSharp-menu.png" width="750" height="446" alt="Screenshot of the MusicSharp menu bar">
 
 And a neat looking about dialog:
 
-![Screenshot of the MusicSharp about dialog](/img/posts/music-sharp/MusicSharp-about-dialog.png "Screenshot of the MusicSharp about dialog")
+<img src="/img/posts/music-sharp/MusicSharp-about-dialog.png" width="750" height="446" alt="Screenshot of the MusicSharp about dialog">
 
 Although I still need to add some additional menu items (such as save/load playlist functionality), this gives us a great jumping off point for the next part, getting basic audio functionality working! 
 
@@ -188,6 +188,6 @@ In Part One of this guide, we learned how to implement a simple UI using Termina
 
 Curious, I tested MusicSharp on my Macbook Pro (running Catalina) and the program ran but crashed once I tried to open an MP3:
 
-![MusicSharp first build running on macOS Catalina](/img/posts/music-sharp/MusicSharp-macOS-Catalina.png "MusicSharp first build running on macOS Catalina")
+<img src="/img/posts/music-sharp/MusicSharp-macOS-Catalina.png" width="750" height="473" alt="MusicSharp first build running on macOS Catalina">
 
 In these early stages of testing, MusicSharp is currently consuming 15mb of memory and negligible CPU usage while running in debug mode, and it'll be interesting to see where the performance numbers end up as the player functionality gets more fleshed out. Be sure to stay tuned for part two of this guide, as we will refactor our current code to make it easier to test and more loosely coupled using Interfaces and Dependency Injection!
