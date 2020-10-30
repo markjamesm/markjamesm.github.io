@@ -10,10 +10,11 @@ My name is Mark-James McDougall, and I'm a Web Developer from Montreal, Canada. 
 - Swift/SwiftUI (iOS, MacOS)
 - C# (Dotnet Core)
 - CMSes (Drupal, Adobe AEM, Wordpress, iModules)
-- Devops (Azure, Github)
 - Google Analytics
 
 To see some of the neat stuff I'm working on, check out my [projects page](/projects). 
+
+<img src="https://github-readme-stats.vercel.app/api?username=markjamesm&count_private=true&show_icons=true" alt="Mark-James' github stats" title="Mark-James' github stats">
 
 If ever you need professional help with a project, I offer consulting for a range of services. Don't hesitate to [contact me](/contact) to inquire about my availabilities and rates.
 
