@@ -4,7 +4,7 @@ title: About me
 subtitle: Get to know me
 ---
 
-My name is Mark-James McDougall, and I'm a Web Developer from Montreal, Canada. I work as a Webmaster at <a href="https://mcgill.ca" target="_blank">McGill University</a> (BA'15) and have experience with a range of technologies including:
+My name is Mark-James McDougall, and I'm a Developer from Montreal, Canada. I work as a Webmaster at <a href="https://mcgill.ca" target="_blank">McGill University</a> (BA'15) and have experience with a range of technologies including:
 
 - Javascript (ES6, Nodejs), HTML, & CSS
 - Swift/SwiftUI (iOS, MacOS)
@@ -12,11 +12,9 @@ My name is Mark-James McDougall, and I'm a Web Developer from Montreal, Canada. 
 - CMSes (Drupal, Adobe AEM, Wordpress, iModules)
 - Google Analytics
 
-To see some of the neat stuff I'm working on, check out my [projects page](/projects). 
+<a href="https://github.com/markjamesm" target=_blank><img src="https://github-readme-stats.vercel.app/api?username=markjamesm&count_private=true&show_icons=true" width="495" height="195" alt="Mark-James' github stats" title="Mark-James' github stats"></a>
 
-<img src="https://github-readme-stats.vercel.app/api?username=markjamesm&count_private=true&show_icons=true" alt="Mark-James' github stats" title="Mark-James' github stats">
-
-If ever you need professional help with a project, I offer consulting for a range of services. Don't hesitate to [contact me](/contact) to inquire about my availabilities and rates.
+If ever you need professional help with a project, I offer consulting for a range of services. Don't hesitate to [contact me](/contact) to inquire about my availabilities and rates. To see some of the neat stuff I've worked on, be sure check out my [projects page](/projects). 
 
 ## Fun fact
 
