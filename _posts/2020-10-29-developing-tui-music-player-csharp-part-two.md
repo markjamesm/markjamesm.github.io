@@ -5,9 +5,16 @@ header-img: "img/posts/music-sharp/musicsharp-open-dialog.jpg"
 tags: [guides, programming projects, c#, MusicSharp] 
 ---
 
-Since the last part of this guide, I've been working quite a bit on refining the program structure before going forward. During this process, I tried using Dependency Injection to loosely couple the player class from the GUI (opening the door for platform-specific audio player implementations). However, this solution was less than ideal as it involved using a Mutex inside Task.Run() to stop the GUI from blocking when an audio file is played. As is noted in the Terminal.Gui docs, "Like other UI toolkits, Terminal.Gui is generally not thread safe. You should avoid calling methods in the UI classes from a background thread as there is no guarantee that they will not corrupt the state of the UI application." To avoid the aforementioned pitfalls, I ended up finding some <a href="https://github.com/naudio/NAudio/blob/master/Docs/PlayAudioFileWinForms.md" target=_blank>sample code</a> from NAudio's author which documented how to manage Naudio's lifecycle in a GUI application (close enough! :-P) and based my model on that going forward. 
+Since the last part of this guide, I've been working quite a bit on refining the program structure before going forward. During this process, I tried using Dependency Injection to loosely couple the player class from the GUI (opening the door for platform-specific audio player implementations). However, this solution was less than ideal as it involved using a Mutex inside Task.Run() to stop the GUI from blocking when an audio file is played. As noted in the Terminal.Gui docs, 
 
-After making a test branch in Git, I made some major modifications to the code, namely getting rid of the Player class and renaming Gui.cs to Player.cs. With these changes in place, we now have a simple player which plays a preset audio file. Let's go one level further by Implementing some actual playback controls! Before we do so however, let's start by adding a file open dialog to our existing File--Open dialog. This will come in handy when we create the play button later on. In order to better follow along, I recommend you take a look at this commit <a href="https://github.com/markjamesm/MusicSharp/commit/ee8cc5e146e81ceb5bc8759c9dc24a7c1bc82533" target=_blank>repo here on Github</a> (and support the project with a star!). 
+```
+like other UI toolkits, Terminal.Gui is generally not thread safe. You should avoid calling methods in the UI classes from a background thread as there is no guarantee that they will not corrupt the state of the UI application." 
+```
+To avoid the aforementioned pitfalls, I ended up finding some <a href="https://github.com/naudio/NAudio/blob/master/Docs/PlayAudioFileWinForms.md" target=_blank>sample code</a> from NAudio's author which documented how to manage Naudio's lifecycle in a GUI application (close enough! :-P) and based my model on that going forward. 
+
+After making a test branch in Git, I made some major modifications to the code, namely getting rid of the Player class and renaming Gui.cs to Player.cs. With these changes in place, we now have a simple player which plays a preset audio file. Let's go one level further by Implementing some actual playback controls! 
+
+Before we do so however, let's start by adding a file open dialog to our existing File--Open dialog. This will come in handy when we create the play button later on. In order to better follow along, I recommend you take a look at this commit <a href="https://github.com/markjamesm/MusicSharp/commit/ee8cc5e146e81ceb5bc8759c9dc24a7c1bc82533" target=_blank>repo here on Github</a> (and support the project with a star!). 
 
 ## Adding an Open File dialog
 
