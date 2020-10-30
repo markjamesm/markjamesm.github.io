@@ -2,7 +2,7 @@
 layout: guide
 title: Developing a Lightweight TUI Music Player in C# using Terminal.Gui (Part Two)
 header-img: "img/posts/music-sharp/musicsharp-open-dialog.jpg"
-tags: [guides, programming projects, c#] 
+tags: [guides, programming projects, c#, MusicSharp] 
 ---
 
 Since the last part of this guide, I've been working quite a bit on refining the program structure before going forward. During this process, I tried using Dependency Injection to loosely couple the player class from the GUI (opening the door for platform-specific audio player implementations). However, this solution was less than ideal as it involved using a Mutex inside Task.Run() to stop the GUI from blocking when an audio file is played. As is noted in the Terminal.Gui docs, "Like other UI toolkits, Terminal.Gui is generally not thread safe. You should avoid calling methods in the UI classes from a background thread as there is no guarantee that they will not corrupt the state of the UI application." To avoid the aforementioned pitfalls, I ended up finding some <a href="https://github.com/naudio/NAudio/blob/master/Docs/PlayAudioFileWinForms.md" target=_blank>sample code</a> from NAudio's author which documented how to manage Naudio's lifecycle in a GUI application (close enough! :-P) and based my model on that going forward. 
@@ -13,7 +13,7 @@ After making a test branch in Git, I made some major modifications to the code, 
 
 In this next step, we're going to implement an open file dialog so that the user can select an audio file to load into the player.
 
-<img src="/img/posts/music-sharp/MusicSharp-open-dialog" width="750" height="402" alt="MusicSharp open file dialog">
+<img src="/img/posts/music-sharp/MusicSharp-open-dialog.png" width="750" height="402" alt="MusicSharp open file dialog">
 
 Inside Player.cs, I created a new OpenFile method, and wired it up to a Terminal.UI OpenDialog() call like this:
 

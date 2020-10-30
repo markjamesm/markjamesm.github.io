@@ -2,8 +2,10 @@
 layout: guide
 title: Developing a Lightweight TUI Music Player in C# using Terminal.Gui (Part One)
 header-img: "img/posts/music-sharp/musicsharp-open-dialog.jpg"
-tags: [guides, programming projects, c#] 
+tags: [guides, programming projects, c#, MusicSharp] 
 ---
+
+<i>Note: Part two of this guide is now <a href="https://markjames.dev/2020-10-29-developing-tui-music-player-csharp-part-two/" target=_blank>available here!</a><i> 
 
 Recently, I've been listening to a lot of <a href="https://somafm.com" target="_blank">SomaFM</a> internet radio streams while I work as they have a lot of terrific commercial-free programming. One day while being creatively inspired by the Sonic Universe station's offerings, I had the idea of creating my own music player with support for streaming. Not only would this be a great project for continuing to learn C# and Dotnet Core, but it would also allow me to build a simple, lightweight player customized to my liking! After a brainstorming session, I came up with the name MusicSharp and a core list of features I planned to implement:
 
@@ -190,4 +192,4 @@ Curious, I tested MusicSharp on my Macbook Pro (running Catalina) and the progra
 
 <img src="/img/posts/music-sharp/MusicSharp-macOS-Catalina.png" width="750" height="473" alt="MusicSharp first build running on macOS Catalina">
 
-In these early stages of testing, MusicSharp is currently consuming 15mb of memory and negligible CPU usage while running in debug mode, and it'll be interesting to see where the performance numbers end up as the player functionality gets more fleshed out. Be sure to stay tuned for part two of this guide, as we will refactor our current code to make it easier to test and more loosely coupled using Interfaces and Dependency Injection!
+In these early stages of testing, MusicSharp is currently consuming 15mb of memory and negligible CPU usage while running in debug mode, and it'll be interesting to see where the performance numbers end up as the player functionality gets more fleshed out. Be sure to check out <a href="https://github.com/naudio/NAudio/blob/master/Docs/PlayAudioFileWinForms.md" target=_blank>part two of this guide</a>, as we will refactor our current code and then implement some playback controls!
