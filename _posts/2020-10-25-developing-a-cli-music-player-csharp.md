@@ -13,6 +13,7 @@ Recently, I've been listening to a lot of <a href="https://somafm.com" target="_
 - Save and load playlists
 - Be lightweight
 - Be CLI-based
+- Cross-platform support
 
 Moreover, I also wanted to make sure that I made use of Test Driven Development and code linting within the project. For this project, I'm making use of Stylecop to enfore proper code style. For the curious, you can view the entire MusicSharp code repository in its current state <a href="https://github.com/markjamesm/MusicSharp" target="_blank">on Github</a>. I highly recommend following the repo to keep up to date with the latest commits (and a star wouldn't be too bad either :-P)!
 
