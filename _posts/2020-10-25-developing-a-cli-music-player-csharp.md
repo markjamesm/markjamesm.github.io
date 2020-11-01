@@ -187,9 +187,7 @@ Although these features were missing, I still find it quite exciting whenever I'
 
 # Closing thoughts
 
-In Part One of this guide, we learned how to implement a simple UI using Terminal.Gui and then use it to play an audio file with NAudio. I would have liked to make MusicSharp cross-platform, but unfortunately According to NAudio creator <a href="Mark Heath" target="_blank">Mark Heath</a>, "A large part of the [NAudio] codebase consists of P/Invoke or COM interop wrappers around the various Windows audio APIs. So even if a .NET Standard build were to be created, much of the functionality would fail to work if you tried to use it in a .NET Core app running on Linux.". 
-
-Curious, I tested MusicSharp on my Macbook Pro (running Catalina) and the program ran but crashed once I tried to open an MP3:
+In Part One of this guide, we learned how to implement a simple UI using Terminal.Gui and then use it to play an audio file with NAudio. In later parts of this guide, we will learn how to use Dependency Injection in order to loosely couple the GUI from the player interface, paving the way for platform-specific audio players!. Interestingly, even at this stage I had no problems compiling MusicSharp on my Macbook Pro (running Catalina), except that the program crashed once I tried to open an MP3 (to be expected):
 
 <img src="/img/posts/music-sharp/MusicSharp-macOS-Catalina.png" width="750" height="473" alt="MusicSharp first build running on macOS Catalina">
 
