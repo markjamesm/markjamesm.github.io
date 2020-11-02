@@ -19,9 +19,7 @@ description: My little corner of the web
 # --- Navigation bar options --- #
 
 navbar-links:
-  About: 
-    - About Me: "aboutme"
-    - Projects: "projects"
+  About Me: "aboutme"
   Guides: "/tags/#guides"
   Software:
     - CU Libraries: "https://markjames.dev/cu-libraries"
