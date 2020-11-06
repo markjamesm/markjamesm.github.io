@@ -7,7 +7,7 @@ subtitle: Get to know me
 My name is Mark-James McDougall, and I'm a Developer from Montreal, Canada. I work as a Webmaster at <a href="https://mcgill.ca" target="_blank">McGill University</a> (BA'15) and have experience with a range of technologies including: 
 - Javascript (ES6, Nodejs), HTML, & CSS 
 - Swift/SwiftUI (iOS, MacOS)
-- C# (Dotnet Core)
+- C# (.NET Core)
 - CMSes (Drupal, Adobe AEM, Wordpress, iModules)
 - Devops (Azure DevOps, Github Actions)
 
