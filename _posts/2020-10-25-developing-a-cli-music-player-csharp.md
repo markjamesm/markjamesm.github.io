@@ -5,8 +5,6 @@ header-img: "img/posts/music-sharp/musicsharp-open-dialog.jpg"
 tags: [guides, programming projects, c#, MusicSharp] 
 ---
 
-<a href="/2020-10-29-developing-tui-music-player-csharp-part-two/">Part Two</a><i> | <a href="/2020-10-29-developing-tui-music-player-csharp-part-three/">Part Three</a><i> 
-
 Recently, I've been listening to a lot of <a href="https://somafm.com" target="_blank">SomaFM</a> internet radio streams while I work as they have a lot of terrific commercial-free programming. One day while being creatively inspired by the Sonic Universe station's offerings, I had the idea of creating my own music player with support for streaming. Not only would this be a great project for continuing to learn C# and Dotnet Core, but it would also allow me to build a simple, lightweight player customized to my liking! After a brainstorming session, I came up with the name MusicSharp and a core list of features I planned to implement:
 
 - Play audio files and streams
@@ -192,3 +190,5 @@ In Part One of this guide, we learned how to implement a simple UI using Termina
 <img src="/img/posts/music-sharp/MusicSharp-macOS-Catalina.png" width="750" height="473" alt="MusicSharp first build running on macOS Catalina">
 
 In these early stages of testing, MusicSharp is currently consuming 15mb of memory and negligible CPU usage while running in debug mode, and it'll be interesting to see where the performance numbers end up as the player functionality gets more fleshed out. Be sure to check out <a href="https://github.com/naudio/NAudio/blob/master/Docs/PlayAudioFileWinForms.md" target=_blank>part two of this guide</a>, as we will refactor our current code and then implement some playback controls!
+
+<a href="/2020-10-29-developing-tui-music-player-csharp-part-two/">Part Two</a><i> | <a href="/2020-10-29-developing-tui-music-player-csharp-part-three/">Part Three</a><i> 

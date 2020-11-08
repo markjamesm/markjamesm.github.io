@@ -5,8 +5,6 @@ header-img: "img/posts/music-sharp/musicsharp-open-dialog.jpg"
 tags: [guides, programming projects, c#, MusicSharp] 
 ---
 
-<a href="/2020-10-25-developing-a-cli-music-player-csharp/"> Part One</a><i> | <a href="/2020-10-29-developing-tui-music-player-csharp-part-three/">Part Three</a><i> 
-
 Since the last part of this guide, I've been working quite a bit on refining the program structure before going forward. I ended up finding some <a href="https://github.com/naudio/NAudio/blob/master/Docs/PlayAudioFileWinForms.md" target=_blank>sample code</a> from NAudio's author which documented how to manage Naudio's lifecycle in a GUI application (close enough! :-P) and based my model on that going forward. 
 
 After making a test branch in Git, I made some major modifications to the code, namely getting rid of the Player class and renaming Gui.cs to Player.cs. With these changes in place, we now have a simple player which plays a preset audio file. Let's go one level further by Implementing some actual playback controls! 
@@ -200,5 +198,6 @@ Running the program at this point should create a GUI featuring some working pla
 
 <img src="/img/posts/music-sharp/MusicSharp-playback-controls.png" width="750" height="402" alt="MusicSharp playback controls screenshot">
 
-Success! We now have an audio player capable of opening files and then playing, pausing, and stopping them without running into any errors. The placement of the buttons is temporary at the moment, and once I have some additional UI elements working I plan to group them all together. Make sure to stay tuned for part three of this series as I'll be looking to implement even more features!
+Success! We now have an audio player capable of opening files and then playing, pausing, and stopping them without running into any errors. The placement of the buttons is temporary at the moment, and once I have some additional UI elements working I plan to group them all together. Make sure to check out part three of this series as I'll be implementing Dependency Injection as well as volume buttons!
 
+<a href="/2020-10-25-developing-a-cli-music-player-csharp/"> Part One</a><i> | <a href="/2020-10-29-developing-tui-music-player-csharp-part-three/">Part Three</a><i> 
