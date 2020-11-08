@@ -22,8 +22,9 @@ navbar-links:
   About Me: "aboutme"
   Guides: "/tags/#guides"
   Software:
-    - CU Libraries: "https://markjames.dev/cu-libraries"
-    - Linnstrument Helper: "https://markjames.dev/linnstrument-helper"
+    - CU Libraries: "/cu-libraries"
+    - Linnstrument Helper: "/linnstrument-helper"
+    - MusicSharp: "/musicsharp"
   Contact: "contact"
   #Author's home: "https://markjames.dev"
 
