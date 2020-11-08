@@ -7,7 +7,9 @@ tags: [guides, programming projects, c#, MusicSharp]
 
 In [part two](/2020-10-29-developing-tui-music-player-csharp-part-two/) of this guide, we refined our audio player and added some play, pause, and stop buttons. In Part Three, we're going to go a step further and implement volume controls. However, before we do that, we're going to refactor our program to make use of Dependency Injection (DI) in order to pave the way for cross-platform support.  
 
-In order to best follow along with this guide, I reccomend checking out the sourcecode <a href="https://github.com/markjamesm/MusicSharp/tree/f80bda947c02ac1c9b2824723feef54b6dd5bc30" target=_blank>on Github</a> and going through some of the commit history. 
+In order to best follow along with this guide, I reccomend checking out the sourcecode <a href="https://github.com/markjamesm/MusicSharp/tree/f80bda947c02ac1c9b2824723feef54b6dd5bc30" target=_blank>on Github</a> and going through some of the commit history. The other sections of this guide are available here:
+
+<a href="/2020-10-25-developing-a-cli-music-player-csharp/">Part One</a> | <a href="/2020-10-29-developing-tui-music-player-csharp-part-two/">Part Two</a>
 
 ## The Case for Dependency Injection
 
@@ -145,5 +147,3 @@ Success!
 ## Closing notes
 
 In part three, we've gone a long way towards creating a more fully-fledged audio player. By refactoring to use Dependency Injection, our code is less tighly coupled, making it easier to test and write implementations for other platforms. Moreover, by adding volume controls, our player now supports enough basic playback features to make it somewhat useable. More importantly for me however, is the knowledge that I've been able to acquire in working on the program. Its important to practice coding as much as possible (ABC - Always Be Coding!), and this project has been integral to solidying my understanding of interfaces and Dependency Injection. Be sure to stay tuned for the fourth and final version of this guide as I plan to implement a way to load playlists and play audio streams!      
-
-<a href="/2020-10-25-developing-a-cli-music-player-csharp/">Part One</a> | <a href="/2020-10-29-developing-tui-music-player-csharp-part-two/">Part Two</a>
