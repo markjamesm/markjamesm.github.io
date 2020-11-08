@@ -200,4 +200,4 @@ Running the program at this point should create a GUI featuring some working pla
 
 Success! We now have an audio player capable of opening files and then playing, pausing, and stopping them without running into any errors. The placement of the buttons is temporary at the moment, and once I have some additional UI elements working I plan to group them all together. Make sure to check out part three of this series as I'll be implementing Dependency Injection as well as volume buttons!
 
-<a href="/2020-10-25-developing-a-cli-music-player-csharp/"> Part One</a><i> | <a href="/2020-10-29-developing-tui-music-player-csharp-part-three/">Part Three</a><i> 
+<a href="/2020-10-25-developing-a-cli-music-player-csharp/"> Part One</a><i> | <a href="/2020-11-06-developing-tui-music-player-csharp-part-three/">Part Three</a><i> 
