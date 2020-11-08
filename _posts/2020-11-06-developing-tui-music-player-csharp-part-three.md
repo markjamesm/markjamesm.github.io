@@ -5,6 +5,8 @@ header-img: "img/posts/music-sharp/musicsharp-open-dialog.jpg"
 tags: [guides, programming projects, c#, MusicSharp] 
 ---
 
+<a href="/2020-10-25-developing-a-cli-music-player-csharp/" target=_blank>Part One</a><i> | <a href="/2020-10-29-developing-tui-music-player-csharp-part-two/" target=_blank>Part Two</a><i> 
+
 In [part two](/2020-10-29-developing-tui-music-player-csharp-part-two/) of this guide, we refined our audio player and added some play, pause, and stop buttons. In Part Three, we're going to go a step further and implement volume controls. However, before we do that, we're going to refactor our program to make use of Dependency Injection (DI) in order to pave the way for cross-platform support.  
 
 In order to best follow along with this guide, I reccomend checking out the sourcecode <a href="https://github.com/markjamesm/MusicSharp/tree/f80bda947c02ac1c9b2824723feef54b6dd5bc30" target=_blank>on Github</a> and going through some of the commit history. 
