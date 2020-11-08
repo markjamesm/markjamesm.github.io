@@ -140,7 +140,7 @@ decreaseVolumeButton.Clicked += () =>
 ```
 Running the code at this stage produces the player buttons. Here's a screenshot of a slightly later build featuring a statusbar in addition to the playback controls:
 
-<img src="/img/posts/music-sharp/musicsharp-volume.png" width="750" height="402" alt="MusicSharp build featuring volume buttons">
+<img src="/img/posts/music-sharp/musicsharp-volume.png" height="450" width="266" alt="MusicSharp build featuring volume buttons">
 
 Success!
 
