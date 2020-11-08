@@ -146,4 +146,4 @@ Success!
 
 In part three, we've gone a long way towards creating a more fully-fledged audio player. By refactoring to use Dependency Injection, our code is less tighly coupled, making it easier to test and write implementations for other platforms. Moreover, by adding volume controls, our player now supports enough basic playback features to make it somewhat useable. More importantly for me however, is the knowledge that I've been able to acquire in working on the program. Its important to practice coding as much as possible (ABC - Always Be Coding!), and this project has been integral to solidying my understanding of interfaces and Dependency Injection. Be sure to stay tuned for the fourth and final version of this guide as I plan to implement a way to load playlists and play audio streams!      
 
-<a href="/2020-10-25-developing-a-cli-music-player-csharp/">Part One</a><i> | <a href="/2020-10-29-developing-tui-music-player-csharp-part-two/">Part Two</a><i> 
+<a href="/2020-10-25-developing-a-cli-music-player-csharp/">Part One</a> | <a href="/2020-10-29-developing-tui-music-player-csharp-part-two/">Part Two</a>
