@@ -5,7 +5,7 @@ header-img: "img/posts/music-sharp/musicsharp-open-dialog.jpg"
 tags: [guides, programming projects, c#, MusicSharp] 
 ---
 
-<a href="https://markjames.dev/2020-10-29-developing-tui-music-player-csharp-part-one/" target=_blank>Part One</a><i> | <a href="https://markjames.dev/2020-10-29-developing-tui-music-player-csharp-part-three/" target=_blank>Part Three</a><i> 
+<a href="/2020-10-25-developing-a-cli-music-player-csharp/"> Part One</a><i> | <a href="/2020-10-29-developing-tui-music-player-csharp-part-three/">Part Three</a><i> 
 
 Since the last part of this guide, I've been working quite a bit on refining the program structure before going forward. I ended up finding some <a href="https://github.com/naudio/NAudio/blob/master/Docs/PlayAudioFileWinForms.md" target=_blank>sample code</a> from NAudio's author which documented how to manage Naudio's lifecycle in a GUI application (close enough! :-P) and based my model on that going forward. 
 
