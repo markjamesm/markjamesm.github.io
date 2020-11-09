@@ -17,7 +17,7 @@ Before we do so however, let's start by adding a file open dialog to our existin
 
 In this next step, we're going to implement an open file dialog so that the user can select an audio file to load into the player.
 
-<img src="/img/posts/music-sharp/MusicSharp-open-dialog.png" height="450" width="266" alt="MusicSharp open file dialog">
+<img src="/img/posts/music-sharp/MusicSharp-open-dialog.png" width="750" height="402" alt="MusicSharp open file dialog">
 
 Inside Player.cs, I created a new OpenFile method, and wired it up to a Terminal.UI OpenDialog() call like this:
 
@@ -198,6 +198,6 @@ pauseBtn.Clicked += () =>
 
 Running the program at this point should create a GUI featuring some working playback controls:
 
-<img src="/img/posts/music-sharp/MusicSharp-playback-controls.png" height="450" width="266" alt="MusicSharp playback controls screenshot">
+<img src="/img/posts/music-sharp/MusicSharp-playback-controls.png" width="750" height="402" alt="MusicSharp playback controls screenshot">
 
 Success! We now have an audio player capable of opening files and then playing, pausing, and stopping them without running into any errors. The placement of the buttons is temporary at the moment, and once I have some additional UI elements working I plan to group them all together. Make sure to check out part three of this series as I'll be implementing Dependency Injection as well as volume buttons!

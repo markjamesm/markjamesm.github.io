@@ -96,7 +96,7 @@ Inside my Program.cs file, I called the Start method like so:
 
 Running the program in this state produced the following result:
 
-<img src="/img/posts/music-sharp/MusicSharp-first-build.png" height="450" width="266" alt="MusicSharp first build screenshot">
+<img src="/img/posts/music-sharp/MusicSharp-first-build.png" width="750" height="402" alt="MusicSharp first build screenshot">
 
 Success! We now have a top level window which dynamically resizes while leaving space on the top and bottom of the screen for statusbars. 
 
@@ -129,11 +129,11 @@ var menu = new MenuBar(new MenuBarItem[]
 
 Here, I did a few things. Firstly, I created a new MenuBar which will house the Menu Bar Items. Next, I created each menu item (File and Help), and populated them with handy child items that we'll need in our UI. These children take a name, optional descriptor, and a method as arguments, and for now I'm calling Application.RequestStop() on each of them to exit the application (Later I'll be replacing these with the actual methods once I write them). In addition, I also created a simple about dialog box as a way to familiarize myself with Terminal.Gui. Compiling our code up to this point produces the following menu:  
 
-<img src="/img/posts/music-sharp/MusicSharp-menu.png" height="450" width="266" alt="Screenshot of the MusicSharp menu bar">
+<img src="/img/posts/music-sharp/MusicSharp-menu.png" width="750" height="446" alt="Screenshot of the MusicSharp menu bar">
 
 And a neat looking about dialog:
 
-<img src="/img/posts/music-sharp/MusicSharp-about-dialog.png" height="450" width="266" alt="Screenshot of the MusicSharp about dialog">
+<img src="/img/posts/music-sharp/MusicSharp-about-dialog.png" width="750" height="446" alt="Screenshot of the MusicSharp about dialog">
 
 Although I still need to add some additional menu items (such as save/load playlist functionality), this gives us a great jumping off point for the next part, getting basic audio functionality working! 
 
@@ -191,6 +191,6 @@ Although these features were missing, I still find it quite exciting whenever I'
 
 In Part One of this guide, we learned how to implement a simple UI using Terminal.Gui and then use it to play an audio file with NAudio. In later parts of this guide, we will learn how to use Dependency Injection in order to loosely couple the GUI from the player interface, paving the way for platform-specific audio players!. Interestingly, even at this stage I had no problems compiling MusicSharp on my Macbook Pro (running Catalina), except that the program crashed once I tried to open an MP3 (to be expected):
 
-<img src="/img/posts/music-sharp/MusicSharp-macOS-Catalina.png" height="450" width="266" alt="MusicSharp first build running on macOS Catalina">
+<img src="/img/posts/music-sharp/MusicSharp-macOS-Catalina.png" width="750" height="473" alt="MusicSharp first build running on macOS Catalina">
 
 In these early stages of testing, MusicSharp is currently consuming 15mb of memory and negligible CPU usage while running in debug mode, and it'll be interesting to see where the performance numbers end up as the player functionality gets more fleshed out. Be sure to check out <a href="https://github.com/naudio/NAudio/blob/master/Docs/PlayAudioFileWinForms.md" target=_blank>part two of this guide</a>, as we will refactor our current code and then implement some playback controls!
