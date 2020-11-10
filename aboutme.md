@@ -13,7 +13,7 @@ My name is Mark-James McDougall, and I'm a Developer from Montreal, Canada. I wo
 
 <a href="https://github.com/markjamesm" target=_blank><img src="https://github-readme-stats.vercel.app/api?username=markjamesm&count_private=true&show_icons=true" width="495" height="195" alt="Mark-James' github stats" title="Mark-James' github"></a>
 
-If ever you need professional help with a project, I offer consulting for a range of services. Don't hesitate to [contact me](/contact) to inquire about my availabilities and rates. To see some of the neat stuff I've worked on, be sure check out my [projects page](/projects). 
+If ever you need professional help with a project, I offer consulting for a range of services. Don't hesitate to [contact me](/contact) to inquire about my availabilities and rates. You can also take a look at my <a href="/resume" target="_blank">resume here</a>.
 
 ## Fun fact
 

@@ -19,13 +19,15 @@ description: My little corner of the web
 # --- Navigation bar options --- #
 
 navbar-links:
-  About Me: "aboutme"
+  About: 
+    - About Me: "/aboutme"
+    - Resume: "/resume"
   Guides: "/tags/#guides"
   Software:
     - CU Libraries: "/cu-libraries"
     - Linnstrument Helper: "/linnstrument-helper"
     - MusicSharp: "/musicsharp"
-  Contact: "contact"
+  Contact: "/contact"
   #Author's home: "https://markjames.dev"
 
 # Image to show in the navigation bar - image must be a square (width = height)
