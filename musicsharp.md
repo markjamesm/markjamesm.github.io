@@ -16,4 +16,4 @@ In addition to working on MusicSharp, I've also created a project log to documen
 
 <a href="/2020-10-25-developing-a-cli-music-player-csharp/"> Part One</a> | <a href="/2020-10-29-developing-tui-music-player-csharp-part-two/">Part Two</a> | <a href="/2020-11-06-developing-tui-music-player-csharp-part-three/">Part Three</a>
 
-<img src="https://user-images.githubusercontent.com/20845425/98765417-1e062b80-23ac-11eb-9cb7-4046d8e979e9.png" width="750" height="402" alt="Screenshot of MusicSharp">
+<img src="https://markjames.dev/img/posts/music-sharp/musicsharp-playlist.png" width="750" height="402" alt="Screenshot of MusicSharp">
