@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Developing a Lightweight TUI Music Player in C# using Terminal.Gui (Part Two)
-header-img: "img/posts/music-sharp/musicsharp-open-dialog.jpg"
+header-img: "img/posts/music-sharp/MusicSharp-open-dialog.png"
 tags: [guides, programming projects, c#, MusicSharp] 
 ---
 
