@@ -14,6 +14,6 @@ MusicSharp is a cross-platform Terminal User Interface (TUI) music player writte
 
 In addition to working on MusicSharp, I've also created a project log to document the development process. You can find it here:
 
-<a href="/2020-10-25-developing-a-cli-music-player-csharp/"> Part One</a> | <a href="/2020-10-29-developing-tui-music-player-csharp-part-two/">Part Two</a> | <a href="/2020-11-06-developing-tui-music-player-csharp-part-three/">Part Three</a>
+<a href="/2020-10-25-developing-a-cli-music-player-csharp/"> Part One</a> | <a href="/2020-10-29-developing-tui-music-player-csharp-part-two/">Part Two</a> | <a href="/2020-11-06-developing-tui-music-player-csharp-part-three/">Part Three</a> | <a href="/2020-11-20-developing-tui-music-player-csharp-part-four/">Part Four</a>
 
-<img src="https://markjames.dev/img/posts/music-sharp/musicsharp-playlist.png" width="750" height="402" alt="Screenshot of MusicSharp">
+<img src="https://markjames.dev/img/posts/music-sharp/musicsharp-tui.png" width="750" height="402" alt="Screenshot of MusicSharp">
