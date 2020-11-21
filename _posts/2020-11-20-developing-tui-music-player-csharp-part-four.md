@@ -7,7 +7,7 @@ tags: [guides, programming projects, c#, MusicSharp]
 
 In <a href="/2020-11-06-developing-tui-music-player-csharp-part-three/" target=_blank>Part Three</a> of this guide, we implemented Dependency Injection (DI) through the use of constructor injection and expanded our player interface by adding volume controls. With all these features in place, the final part of this guide will add some more key features including loading playlist. At the end of this tutorial, our player should look something like this:
 
-<img src="/img/posts/music-sharp/musicsharp-tui.png" width="750" height="402" alt="MusicSharp build with audio streaming support">
+<img src="/img/posts/music-sharp/MusicSharp-tui.png" width="750" height="402" alt="MusicSharp build with audio streaming support">
 
 I also recommend taking a look at <a href="https://github.com/markjamesm/MusicSharp" target=_blank>MusicSharp on Github</a> where you can clone a working version to follow along with.
 
@@ -207,7 +207,7 @@ private void OpenStream()
 ```
 At the moment, streaming support works with MP3 (and a select few other formats) and so I tested the player using a direct streaming link from Soma.fm:
 
-<img src="/img/posts/music-sharp/musicsharp-open-stream.png" width="750" height="402" alt="MusicSharp build with audio streaming support">
+<img src="/img/posts/music-sharp/MusicSharp-open-stream.png" width="750" height="402" alt="MusicSharp build with audio streaming support">
 
 Loading the MP3 worked just as well as a local file!
 
@@ -340,7 +340,7 @@ private void TimePlayedLabel(string timePlayed)
 
 The code above is fairly lengthy, but I've added comments to make it clear what everything is doing. After compiling the code, I was left with something similar to this (minus the currently non-functional seek buttons):
 
-<img src="/img/posts/music-sharp/musicsharp-tui.png" width="750" height="402" alt="Final state of MusicSharp">
+<img src="/img/posts/music-sharp/MusicSharp-tui.png" width="750" height="402" alt="Final state of MusicSharp">
 
 You can now see the progress bar representing the proper amount, as well as the playtime being displayed! Our player is now starting to look and feel a lot more like an audio player! However, I did notice that the progress bar mainloop code runs into timing issues if you try to play a second file in a playlist. I suspect that this may be due to the way I setup the loop, and in the future I would possibly add code to stop and reset the progressbar properly, but for now it works well enough for single files.  
 
