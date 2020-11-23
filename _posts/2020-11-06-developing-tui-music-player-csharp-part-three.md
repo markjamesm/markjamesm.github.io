@@ -9,7 +9,7 @@ In [part two](/2020-10-29-developing-tui-music-player-csharp-part-two/) of this 
 
 In order to best follow along with this guide, I reccomend checking out the sourcecode <a href="https://github.com/markjamesm/MusicSharp/tree/f80bda947c02ac1c9b2824723feef54b6dd5bc30" target=_blank>on Github</a> and going through some of the commit history. The other sections of this guide are available here:
 
-<a href="/2020-10-25-developing-a-cli-music-player-csharp/">Part One</a> | <a href="/2020-10-29-developing-tui-music-player-csharp-part-two/">Part Two</a>
+<a href="/2020-10-25-developing-a-cli-music-player-csharp/">Part One</a> | <a href="/2020-10-29-developing-tui-music-player-csharp-part-two/">Part Two</a> | <a href="/2020-11-20-developing-tui-music-player-csharp-part-four/">Part Four</a>
 
 ## The Case for Dependency Injection
 

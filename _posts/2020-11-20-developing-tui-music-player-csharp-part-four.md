@@ -9,7 +9,9 @@ In <a href="/2020-11-06-developing-tui-music-player-csharp-part-three/" target=_
 
 <img src="/img/posts/music-sharp/MusicSharp-tui.png" width="750" height="402" alt="MusicSharp build with audio streaming support">
 
-I also recommend taking a look at <a href="https://github.com/markjamesm/MusicSharp" target=_blank>MusicSharp on Github</a> where you can clone a working version to follow along with.
+I also recommend taking a look at <a href="https://github.com/markjamesm/MusicSharp" target=_blank>MusicSharp on Github</a> where you can clone a working version to follow along with. Additionally, the other sections of this guide are available here:
+
+<a href="/2020-10-25-developing-a-cli-music-player-csharp/">Part One</a> | <a href="/2020-10-29-developing-tui-music-player-csharp-part-two/">Part Two</a> | <a href="/2020-11-06-developing-tui-music-player-csharp-part-three/">Part Three</a>
 
 ## Loading Audio Playlists
 
