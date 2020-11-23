@@ -11,8 +11,6 @@ Linnstrument Helper is an <a href="https://github.com/markjamesm/linnstrument-he
 
 For the curious, here's my [build log](https://markjames.dev/2020-05-06-writing-a-midi-controller-app-part-one/) for the project and <a href="https://github.com/markjamesm/linnstrument-helper" target="_blank">a video of me</a> playing some smooth jazz on a Linnstrument 128. 
 
-
-https://www.youtube.com/watch?v=njY9xBz9M18
 ## Features
 
 - Polyphonic sound engine.
