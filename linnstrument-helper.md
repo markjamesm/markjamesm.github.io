@@ -9,8 +9,10 @@ header-img: "img/posts/linnstrument-helper-og.jpg"
 
 Linnstrument Helper is an <a href="https://github.com/markjamesm/linnstrument-helper" target="_blank">open source</a> Mac OS app I developed to help people learn the <a href="https://www.rogerlinndesign.com/linnstrument" target="_blank">Linnstrument</a> layout quickly and efficiently. Just like a bass guitar, the Linnstrument uses all fourths tuning. If you'd like to help contribute to the project, please take a look at the <a href="https://github.com/markjamesm/linnstrument-helper" target="_blank">issues page</a>. 
 
-For the curious, here's my [build log](https://markjames.dev/2020-05-06-writing-a-midi-controller-app-part-one/) for the project.
+For the curious, here's my [build log](https://markjames.dev/2020-05-06-writing-a-midi-controller-app-part-one/) for the project and <a href="https://github.com/markjamesm/linnstrument-helper" target="_blank">a video of me</a> playing some smooth jazz on a Linnstrument 128. 
 
+
+https://www.youtube.com/watch?v=njY9xBz9M18
 ## Features
 
 - Polyphonic sound engine.
