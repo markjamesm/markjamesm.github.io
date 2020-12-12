@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: Back to School
 tags: [blog] 
 ---
