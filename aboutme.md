@@ -4,7 +4,7 @@ title: About me
 subtitle: Get to know me
 ---
 
-My name is Mark-James McDougall, and I'm a Fullstack Developer from Montreal, Canada. I work as a Webmaster at <a href="https://mcgill.ca" target="_blank">McGill University</a> (BA'15) and have experience with a range of technologies including: 
+My name is Mark-James McDougall, and I'm a Developer from Montreal, Canada. I work as a Webmaster at <a href="https://mcgill.ca" target="_blank">McGill University</a> (BA'15) and have experience with a range of technologies including: 
 - Javascript, HTML, & CSS
 - C#, ASP.NET 
 - Swift/SwiftUI (iOS, MacOS)
