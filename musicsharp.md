@@ -10,6 +10,10 @@ header-img: "img/posts/music-sharp/musicsharp-volume.png"
 
 MusicSharp is a cross-platform Terminal User Interface (TUI) music player written in C# (.NET 5) with the goal of being minimalistic and light on resources. Released as an open source project <a href="https://github.com/markjamesm/musicsharp" target="_blank">on Github</a>, MusicSharp has received several contributors to the project who have helped implement features. Github Actions is used for CI and MSTest for unit testing.
 
+## Installation
+
+Download the <a href="https://github.com/markjamesm/MusicSharp/releases" target="_blank">latest release of MusicSharp</a> and follow the installation instructions.
+
 ## Build Log
 
 In addition to working on MusicSharp, I've also created a project log to document the development process. You can find it here:
