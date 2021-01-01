@@ -2,6 +2,7 @@
 layout: page
 title: CU Libraries
 subtitle: Realtime resource status from the Concordia University libraries.
+header-img: "img/posts/cu-libraries-og.png"
 ---
 
 [![Build](https://github.com/markjamesm/cu-libraries/workflows/build/badge.svg?branch=master)](https://github.com/markjamesm/cu-libraries/actions) [![Platforms](https://img.shields.io/badge/platforms-iOS-blue.svg)](https://apple.com/ios) [![Swift](https://img.shields.io/badge/Swift-5.1-orange.svg)](https://swift.org) [![License](https://img.shields.io/badge/License-GPL-red.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
