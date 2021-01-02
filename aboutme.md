@@ -4,16 +4,9 @@ title: About me
 subtitle: Get to know me
 ---
 
-My name is Mark-James McDougall, and I'm a Developer from Montreal, Canada. I work as a Webmaster at <a href="https://mcgill.ca" target="_blank">McGill University</a> (BA'15) and have experience with a range of technologies including: 
-- Javascript, HTML, & CSS
-- C#, ASP.NET 
-- Swift/SwiftUI (iOS, MacOS)
-- CMSes (Drupal, Adobe AEM, Wordpress, iModules)
-- Devops (Azure DevOps, Github Actions)
+My name is Mark-James McDougall, and I'm a Developer from Montreal, Canada. I work as a Webmaster at my alma mater <a href="https://mcgill.ca" target="_blank">McGill University</a> (BA'15) and enjoy working on open source projects in my spare time.  
 
 <a href="https://github.com/markjamesm" target=_blank><img src="https://github-readme-stats.vercel.app/api?username=markjamesm&count_private=true&show_icons=true" width="495" height="195" alt="Mark-James' github stats" title="Mark-James' github"></a>
-
-If ever you need professional help with a project, I offer consulting for a range of services. Don't hesitate to [contact me](/contact) to inquire about my availabilities and rates. You can also take a look at my <a href="/resume" target="_blank">resume here</a>.
 
 ## Fun fact
 
