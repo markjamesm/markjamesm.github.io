@@ -50,7 +50,7 @@ let Admins = [{Username="MJ";Password="M"}; {Username="Joe";Password="C"}] |> Se
 
 During the binding, we never specifed the actual type! F#'s powerful type inference means that I can skip a lot of boilerplate that I would normally use in C# while still having all the benefits of a strongly typed language. 
 
-We also make use of the pipe forward operator |> in order to take the admins list and turn it into a set. Converting the list to a set allows us to use .Contains on our admins list in the match expression later on in the code:
+We also make use of the pipe forward operator \|> in order to take the admins list and turn it into a set. Converting the list to a set allows us to use .Contains on our admins list in the match expression later on in the code:
 
 ```fsharp
         match Admins.Contains loginCredentials with
