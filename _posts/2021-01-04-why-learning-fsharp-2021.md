@@ -58,6 +58,8 @@ We also make use of the pipe forward operator \|> in order to take the admins li
         | false -> LoginRoutine()
 ```
 
+Since the function has been marked with the rec (recursive) keyword, it will continue to call itself until the match returns true. This eliminates the need for using a while loop while keeping our method immutable.
+
 In addition, its important to note that F# executes code from the top down which I find makes following program flow much easier. Despite this, I did run into a few compiler errors until I got the hang of the execution flow and making sure to put functions in the proper order. 
 
 ## The Bad
