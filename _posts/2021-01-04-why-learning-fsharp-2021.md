@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why I'm Learning F# In 2021
+title: Why I'm Learning F# in 2021
 tags: [blog, programming projects] 
 ---
 
