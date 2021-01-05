@@ -50,7 +50,15 @@ let Admins = [{Username="MJ";Password="M"}; {Username="Joe";Password="C"}] |> Se
 
 During the binding, we never specifed the actual type! F#'s powerful type inference means that I can skip a lot of boilerplate that I would normally use in C# while still having all the benefits of a strongly typed language. 
 
-In addition, it is important to note that F# executes code from the top down which I find makes following program flow much easier. Despite this, I did run into a few compiler errors until I got the hang of the execution flow and making sure to put functions in the proper order. 
+We also make use of the pipe forward operator (|>) in order to take the admins list and turn it into a set. Converting the list to a set allows us to use .Contains on our admins list in the match expression later on in the code:
+
+```fsharp
+        match Admins.Contains loginCredentials with
+        | true -> printfn "You are logged in"
+        | false -> LoginRoutine()
+```
+
+In addition, its important to note that F# executes code from the top down which I find makes following program flow much easier. Despite this, I did run into a few compiler errors until I got the hang of the execution flow and making sure to put functions in the proper order. 
 
 ## The Bad
 So far, my biggest issue hasn't been with the language itself, but rather the lack of learning resources compared with other, more popular languages. <a href="https://www.manning.com/books/get-programming-with-f-sharp" target="_blank">Get Programming with F#</a> has been a terrific book for learning, but the paradigm shift that functional programming requires can be quite significant and I find myself constantly Googling certain issues and being able to count the number of (usually not very related) Stack Exchange topics on one hand. I did however find a great small but active <a href="https://discord.gg/vs4U6HQhAG" target="_blank">F# Discord community</a> which has been great at answering smaller one-off questions that I've had regarding the language.
