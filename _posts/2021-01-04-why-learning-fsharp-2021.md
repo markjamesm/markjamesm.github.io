@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Why I'm Learning F# in 2021
-tags: [blog, programming projects] 
+tags: [blog, programming projects]
+header-img: "img/posts/fsharp/fsharp-og-logo.jpg"
 ---
 
 For the past while, I've had the goal of learning a functional programming language in the back of my mind but never acted on it for various reasons. However, during a recent weekend afternoon of winter COVID-lockdown web browsing, I stumbled across the terrific <a href="https://fsharpforfunandprofit.com/" target="_blank">F# for fun and profit</a> which piqued my interest and convinced me to take the plunge and learn FP in 2021. I believe that learning different programming paradigms helps you become stronger in all languages, and with C# incorporating more and more features from F# (records among other things for example) learning functional programming would be a benefit in a few different ways.
