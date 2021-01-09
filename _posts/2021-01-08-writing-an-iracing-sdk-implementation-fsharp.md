@@ -29,7 +29,7 @@ and I figured that this would be a good featureset to aim for in the final versi
 
 ## Creating the Library
 
-After coming up with some desired features, the first step was to create a new FSharp solution called iRacingFSharp. Inside the solution, I created two projects. One was our actual library, called iRacingFSharp, and the other was a basic console app called SDKReader (located in the Examples Folder) to test the functionality of the library as I worked on it.
+After coming up with some desired features, the first step was to create a new FSharp solution called iRacingFSharp. Inside the solution, I created two projects. One was our actual library, called iRacingFSharp, and the other was a basic console app called SDKReader (located in the Examples Folder) to test the functionality of the library as I worked on it. Note, if you'd like to see the full codebase you can <a href="https://github.com/markjamesm/irsdk-fsharp" target=_blank>here on github</a>.
 
 ## The First Function
 
