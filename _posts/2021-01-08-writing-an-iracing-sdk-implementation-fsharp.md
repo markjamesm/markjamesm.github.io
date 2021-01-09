@@ -43,7 +43,8 @@ Getting this URL in Postman returns a JSON object which looks like this:
 ```json
 var simStatus={
    running:0 // 1 if the sim is running
-};```
+};
+```
 
 I decided to make use of the <a href="https://fsharp.github.io/FSharp.Data/library/Http.html" target=_blank>F# Data HTTP library</a> in order to download the response and so I installed it from NuGet at this point. 
 
