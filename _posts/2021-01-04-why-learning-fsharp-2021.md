@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why I'm Learning F# in 2021
-tags: [blog, programming projects]
+tags: [blog, programming projects, f#]
 header-img: "img/posts/fsharp/fsharp-og-logo.jpg"
 ---
 
