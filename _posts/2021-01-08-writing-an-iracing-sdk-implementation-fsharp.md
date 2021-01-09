@@ -67,6 +67,8 @@ module IrsdkFS =
 
 In the above code, I've created a module which contains a function called SimStatus that takes no parameters. It then binds the JSON response to simStatusURL and passes it to the HTTP library via Http.RequestString(). Finally, simStatusObject is returned in string format which can be parsed further by another function in a later step.
 
+# Testing The Function
+
 With this simple function in place, the next step was to create SDKReader.fs inside my SDKReader console app. This file contained code to call the SimStatus() function and print the output:
 
 ```fsharp
