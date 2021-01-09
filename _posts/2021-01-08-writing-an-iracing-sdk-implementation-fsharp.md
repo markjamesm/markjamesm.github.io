@@ -90,4 +90,6 @@ Running dotnet build inside the SDKReader folder displayed the following output 
 
 Success! With this method working, we now have the very beginnings of an F# implementation of the iRacing SDK! Although it is a small step, we were also able to create and structure the project. Lastly, I also setup a a basic .NET build through Github Actions for CI. 
 
+# Next Steps
+
 Stay tuned for Part Two where I plan to implement some telemetry functions, and be sure to follow along with the <a href="https://github.com/markjamesm/irsdk-fsharp" target=_blank>Github Repo here</a> if you're interested in seeing how to project progresses (or would like to contribute)!
