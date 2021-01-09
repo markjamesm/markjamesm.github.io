@@ -17,7 +17,7 @@ Inspired by setting everything up and doing some laps to practice for an eventua
 
 ## Getting Started
 
-I tend to learn best when projects are slightly outside of my comfort zone, and this would be both my first time writing a library, as well as writing one in a functional language! Having used an array of libraries at this point, I had some confidence in choosing an organizational structure, and the Python implementation is only <a href="https://github.com/kutu/pyirsdk/blob/master/irsdk.py" target=_blank>739 lines of code</a> which felt doable compared to some of the larger libraries out there.
+I tend to learn best when projects are slightly outside of my comfort zone, and this would be both my first time writing a library, as well as writing one in a functional language! Having used an array of libraries at this point, I had some confidence in choosing an organizational structure. Moreover, the Python implementation is only <a href="https://github.com/kutu/pyirsdk/blob/master/irsdk.py" target=_blank>739 lines of code</a> which felt doable compared to some of the larger libraries out there.
 
 Moreover, the python implementation of the SDK has the ability to: 
 
