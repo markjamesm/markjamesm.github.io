@@ -9,7 +9,7 @@ In my [previous post](/2021-01-04-why-learning-fsharp-2021/), I discussed how I'
 
 <img src="/img/posts/irsdk-fsharp/racing-rig.jpg" width="650" height="488" alt="Photo of my current iRacing VR setup">
 
-Having a dedicated table really helps, as in my old apartment it was fairly difficult to setup a station with limited space, but now I can fortunately just jump in. Despite the past limitations, I was able to get fairly competitive and still remember the thrill of my first win agaisnt a field of real racers:
+Having a dedicated table really helps, as in my old apartment it was fairly difficult to setup a station with limited space, but now I can fortunately just jump in. Despite the past limitations, I was able to get fairly competitive and still remember the thrill of my first win agaisnt a field of real racers in a Mazda MX-5:
 
 <img src="/img/posts/irsdk-fsharp/iracing-win.jpg" width="500" height="279" alt="Photo of my iRacing first win certificate">
 
