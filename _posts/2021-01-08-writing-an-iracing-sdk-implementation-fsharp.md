@@ -40,7 +40,7 @@ http://127.0.0.1:32034/get_sim_status?object=simStatus
 ```
 Getting this URL in Postman returns a JSON object which looks like this:
 
-```json
+```
 var simStatus={
    running:0 // 1 if the sim is running
 };
