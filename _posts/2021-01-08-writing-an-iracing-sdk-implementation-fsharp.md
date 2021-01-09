@@ -7,7 +7,7 @@ header-img: "img/posts/fsharp/fsharp-og-logo.jpg"
 
 In my [previous post](/2021-01-04-why-learning-fsharp-2021/), I discussed how I've decided to learn F# in 2021 for a number of reasons. Around the same time, I also happened to setup my Sim Racing rig so that I could continue to play <a href="https://www.iracing.com/" target=_blank>iRacing</a> with my VR headset (HTC Vive). Its been several years since I've last played, but with COVID-related curfews being implemented here in Montreal tomorrow, I've been increasingly taking up home-based pursuits which I didn't always have the time for pre-lockdown. Since the last time I played iRacing, I'm running a PC with a much better processor, motherboard, and only SSDs. The VR performance has been a huge leap forward since I used to play with my old machine and I was quite impressed. After spending a couple of hours setting up, here's what my current humble racing setup:
 
-<img src="/img/posts/irsdk-fsharp/racing-rig.jpg" width="500" height="375" alt="Photo of my current iRacing VR setup">
+<img src="/img/posts/irsdk-fsharp/racing-rig.jpg" width="650" height="488" alt="Photo of my current iRacing VR setup">
 
 Having a dedicated table really helps, as in my old apartment it was fairly difficult to setup a station with limited space, but now I can fortunately just jump in. Despite the past limitations, I was still able to get fairly competitive and still remember the thrill of my first win agaisnt a field of real racers:
 
