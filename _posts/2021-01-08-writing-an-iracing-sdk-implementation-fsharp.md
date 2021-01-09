@@ -92,4 +92,6 @@ Success! With this method working, we now have the very beginnings of an F# impl
 
 # Next Steps
 
-Stay tuned for Part Two where I plan to implement some telemetry functions, and be sure to follow along with the <a href="https://github.com/markjamesm/irsdk-fsharp" target=_blank>Github Repo here</a> if you're interested in seeing how to project progresses (or would like to contribute)!
+iRacing’s API telemetry comes in three variations; data written to a .ibt file 60 times a second, live data exposed to the telemetry API 60 times per second, and a session string in YAML format that contains more or less static information about the session. The YAML string is appended to the end of the .ibt file but only a small portion of that data is exposed. This means that going forward, I'll need to look into parsing the YAML as well as mapping more of the API endpoints. The iRacing API appears to be nonstandard and so it may take a little more work than just a typical REST API.
+
+Stay tuned for Part Two where I plan to implement some telemetry functions and look into parsing the aforementioned YAML. In addition, be sure to follow along with the <a href="https://github.com/markjamesm/irsdk-fsharp" target=_blank>Github Repo here</a> if you're interested in seeing how to project progresses (or would like to contribute)!
