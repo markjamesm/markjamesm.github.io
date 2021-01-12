@@ -9,147 +9,152 @@
 
 <url>
   <loc>https://markjames.dev/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://markjames.dev/aboutme/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://markjames.dev/resume</loc>
-  <lastmod>2021-01-09T03:38:40+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://markjames.dev/tags/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://markjames.dev/cu-libraries/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://markjames.dev/linnstrument-helper/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://markjames.dev/musicsharp/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://markjames.dev/contact/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://markjames.dev/2021-01-11-transitioning-from-csharp-to-fsharp-rethinking-state/</loc>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://markjames.dev/2021-01-08-writing-an-iracing-sdk-implementation-fsharp/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://markjames.dev/2021-01-04-why-learning-fsharp-2021/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://markjames.dev/2020-12-09-back-to-school/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://markjames.dev/2020-11-20-developing-tui-music-player-csharp-part-four/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://markjames.dev/2020-11-06-developing-tui-music-player-csharp-part-three/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://markjames.dev/page2/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://markjames.dev/accessibility/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://markjames.dev/2020-11-06-developing-tui-music-player-csharp-part-three/</loc>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://markjames.dev/2020-10-29-developing-tui-music-player-csharp-part-two/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://markjames.dev/2020-10-25-developing-a-cli-music-player-csharp/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://markjames.dev/2020-08-26-late-summer-updates/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://markjames.dev/2020-05-16-importance-of-a-good-monitor/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://markjames.dev/2020-04-17-making-best-of-physical-distancing/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://markjames.dev/2020-03-04-new-website/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://markjames.dev/2020-05-22-making-a-roguelike-in-c-with-gorogue-sadconsole-part-two/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://markjames.dev/2020-05-21-making-a-roguelike-in-c-with-gorogue-sadconsole-part-one/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://markjames.dev/2020-05-06-writing-a-midi-controller-app-part-two/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://markjames.dev/2020-05-06-writing-a-midi-controller-app-part-one/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://markjames.dev/2020-04-20-bookmark-dead-link-checker-swift/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://markjames.dev/page3/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://markjames.dev/samplebookmarks.html</loc>
-  <lastmod>2021-01-09T03:38:40+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:49+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://markjames.dev/page4/</loc>
-  <lastmod>2021-01-09T03:38:45+00:00</lastmod>
+  <lastmod>2021-01-12T04:17:55+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 
