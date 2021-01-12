@@ -62,7 +62,14 @@ let playerHealth = 100
 fightEnemy playerHealth 
 ```
 
-In contrast to the void C# method which modifies a playerHealth property, in F# we pass fightEnemy our playerHealth value and it gives us a playerHealth value in return, producing no side effects in the process. The function depends on the input in order to produce a result which we can then use elsewhere in our code. Aside from making the function much easier to reason about, it also has the added benefit of making your code much easier to debug and test as functions exist independent of one another and the outside world. 
+In contrast to the void C# method which modifies a playerHealth property, in F# we pass fightEnemy our playerHealth value and it gives us a playerHealth value in return, producing no side effects in the process. The function depends on the input in order to produce a result which we can then use elsewhere in our code. Aside from making the function much easier to reason about, it also has the added benefit of making your code much easier to debug and test as functions exist independent of one another and the outside world. If we wanted our example to get more complex, we could create an object which contains multiple state properties such as:
+
+```fsharp
+  let fightEnemy playerState =
+        playerState |> calculateNewHealth
+              |> calculateNewWeaponState
+  let newPlayerState = fightEnemy currentPlayerState
+```
 
 # Summary Notes
 
