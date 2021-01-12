@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: On Transitoning from C# to F# — Rethinking State
+title: On Transitioning from C# to F# — Rethinking State
 tags: [f#, guides]
 header-img: "img/posts/fsharp/fsharp-og-logo.jpg"
 ---
