@@ -11,7 +11,7 @@ Although the example I will be using deals with opening a memory mapped file, it
 
 ## IO Handling in F#
 
-For a learning project, I've been working on my [F# library for iRacing](/2021-01-08-writing-an-iracing-sdk-implementation-fsharp/). Early on in development, one of the first things I needed to do was some IO, namely loading a MemoryMappedFile. Technically, this can be done in a single line of code:
+For a learning project, I've been working on an implementation of the [iRacing SDK in F#](/2021-01-08-writing-an-iracing-sdk-implementation-fsharp/). Early on in development, one of the first things I needed to do was some IO, namely loading a MemoryMappedFile. Technically, this can be done in a single line of code:
 
 ```fsharp
 let memoryMap = MemoryMappedFile.OpenExisting("Local\\IRSDKMemMapFileName") 
