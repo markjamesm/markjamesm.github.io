@@ -57,10 +57,10 @@ Fortunately, an extremely patient user (nffa) on the F# Slack channel was able t
 As it turns out, in order to properly implement Railway Oriented Programming in my code, I needed to make use of Option types in conjunction with map and bind to really get the magic of Railway Oriented Programming. As we will see, these two functions will cut down significantly on boilerplate and enable us to call loadMemoryMap without having to implement any error checking inside of it. To do so, I created a new function called start () which would setup the pipeline:
 
 ```fsharp
-    ///<summary>Loads the iRacing memory map file if it is present on disk.</summary>
-    let start () =
-        openMemoryMappedFile
-        |> Option.map loadMemoryMap // If openMemoryMappedFile is some, then call loadMemoryMap
+///<summary>Loads the iRacing memory map file if it is present on disk.</summary>
+let start () =
+    openMemoryMappedFile
+    |> Option.map loadMemoryMap // If openMemoryMappedFile is some, then call loadMemoryMap
 ```
 
 Inside our start function, we call openMemoryMappedFile which either returns Some MemoryMappedFile or None. Next, we use the pipe forward operator to pass the MemoryMappedFile to loadMemoryMap, but only if we have Some MemoryMappedfile due to our use of Option.map. Now our loadMemoryMap function stays the same as above, and no boilerplate is needed!
