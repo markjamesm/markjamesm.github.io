@@ -7,7 +7,7 @@ tags: [guides, programming projects, c#, MusicSharp]
 
 In [part two](/2020-10-29-developing-tui-music-player-csharp-part-two/) of this guide, we refined our audio player and added some play, pause, and stop buttons. In Part Three, we're going to go a step further and implement volume controls. However, before we do that, we're going to refactor our program to make use of Dependency Injection (DI) in order to pave the way for cross-platform support.  
 
-In order to best follow along with this guide, I reccomend checking out the sourcecode <a href="https://github.com/markjamesm/MusicSharp/tree/f80bda947c02ac1c9b2824723feef54b6dd5bc30" target=_blank>on Github</a> and going through some of the commit history. The other sections of this guide are available here:
+In order to best follow along with this guide, I recommend checking out the sourcecode <a href="https://github.com/markjamesm/MusicSharp/tree/f80bda947c02ac1c9b2824723feef54b6dd5bc30" target=_blank>on Github</a> and going through some of the commit history. The other sections of this guide are available here:
 
 <a href="/2020-10-25-developing-a-cli-music-player-csharp/">Part One</a> | <a href="/2020-10-29-developing-tui-music-player-csharp-part-two/">Part Two</a> | <a href="/2020-11-20-developing-tui-music-player-csharp-part-four/">Part Four</a>
 
@@ -21,7 +21,7 @@ The first step in the process was to refactor the code from part two, and I did 
 - model
 - view
 
-I then created Gui.cs inside of the view folder to house the TUI elements, and IPlayer.cs and Winplayer.cs inside the model folder for the music player methods. Starting with IPlayer, I started thinking about the methods common to all player implementations. Using the current application as a guide, I first needed to imlpement methods to pause, play, and stop the audio playback, as well as an auto-property to store the name of the last file opened:
+I then created Gui.cs inside of the view folder to house the TUI elements, and IPlayer.cs and Winplayer.cs inside the model folder for the music player methods. Starting with IPlayer, I started thinking about the methods common to all player implementations. Using the current application as a guide, I first needed to implement methods to pause, play, and stop the audio playback, as well as an auto-property to store the name of the last file opened:
 
 ```csharp
 public interface IPlayer
@@ -146,4 +146,4 @@ Success!
 
 ## Closing notes
 
-In part three, we've gone a long way towards creating a more fully-fledged audio player. By refactoring to use Dependency Injection, our code is less tighly coupled, making it easier to test and write implementations for other platforms. Moreover, by adding volume controls, our player now supports enough basic playback features to make it somewhat useable. More importantly for me however, is the knowledge that I've been able to acquire in working on the program. Its important to practice coding as much as possible (ABC - Always Be Coding!), and this project has been integral to solidifying my understanding of interfaces and Dependency Injection. Be sure to stay tuned for the fourth and final version of this guide as I plan to implement a way to load playlists and display playback state!      
+In part three, we've gone a long way towards creating a more fully-fledged audio player. By refactoring to use Dependency Injection, our code is less tightly coupled, making it easier to test and write implementations for other platforms. Moreover, by adding volume controls, our player now supports enough basic playback features to make it somewhat useable. More importantly for me however, is the knowledge that I've been able to acquire in working on the program. Its important to practice coding as much as possible (ABC - Always Be Coding!), and this project has been integral to solidifying my understanding of interfaces and Dependency Injection. Be sure to stay tuned for the fourth and final version of this guide as I plan to implement a way to load playlists and display playback state!      
