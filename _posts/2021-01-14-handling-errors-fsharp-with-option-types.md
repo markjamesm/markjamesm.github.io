@@ -27,7 +27,7 @@ let validateMemoryMappedFile (filename: string) = // This function takes a strin
                 None
 ```
 
-In the above code, we try to bind memoryMap with the MemoryMappedFile, and if the operation is successful we then return Some memoryMap. In F#, the Some keyword is used to implement what's known as an [i]Option[/i].The Option type is F#'s alternative to null, and behind the scenes its a discriminated union that looks like this:
+In the above code, we try to bind memoryMap with the MemoryMappedFile, and if the operation is successful we then return Some memoryMap. In F#, the Some keyword is used to implement what's known as an *Option*.The Option type is F#'s alternative to null, and behind the scenes its a discriminated union that looks like this:
 
 ```fsharp
 type Option<'a> = //'a represents a generic type  
@@ -85,7 +85,7 @@ Notice how similar it looks to Option.map, with the exception being the second i
 
 Conceptually, Option and Result are mostly the same, except that Result carries information about the nature of why something failed. If this isn't important, then Option works as well. Moreover, in the [Agaisnt Railway Oriented Prorgramming](https://fsharpforfunandprofit.com/posts/against-railway-oriented-programming/) section, Scott recommends agaisnt using Results for IO in F#, as
 
-[i]anywhere that there is I/O there will many, many things that can go wrong. It is tempting to try to model all possibilities with a Result, but I strongly advise against this. Instead, only model the bare minimum that you need for your domain, and let all the other errors become exceptions.[/i]
+*anywhere that there is I/O there will many, many things that can go wrong. It is tempting to try to model all possibilities with a Result, but I strongly advise against this. Instead, only model the bare minimum that you need for your domain, and let all the other errors become exceptions.*
 
 From what I understand, those new to functional languages should focus on using the Option type and only start using results when explicitly needed. As options work in most cases, you'll likely be quite comfortable in the language by the time you start making use of Result types and by then their use should be trivial, especially since Options can become Results as long as you can 'fill in' the missing Error type/data.  Moreover, Results can become options by just dropping their error data.
 
