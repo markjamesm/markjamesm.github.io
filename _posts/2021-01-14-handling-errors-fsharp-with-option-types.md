@@ -5,7 +5,9 @@ tags: [f#, guides]
 header-img: "img/posts/fsharp/fsharp-og-logo.jpg"
 ---
 
-As I continue to study functional programming with F#, I've been learning to handle things (such as [thinking about state](/2021-01-11-transitioning-from-csharp-to-fsharp-rethinking-state/)) in a different way than I would in an object oriented programming language. In keeping with my recent learning F# article series, I've decided to discuss another element of the learning process which caused me significant confusion over the past few days - namely error handling in F#. Although the example I will beu using deals with opening a memory mapped file, it is applicable to any kind of setting where you might return either none or a value.
+As I continue to study functional programming with F#, I've been learning to handle things (such as [thinking about state](/2021-01-11-transitioning-from-csharp-to-fsharp-rethinking-state/)) in a different way than I would in an object oriented programming language. In keeping with my recent learning F# article series, I've decided to discuss another element of the learning process which caused me significant confusion over the past few days - namely error handling in F#. 
+
+Although the example I will be using deals with opening a memory mapped file, it is applicable to any kind of setting where you might return either none or a value.
 
 ## IO Handling in F#
 
@@ -33,7 +35,6 @@ In the above code, we try to bind memoryMap with the MemoryMappedFile, and if th
 type Option<'a> = //'a represents a generic type  
    | Some of 'a   // A value of type 'a exists        
    | None         // No value exists
-
 ```
 
 Now when I tested my code, everything seemed to work as planned, either returning Some MemoryMappedFile (-> 'a option) or failing with an error message and then returning None. Success, right?! No so fast! The next step in my chain was to create a ViewAccessor from the MemoryMap so that I could get ready to read the data. The pure function to do this looks like:
@@ -52,7 +53,7 @@ On the terrific F# for Fun and Profit website, there's an [in-depth article](htt
 
 The main sticking point for me was the idea of the error track, and not catching an exception in the objected oriented sense. In addition, I was getting confused as you can use Options or Results to handle errors in Railway Oriented Programming and I wasn't exactly sure which to use.
 
-Fortunately, an extremely patient user (nffa) on the F# Slack channel was able to help me trememndously in understanding the concept by working through some example code with me. Although the F# community is relatively small, I will say that the answers to questions I've asked in the Slack and Discord channels have been absolutely terrific! 
+Fortunately, an extremely patient user (nffa) on the F# Slack channel was able to help me tremendously in understanding the concept by working through some example code with me. Although the F# community is relatively small, I will say that the answers to questions I've asked in the Slack and Discord channels have been absolutely terrific! 
 
 As it turns out, in order to properly implement Railway Oriented Programming in my code, I needed to make use of Option types in conjunction with map and bind to really get the magic of Railway Oriented Programming. As we will see, these two functions will cut down significantly on boilerplate and enable us to call loadMemoryMap without having to implement any error checking inside of it. To do so, I created a new function called start () which would setup the pipeline:
 
@@ -83,7 +84,7 @@ Notice how similar it looks to Option.map, with the exception being the second i
 
 ## Additional Notes Regarding Option Types
 
-Conceptually, Option and Result are mostly the same, except that Result carries information about the nature of why something failed. If this isn't important, then Option works as well. Moreover, in the [Agaisnt Railway Oriented Prorgramming](https://fsharpforfunandprofit.com/posts/against-railway-oriented-programming/) section, Scott recommends agaisnt using Results for IO in F#, as
+Conceptually, Option and Result are mostly the same, except that Result carries information about the nature of why something failed. If this isn't important, then Option works as well. Moreover, in the [Against Railway Oriented Programming](https://fsharpforfunandprofit.com/posts/against-railway-oriented-programming/) section, Scott recommends against using Results for IO in F#, as
 
 *anywhere that there is I/O there will many, many things that can go wrong. It is tempting to try to model all possibilities with a Result, but I strongly advise against this. Instead, only model the bare minimum that you need for your domain, and let all the other errors become exceptions.*
 
