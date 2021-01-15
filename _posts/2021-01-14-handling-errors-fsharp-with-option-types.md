@@ -20,9 +20,9 @@ let memoryMap = MemoryMappedFile.OpenExisting("Local\\IRSDKMemMapFileName")
 However, opening a MemoryMappedFile requires the iRacing simulator to be running. If MemoryMappedFile.OpenExisting() does not find the desired MemoryMap, then it fails with a System.IO.FileNotFound exception. No problem! in C# I would simply wrap the error in a try/catch block and fail gracefully if no file is found, and so I figured that I could do the same here in F#:
 
 ```fsharp
-let validateMemoryMappedFile (filename: string) = // This function takes a string and returns an option of type 'a (string -> 'a option)
+let validateMemoryMappedFile () = // This function returns an option of type 'a. (string -> 'a option)
     try
-        let memoryMap = MemoryMappedFile.OpenExisting(filename) 
+        let memoryMap = MemoryMappedFile.OpenExisting("Local\\IRSDKMemMapFileName") 
         Some(memoryMap)
     with
         | ex -> eprintf "Error: %s" ex.Message 

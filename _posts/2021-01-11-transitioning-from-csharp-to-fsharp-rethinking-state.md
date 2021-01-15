@@ -36,7 +36,7 @@ player.FightEnemy();
 // PlayerHealth is now 95.
 Console.WriteLine(player.PlayerHealth);
 ```
-By creaintg a state in the PlayerHealth property and then modifying it using the void FightEnemy() method, we're producing what's known as a [i]side effect[/i]. According to Wikipedia, the formal definition for a side effect is:
+By creating a state in the PlayerHealth property and then modifying it using the void FightEnemy() method, we're producing what's known as a [i]side effect[/i]. According to Wikipedia, the formal definition for a side effect is:
 
 ```
 ... An operation, function or expression is said to have a side effect if it modifies some state variable value(s) outside its local environment, that is to say has an observable effect besides returning a value (the main effect) to the invoker of the operation.
@@ -73,4 +73,4 @@ In contrast to the void C# method which modifies a playerHealth property, in F# 
 
 # Summary Notes
 
-As you can see, there are a number of benefits to using pure functions and avoiding mutable state in your programs. Even just looking at the F# code, I find things much easier to reason about since I don't need to keep track of a class property which may or may not be changed by multiple side effect producing methods. Of course, there are some instances where side effects can't be avoided (eg: writing to a database or gettting an HTTP file), and this makes it important to design your functional code in such a way as to push the side effect producing code to the boundaries of your application. 
+As you can see, there are a number of benefits to using pure functions and avoiding mutable state in your programs. Even just looking at the F# code, I find things much easier to reason about since I don't need to keep track of a class property which may or may not be changed by multiple side effect producing methods. Of course, there are some instances where side effects can't be avoided (eg: writing to a database or getting an HTTP file), and this makes it important to design your functional code in such a way as to push the side effect producing code to the boundaries of your application. 
