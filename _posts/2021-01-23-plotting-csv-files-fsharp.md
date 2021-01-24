@@ -27,8 +27,8 @@ type  rawCSV = CsvProvider<filePath, HasHeaders = true>
 ```
 
 In the above code, we bind our filepath to an identifier and then create a new type which contains the CSVProvider plus our filepath. We also include HasHeaders = true as our CSV file contains column headers. One thing to note is that in F# we use [<\Literal>\] the same way we would const in C# or other languages. I'm using a literal here due to a blessing and curse of type providers in F#. On one hand, they're amazing, because you get compile-time types for your data! But, that also means the data must be available at compile time. You can usually work around this by either:
-[*]Including representative data inside your project's git repo, so you can build the provider based on sample data and then parse any conforming input data
-[*]Using a string literal in source code to define sample data and use that for the provider (which is what I've done here).
+* Including representative data inside your project's git repo, so you can build the provider based on sample data and then parse any conforming input data
+* Using a string literal in source code to define sample data and use that for the provider (which is what I've done here).
 
 Now that we have our type provider setup, the next step is to create a function which loads our CSV file by using the GetSample() function from our type provider:
 
