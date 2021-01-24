@@ -5,11 +5,11 @@ tags: [guides, f#]
 header-img: "img/posts/fsharp/fsharp-og-logo.jpg"
 ---
 
-Data visualization is an important tool and there's been many cases where I've found myself wanting to visualize data from a CSV file. As I've [been learning F#](/2021-01-04-why-learning-fsharp-2021/) in the New Year, I thought that plotting a chart would be a great exercise to help sharpen my F# skills. Fortunately, charts can be created fairly easily in F# by using the [XPlot](https://fslab.org/XPlot/) library in conjunction with Plotly.
+Data visualization is an important tool, and there's been many cases where I've found myself wanting to visualize data from a CSV file. As I've [been learning F#](/2021-01-04-why-learning-fsharp-2021/) in the New Year, I thought that plotting a chart would be a great exercise to help sharpen my F# skills. Fortunately, charts can be created fairly easily in F# by using the [XPlot](https://fslab.org/XPlot/) library in conjunction with Plotly.
 
 For the purposes of this exercise, I'll be using the Spotify Dataset from Kaggle, specifically the data by year [CSV file](https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks?select=data_by_year.csv). From this file, we'll be looking to plot the danceability of music over time. According to the Kaggle definition, danceability is "The relative measurement of the track being danceable (ranging from 0 to 1)", but I'm unsure what the exact criteria for danceability is (maybe tempo and loudness combined with some other variable?). The end result should look something like this:
 
-<img src="img\posts\graphing\Music-danceability-over-time.png" width="710" height="601" alt="MusicSharp build featuring volume buttons">
+<img src="img/posts/graphing/music-danceability-over-time.png" width="710" height="601" alt="MusicSharp build featuring volume buttons">
 
 # Reading a CSV File
 
