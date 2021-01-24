@@ -62,7 +62,9 @@ let graphData (rawCSV: rawCSV) =
 
 This function takes in our rawCSV type and returns a Scatter object, which is produced by iterating over the Year and Danceability rows of the CSV file. 
 
-One important thing to remember, is that in F#, the order of your files matter. In my Graphing module, I had been getting the error: *FS0039: The namespace or module 'CSVRead' is not defined* which confused me as I was referencing was my own module inside Graphing.fs. It turns out however, that I had forgotten to put CSVRead.fs above Graphing.fs inside Visual Studio, but once I did the error cleared up right away. Although I'm not used to having the order of source files matter, it makes quite a lot of sense in terms of readability as the same principles apply to functions within the files. My experience with this style so far has made it easier to understand programs as I'm not constantly jumping from file to file and looking in different areas while trying to mentally keep track of function side effects.
+One important thing to remember, is that in F#, the order of your files matter. In my Graphing module, I had been getting the error: *FS0039: The namespace or module 'CSVRead' is not defined* which confused me as I was referencing was my own module inside Graphing.fs. It turns out however, that I had forgotten to put CSVRead.fs above Graphing.fs inside Visual Studio, but once I did the error cleared up right away. 
+
+Although I'm not used to having the order of source files matter, it makes quite a lot of sense in terms of readability as the same principles apply to functions within the files. My experience with this style so far has made it easier to understand programs as I'm not constantly jumping from file to file and looking in different areas while trying to mentally keep track of function side effects.
 
 The next step is to create a function which takes our scatter plot as input and then sets up the actual plot in Plotly:
 
