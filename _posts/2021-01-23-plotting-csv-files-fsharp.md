@@ -9,7 +9,7 @@ Data visualization is an important tool, and there's been many cases where I've 
 
 For the purposes of this exercise, I'll be using the [Spotify Dataset](https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks?select=data_by_year.csv) from Kaggle, specifically the data by year file. From this file, we'll be looking to plot the danceability of music over time. According to the Kaggle definition, danceability is "The relative measurement of the track being danceable (ranging from 0 to 1)", but I'm unsure what the exact criteria for danceability is (maybe tempo and loudness combined with some other variable?). The end result should look something like this:
 
-<img src="/img/posts/graphing/Music-danceability-over-time.png" width="710" height="601" alt="MusicSharp build featuring volume buttons">
+<img src="/img/posts/graphing/Music-danceability-over-time.png" width="710" height="601" alt="Graph showing music's danceability from 1920-2020">
 
 # Reading a CSV File
 
