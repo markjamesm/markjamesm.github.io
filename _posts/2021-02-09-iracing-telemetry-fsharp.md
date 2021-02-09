@@ -138,8 +138,6 @@ class Program
         // Use live telemetry
     }
 }
-
-private 
 ```
 
 In F#, we subscribe to the event using Observable.subscribe and call our writeToCsv function each time the event is fired:
