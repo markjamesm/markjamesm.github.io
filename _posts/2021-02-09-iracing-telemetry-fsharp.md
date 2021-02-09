@@ -7,7 +7,7 @@ header-img: "img/posts/fsharp/fsharp-og-logo.jpg"
 
 During the pandemic, I've been spending quite a lot of time playing [iRacing](https://iracing.com) in VR. I love the realism of iRacing (and how well it supports VR!), and managed to score a win in the Mazda MX-5 this season at the now defunct Oran Park raceway. 
 
-<img src="/img/posts/race-result.png" width="463" height="113" alt="First place at Oran Park Raceway">
+<img src="/img/posts/race-result-mazda.png" width="463" height="113" alt="First place at Oran Park Raceway">
 
 In a [previous post](https://markjames.dev/2021-01-08-writing-an-iracing-sdk-implementation-fsharp/), I discussed how I was looking to create an F# library for the iRacing SDK. This proved to be a bigger challenge than I thought as the iRacing API uses a memory mapped file and I'm not yet familiar enough with F# to be tackling the problem yet.
 
