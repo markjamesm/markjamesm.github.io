@@ -122,7 +122,7 @@ The interop between C# and F# events is nice, and I find this solution to be qui
 Now that we have a backend system logging some telemetry data from the sim, the next step is to plot the graph we saw above. In order to do so, I created a new .NET Interactive notebook in VS Code Insiders. I then imported the libraries I needed and wrote the following intitial code:
 ```fsharp
 [<Literal>]
-let FilePath = """C:\Users\mjmcd\Desktop\Programming\test1.csv"""
+let FilePath = """C:\LapTimes.csv"""
 
 type rawCsv = CsvProvider<FilePath, HasHeaders = true>
 
@@ -154,10 +154,27 @@ The first thing I do is make use of a higher order function, Seq.filter in order
 
 Next, we construct a pipeline using the forward piping operator (|>) to map the lap distance and speed vartiables as X and Y values on a line chart, and then define how the chart should be styled. I really like the forward piping operator, and I find that it produces some really clean and concise code.
 
+## Other Exploratory Data
+
+Another thing I tried was seeing what my average lap speed was across laps 1-4:
+
+```fsharp
+let lapCsv = Frame.ReadCsv("""C:\LapTimes.csv""", hasHeaders = true)
+
+let speed = lapCsv.GetColumn<int>("Speed")
+speed |> Stats.mean
+|> printf "Average speed: %A"
+```
+
+The results were:
+```
+Average speed:
+121.0335937
+```
 ## Next Steps
 
 Although there are much better telemetry systems out there, working on my own simple version has allowed me to better see the differences between C# and F#, while at the same time seeing how I can use C# libraries in F# in order to accomplish different tasks.
 
 Moving forward, the next step is to parse the CSV file and then plot several laps together to analyze breaking points and speed on the straights to see if I can improve on any specific areas of the track.
 
-It would also be a good idea to buffer the output as opposed to writing to the file each tick, but since its only 2 updates per second and doesn't need to scale, I'm okay with leaving it as is for now.
+Lastly, It would also be a good idea to buffer the output as opposed to writing to the file each tick, but since its only 2 updates per second and doesn't need to scale, I'm okay with leaving it as is for now.
