@@ -184,7 +184,7 @@ createChart(lapPerformance: rawCsv)
 ```
 The first thing I do is make use of a higher order function, Seq.filter in order to only include lap two for plotting. Thanks to type providers, we can reference columns (e.g. row.Lap) directly while developing! I find this super handy as I no longer need to reference the file itself to figure out which columns are which.
 
-Next, we construct a pipeline using the forward piping operator (|\>\) to map the lap distance and speed vartiables as X and Y values on a line chart, and then define how the chart should be styled. I really like the forward piping operator, and I find that it produces some really clean and concise code.
+Next, we construct a pipeline using the forward piping operator (\|\>\) to map the lap distance and speed vartiables as X and Y values on a line chart, and then define how the chart should be styled. I really like the forward piping operator, and I find that it produces some really clean and concise code.
 
 ## Other Exploratory Data
 
