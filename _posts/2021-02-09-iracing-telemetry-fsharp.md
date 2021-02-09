@@ -13,7 +13,7 @@ In a [previous post](https://markjames.dev/2021-01-08-writing-an-iracing-sdk-imp
 
 As an alternative (and thanks to F#'s interoperability with C# and the .NET platform), I decided to familiarize myself with this [C# iRacing SDK](https://github.com/NickThissen/iRacingSdkWrapper) and build a small app that gathers some basic telemetry data and writes it to a CSV file which I could then plot in a .NET Interactive Notebook using Plotly.NET. The end result of my first few tests looked like this:
 
-<div id="2ab460b2-04c6-45dc-abcd-35245dddf90c" style="width: 700px; height: 350px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+<div id="2ab460b2-04c6-45dc-abcd-35245dddf90c" style="width: 700px; height: 400px;"><!-- Plotly chart will be drawn inside this DIV --></div>
 <script type="text/javascript">
 
             var renderPlotly_2ab460b204c645dcabcd35245dddf90c = function() {
@@ -21,7 +21,7 @@ As an alternative (and thanks to F#'s interoperability with C# and the .NET plat
             fsharpPlotlyRequire(['plotly'], function(Plotly) {
 
             var data = [{"type":"scatter","x":[0.0,0.01,0.02,0.03,0.03,0.04,0.05,0.06,0.07,0.08,0.09,0.09,0.1,0.11,0.11,0.12,0.12,0.13,0.13,0.13,0.14,0.14,0.14,0.15,0.15,0.15,0.16,0.16,0.17,0.17,0.18,0.18,0.19,0.19,0.2,0.21,0.21,0.22,0.22,0.23,0.23,0.23,0.24,0.24,0.25,0.26,0.26,0.27,0.27,0.28,0.29,0.29,0.3,0.3,0.31,0.31,0.32,0.33,0.33,0.34,0.35,0.36,0.36,0.37,0.38,0.39,0.4,0.4,0.41,0.42,0.42,0.42,0.43,0.43,0.44,0.45,0.45,0.46,0.46,0.47,0.48,0.48,0.49,0.5,0.5,0.51,0.52,0.53,0.53,0.54,0.54,0.55,0.55,0.56,0.57,0.57,0.58,0.59,0.59,0.6,0.61,0.62,0.62,0.63,0.64,0.65,0.66,0.66],"y":[193,197,200,203,206,210,213,217,220,224,211,188,167,147,127,105,90,88,85,82,88,96,98,93,89,84,88,102,114,123,132,141,149,154,150,145,131,124,119,114,114,119,126,136,144,151,158,159,144,141,139,138,138,145,152,159,166,172,178,184,188,193,197,202,206,209,188,161,132,121,117,116,120,125,131,137,143,150,156,163,168,173,178,183,186,189,171,148,140,137,139,146,153,159,165,170,174,178,181,183,186,189,193,196,199,196,174,152],"mode":"lines","line":{"width":{},"shape":"spline"},"marker":{}}];
-            var layout = {"title":"Laguna Seca (Ferrari 488 GTE)","xaxis":{"title":"Lap Distance (%)","showgrid":false,"position":200.0},"yaxis":{"title":"Speed (Km/h)","showgrid":false},"margin":{"l":120,"r":100,"t":50,"b":150,"pad":0,"autoexpand":true},"width":700.0,"height"350.0};
+            var layout = {"title":"Laguna Seca (Ferrari 488 GTE)","xaxis":{"title":"Lap Distance (%)","showgrid":false,"position":200.0},"yaxis":{"title":"Speed (Km/h)","showgrid":false},"margin":{"l":120,"r":100,"t":50,"b":150,"pad":0,"autoexpand":true},"width":700.0,"height"400.0};
             var config = {};
             Plotly.newPlot('2ab460b2-04c6-45dc-abcd-35245dddf90c', data, layout, config);
 });
