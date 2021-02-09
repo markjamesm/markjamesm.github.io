@@ -13,9 +13,6 @@ In a [previous post](https://markjames.dev/2021-01-08-writing-an-iracing-sdk-imp
 
 As an alternative (and thanks to F#'s interoperability with C# and the .NET platform), I decided to familiarize myself with this [C# iRacing SDK](https://github.com/NickThissen/iRacingSdkWrapper) and build a small app that gathers some basic telemetry data and writes it to a CSV file which I could then plot in a .NET Interactive Notebook using Plotly.NET. The end result of my first few tests looked like this:
 
-
-
-<!DOCTYPE html>
 <html>
     <head>
         <!-- Plotly.js -->
