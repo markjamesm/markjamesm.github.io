@@ -159,7 +159,7 @@ type rawCsv = CsvProvider<FilePath, HasHeaders = true>
 // CSV File
 let lapPerformance = rawCsv.GetSample()
 ```
-The use of [<Literal>] here is because FilePath must be a constant so that the CsvProvider can read the data while we're developing. As I mentioned in a previous article on [CSV files in F#](/2021-01-23-plotting-csv-files-fsharp/) "Type providers are a blessing and curse in F#. On one hand, they're amazing, because you get compile-time types for your data! But, that also means the data must be available at compile time. You can usually work around this by either:
+The use of \[\<Literal\>\] here is because FilePath must be a constant so that the CsvProvider can read the data while we're developing. As I mentioned in a previous article on [CSV files in F#](/2021-01-23-plotting-csv-files-fsharp/) "Type providers are a blessing and curse in F#. On one hand, they're amazing, because you get compile-time types for your data! But, that also means the data must be available at compile time. You can usually work around this by either:
 * Including representative data inside your project's git repo, so you can build the provider based on sample data and then parse any conforming input data
 * Using a string literal in source code to define sample data and use that for the provider (which is what I've done here)."
 
