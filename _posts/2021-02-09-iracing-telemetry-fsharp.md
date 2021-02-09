@@ -149,7 +149,7 @@ The interop between C# and F# events is nice, and I find this solution to be qui
 
 ## Plotting the Telemetry Data
 
-Now that we have a backend system logging some telemetry data from the sim, the next step is to plot the graph we saw above. In order to do so, I created a new .NET Interactive notebook in VS Code Insiders. I then imported the libraries I needed and wrote the following intitial code:
+Now that we have a backend system logging some telemetry data from the sim, the next step is to plot the graph we saw above. In order to do so, I created a new .NET Interactive notebook in VS Code Insiders. I then imported the libraries I needed and wrote the following initial code:
 ```fsharp
 [<Literal>]
 let FilePath = """C:\LapTimes.csv"""
@@ -159,7 +159,7 @@ type rawCsv = CsvProvider<FilePath, HasHeaders = true>
 // CSV File
 let lapPerformance = rawCsv.GetSample()
 ```
-The use of \[\<Literal\>\] here is because FilePath must be a constant so that the CsvProvider can read the data while we're developing. As I mentioned in a previous article on [CSV files in F#](/2021-01-23-plotting-csv-files-fsharp/) "Type providers are a blessing and curse in F#. On one hand, they're amazing, because you get compile-time types for your data! But, that also means the data must be available at compile time. You can usually work around this by either:
+The use of \[\<Literal\>\] here is because FilePath must be a constant so that the CsvProvider can read the data while we're developing. As I mentioned in a previous article on [CSV files in F#](/2021-01-23-plotting-csv-files-fsharp/), "Type providers are a blessing and curse in F#. On one hand, they're amazing, because you get compile-time types for your data! But, that also means the data must be available at compile time. You can usually work around this by either:
 * Including representative data inside your project's git repo, so you can build the provider based on sample data and then parse any conforming input data
 * Using a string literal in source code to define sample data and use that for the provider (which is what I've done here)."
 
@@ -186,7 +186,7 @@ createChart(lapPerformance: rawCsv)
 ```
 The first thing I do is make use of a higher order function, Seq.filter in order to only include lap two for plotting. Thanks to type providers, we can reference columns (e.g. row.Lap) directly while developing! I find this super handy as I no longer need to reference the file itself to figure out which columns are which.
 
-Next, we construct a pipeline using the forward piping operator (\|\>\) to map the lap distance and speed vartiables as X and Y values on a line chart, and then define how the chart should be styled. I really like the forward piping operator, and I find that it produces some really clean and concise code.
+Next, we construct a pipeline using the forward piping operator (\|\>\) to map the lap distance and speed variables as X and Y values on a line chart, and then define how the chart should be styled. I really like the forward piping operator, and I find that it produces some really clean and concise code.
 
 ## Other Exploratory Data
 
@@ -211,4 +211,4 @@ Although there are much better telemetry systems out there, working on my own si
 
 Moving forward, the next step is to parse the CSV file and then plot several laps together to analyze breaking points and speed on the straights to see if I can improve on any specific areas of the track.
 
-Lastly, It would also be a good idea to buffer the output as opposed to writing to the file each tick, but since its only 2 updates per second and doesn't need to scale, I'm okay with leaving it as is for now.
+Lastly, It would also be a good idea to buffer the output as opposed to writing to the file each tick, but since its only two updates per second and doesn't need to scale, I'm okay with leaving it as is for now.
