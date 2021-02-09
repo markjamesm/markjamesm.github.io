@@ -151,7 +151,7 @@ The interop between C# and F# events is nice, and I find this solution to be qui
 
 Now that we have a backend system logging some telemetry data from the sim, the next step is to plot the graph we saw above. In order to do so, I created a new .NET Interactive notebook in VS Code Insiders. I then imported the libraries I needed and wrote the following intitial code:
 ```fsharp
-\[\<Literal\>\]
+[<Literal>]
 let FilePath = """C:\LapTimes.csv"""
 
 type rawCsv = CsvProvider<FilePath, HasHeaders = true>
