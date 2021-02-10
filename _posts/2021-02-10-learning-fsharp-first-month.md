@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: On Learning F#:\ The First Month
+title: On Learning F# — The First Month
 tags: [f#, blog, guides]
 header-img: "img/posts/fsharp/fsharp-og-logo.jpg"
 ---
