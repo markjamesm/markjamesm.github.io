@@ -201,15 +201,15 @@ let lapCsv = Frame.ReadCsv("""C:\LapTimes.csv""", hasHeaders = true)
 let speed = lapCsv.GetColumn<int>("Speed")
 speed 
 |> Stats.mean
-|> printf "Average speed: %A"
+|> printf "Average speed: %A Km/h"
 ```
 
 The results were:
 ```
 Average speed:
-121.0335937
+121.036 Km/h
 ```
-In this example, we're loading our CSV file into a Deedle Dataframe, and then binding the Speed column to speed. Next, we make use of pipeline operator to get the mean of the colummn and print that to the console. 
+In this example, we're loading our CSV file into a Deedle Dataframe, and then binding the Speed column to speed. Next, we make use of pipeline operator to get the mean of the colummn and print that to the console.
 
 ## Next Steps
 
