@@ -5,7 +5,7 @@ tags: [f#, guides, iracing]
 header-img: "img/posts/fsharp/fsharp-og-logo.jpg"
 ---
 
-During the pandemic, I've been spending quite a lot of time playing [iRacing](https://iracing.com) in VR. I love the realism of iRacing (and how well it supports VR!), and managed to score a win in the Mazda MX-5 this season at the now defunct Oran Park raceway. 
+During the pandemic, I've been spending quite a lot of time playing [iRacing](https://iracing.com) in VR. I love the realism of iRacing (and how well it supports VR!), and managed to score a win in the Mazda MX-5 this season at the (sadly) now defunct Oran Park Raceway near Sydney. 
 
 <img src="/img/posts/race-result-mazda.png" width="600" height="150" alt="First place at Oran Park Raceway">
 
