@@ -5,7 +5,7 @@ tags: [f#, guides, iracing]
 header-img: "img/posts/fsharp/fsharp-og-logo.jpg"
 ---
 
-During the pandemic, I've been spending quite a lot of time playing [iRacing](https://iracing.com) in VR. I love the realism of iRacing (and how well it supports VR!), and managed to score a win in the Mazda MX-5 this season at the (sadly) now defunct Oran Park Raceway near Sydney. 
+During the pandemic, I've been spending quite a bit of time playing [iRacing](https://iracing.com) in VR. I love the realism of iRacing (and how well it supports VR!), and managed to score a win in the Mazda MX-5 this season at the (sadly) now defunct Oran Park Raceway near Sydney. 
 
 <img src="/img/posts/race-result-mazda.png" width="600" height="150" alt="First place at Oran Park Raceway">
 
@@ -142,6 +142,7 @@ class Program
 
 In F#, we subscribe to the event using Observable.subscribe and call our writeToCsv function each time the event is fired:
 ```fsharp
+    iracing.TelemetryUpdated
     |> Observable.subscribe writeToCsv |> ignore
 ```
 
@@ -188,15 +189,18 @@ The first thing I do is make use of a higher order function, Seq.filter in order
 
 Next, we construct a pipeline using the forward piping operator (\|\>\) to map the lap distance and speed variables as X and Y values on a line chart, and then define how the chart should be styled. I really like the forward piping operator, and I find that it produces some really clean and concise code.
 
-## Other Exploratory Data
+## Exploratory Data with Deedle
 
-Another thing I tried was seeing what my average lap speed was across laps 1-4:
+For a project at work, I've been exploring the use of [Deedle](https://bluemountaincapital.github.io/Deedle/) as an alternative to Python's Pandas, and it could be a good library to make use of here to explore telemetry data in greater detail.
+
+The first thing I tried using Deedle, was seeing what my average lap speed was across laps 1-4 at the Laguna Seca Racetrack:
 
 ```fsharp
 let lapCsv = Frame.ReadCsv("""C:\LapTimes.csv""", hasHeaders = true)
 
 let speed = lapCsv.GetColumn<int>("Speed")
-speed |> Stats.mean
+speed 
+|> Stats.mean
 |> printf "Average speed: %A"
 ```
 
@@ -205,7 +209,7 @@ The results were:
 Average speed:
 121.0335937
 ```
-For a project at work, I've been exploring the use of [Deedle](https://bluemountaincapital.github.io/Deedle/) as an alternative to Python's Pandas, and it could be a good library to make use of to explore telemetry data in greater detail.
+In this example, we're loading our CSV file into a Deedle Dataframe, and then binding the Speed column to speed. Next, we make use of pipeline operator to get the mean of the colummn and print that to the console. 
 
 ## Next Steps
 
