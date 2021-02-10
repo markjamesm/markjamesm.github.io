@@ -205,12 +205,10 @@ The results were:
 Average speed:
 121.0335937
 ```
-For a project at work, I've been exploring the use of [Deedle](https://bluemountaincapital.github.io/Deedle/) as an alternative to Python's Pandas, and it could be a good library to make use of in this case as well.
+For a project at work, I've been exploring the use of [Deedle](https://bluemountaincapital.github.io/Deedle/) as an alternative to Python's Pandas, and it could be a good library to make use of to explore telemetry data in greater detail.
 
 ## Next Steps
 
-Although there are much better telemetry systems out there, working on my own simple version has allowed me to better see the differences between C# and F#, while at the same time seeing how I can use C# libraries in F# in order to accomplish different tasks.
+Although there are much better telemetry systems out there, working on my own simple version has allowed me to better see the differences between C# and F#, while at the same time seeing how I can use C# libraries in F# in order to accomplish different tasks. In addition, It would be a good idea to buffer the output as opposed to writing to the file each tick, but since its only two updates per second and doesn't need to scale, I'm okay with leaving it as is for now.
 
 Moving forward, the next step is to parse the CSV file and then plot several laps together to analyze breaking points and speed on the straights to see if I can improve on any specific areas of the track.
-
-Lastly, It would also be a good idea to buffer the output as opposed to writing to the file each tick, but since its only two updates per second and doesn't need to scale, I'm okay with leaving it as is for now.
