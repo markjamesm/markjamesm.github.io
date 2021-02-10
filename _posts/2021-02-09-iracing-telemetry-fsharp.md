@@ -209,7 +209,7 @@ The results were:
 Average speed:
 121.036 Km/h
 ```
-In this example, we're loading our CSV file into a Deedle Dataframe, and then binding the Speed column to speed. Next, we make use of pipeline operator to get the mean of the colummn and print that to the console.
+In this example, we're loading our CSV file into a Deedle Dataframe, and then binding the Speed column to speed. Next, we make use of pipeline operator to get the mean of the column and print that to the console.
 
 ## Next Steps
 
