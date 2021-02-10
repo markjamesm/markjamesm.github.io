@@ -205,6 +205,8 @@ The results were:
 Average speed:
 121.0335937
 ```
+For a project at work, I've been exploring the use of [Deedle](https://bluemountaincapital.github.io/Deedle/) as an alternative to Python's Pandas, and it could be a good library to make use of in this case as well.
+
 ## Next Steps
 
 Although there are much better telemetry systems out there, working on my own simple version has allowed me to better see the differences between C# and F#, while at the same time seeing how I can use C# libraries in F# in order to accomplish different tasks.
