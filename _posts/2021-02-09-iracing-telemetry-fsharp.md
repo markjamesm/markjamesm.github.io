@@ -216,3 +216,5 @@ In this example, we're loading our CSV file into a Deedle Dataframe, and then bi
 Although there are much better telemetry systems out there, working on my own simple version has allowed me to better see the differences between C# and F#, while at the same time seeing how I can use C# libraries in F# in order to accomplish different tasks. In addition, It would be a good idea to buffer the output as opposed to writing to the file each tick, but since its only two updates per second and doesn't need to scale, I'm okay with leaving it as is for now.
 
 Moving forward, the next step is to parse the CSV file and then plot several laps together to analyze breaking points and speed on the straights to see if I can improve on any specific areas of the track.
+
+Lastly, thanks to F# great interop with C#, I'm not so sure that there's a need to port the library to F#, and I might instead look towards some other areas of F# where there's more of a need for a library.
