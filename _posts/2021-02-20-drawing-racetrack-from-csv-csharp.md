@@ -13,7 +13,6 @@ As I've mentioned in a few previous articles, I've been doing quite a lot of exp
 
 <img src="/img/posts/gilles-villeneuve-trackmap.png" width="375" height="1065" alt="The Gilles Villeneuve Racetrack created from GPS coordinates">
 
-
 ## Parsing the CSV File with CSVHelper
 
 The first step of the project was to download the track data for Montreal [here](https://github.com/TUMFTM/racetrack-database/blob/master/tracks/Montreal.csv). Upon inspecting the file, it contained four columns; the center lines (x, y), and the track widths to the right (w_tr_right) and left (w_tr_left). As I wanted to keep the project fairly simple, I only needed to make use of the X Y center lines which I could then plot.
