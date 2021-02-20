@@ -11,7 +11,7 @@ I'm a big fan of Google maps (I've used it extensively for years to explore all 
 
 As I've mentioned in a few previous articles, I've been doing quite a lot of experimenting with [iRacing telemetry](https://markjames.dev/2021-02-09-iracing-telemetry-fsharp/) lately. In keeping with the theme of racing, I decided to create a small program which creates a PNG map of my hometown Formula 1 circuit, Circuit Gilles Villeneuve in Montreal. The end result looked like this:
 
-<img src="/img/posts/gilles-villeneuve-trackmap.png" width="375" height="1065" alt="The Gilles Villeneuve Racetrack created from GPS coordinates">
+<img src="/img/posts/gilles-villeneuve-trackmap-cropped.png" width="375" height="1065" alt="The Gilles Villeneuve Racetrack created from GPS coordinates">
 
 ## Parsing the CSV File with CSVHelper
 
