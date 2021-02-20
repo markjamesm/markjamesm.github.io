@@ -46,9 +46,9 @@ static void Main(string[] args)
 ```
 The resulting trackValues variable is an IEnumerable of type Track which would form the basis for plotting the track.
 
-## Plotting the Track Using System.Drawing
+## Plotting the Track Using System.Drawing.Common
 
-The [System.Drawing](https://docs.microsoft.com/en-us/dotnet/api/system.drawing?view=dotnet-plat-ext-5.0) namespace by Microsoft provides access to GDI+ graphics functionality. Making use of System.Drawing would enable me to create and export the resulting track plot to a PNG file.
+The [System.Drawing.Common](https://www.nuget.org/packages/System.Drawing.Common) namespace by Microsoft provides access to GDI+ graphics functionality. Making use of System.Drawing would enable me to create and export the resulting track plot to a PNG file.
 
 Since the System.Drawlines() method requires the use of an array of Points to draw an image, the first thing I needed to do was to create a list to store the GPS coordinates, add the coordinates, and then convert that list to an array of Points. In C#, you cannot change the array size once is created, and so its easier to start with a list and then convert it using the ToArray() method. Below my trackValues variable, I added the following lines of code:
 
@@ -96,3 +96,7 @@ Success!
 ## Conclusion 
 
 The process of reading a CSV file of GPS coordinates and then drawing them and saving to a file was a painless process in C#, and this was a fun project to get my brain used to the syntax of C#  after having spent the past few months working in F#. Going forward, it could be interesting to take into account the track widths and plot the ideal racing line inside of them, but that's a project for another day! 
+
+One additional item to note is that System.Drawing is not recommended for use in ASP.NET projects, as per Microsoft:
+
+"The System.Drawing namespace is not recommended for new development, because it's not supported within Windows services, ASP.NET Core, and ASP.NET. Attempting to use System.Drawing classes within one of these application types may result in run-time exceptions and diminished service performance. Recommended alternatives include ImageSharp, SkiaSharp, and Windows Imaging Components."
