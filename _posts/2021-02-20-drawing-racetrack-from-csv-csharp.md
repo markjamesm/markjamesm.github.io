@@ -9,9 +9,9 @@ Although 2021 has been the year of [learning F#](/2021-01-04-why-learning-fsharp
 
 I'm a big fan of Google maps (I've used it extensively for years to explore all kinds of places!), and recently I've become interested in the Open Street Map (OSM) project and the work being done on it. While browsing for some OSM related projects, I happened to come across this [Github repo](https://github.com/TUMFTM/racetrack-database) which contains center lines, track widths, and race lines for a variety of automotive racetracks across the world. According to the readme file, The original center lines were fetched as GPS points from the OpenStreetMap project, and the author applied a smoothing algorithm to the center lines of the track.
 
-As I've mentioned in a few previous articles, I've been doing quite a lot of experimenting with [iRacing telemetry](https://markjames.dev/2021-02-09-iracing-telemetry-fsharp/) lately. In keeping with the theme of racing, I decided to create a small program which creates a PNG map of my hometown Formula 1 circuit, Circuit Gilles Villeneuve in Montreal. The end result looked like this (scaled down for the blog):
+As I've mentioned in a few previous articles, I've been doing quite a lot of experimenting with [iRacing telemetry](https://markjames.dev/2021-02-09-iracing-telemetry-fsharp/) lately. In keeping with the theme of racing, I decided to create a small program which creates a PNG map of my hometown Formula 1 circuit, Circuit Gilles Villeneuve in Montreal. The end result looked like this:
 
-<img src="/img/posts/gilles-villeneuve-trackmap.png" width="700" height="1185" alt="The Gilles Villeneuve Racetrack created from GPS coordinates">
+<img src="/img/posts/gilles-villeneuve-trackmap.png" width="375" height="1065" alt="The Gilles Villeneuve Racetrack created from GPS coordinates">
 
 
 ## Parsing the CSV File with CSVHelper
