@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Drawing a Racetrack From a CSV File With C#
+title: Drawing a Racetrack From GPS Coordinates With C#
 header-img: "img/posts/opengraph/csharp-logo.png"
 tags: [guides, programming projects, c#] 
 ---
