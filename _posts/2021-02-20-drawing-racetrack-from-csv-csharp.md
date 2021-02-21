@@ -5,11 +5,11 @@ header-img: "img/posts/opengraph/csharp-logo.png"
 tags: [guides, programming projects, c#] 
 ---
 
-Although 2021 has been the year of [learning F#](/2021-01-04-why-learning-fsharp-2021/) for me, I was recently approached by a company looking to have me do some part time work in C#. As I find the work they're doing to be quite interesting, I've spent this chilly Saturday in February working on a small project in C# to get myself back into the groove of things before diving into the work in a week or so.
+Although 2021 has been the year of [learning F#](/2021-01-04-why-learning-fsharp-2021/) for me, I was recently approached by a company looking to have me do some part time work in C#. As I find the work they're doing to be quite interesting, I've spent this chilly Saturday in February working on a small project in C# to get myself back into the groove of things before diving into the project next week.
 
 I'm a big fan of Google maps (I've used it extensively for years to explore all kinds of places!), and recently I've become interested in the Open Street Map (OSM) project and the work being done on it. While browsing for some OSM related projects, I happened to come across this [Github repo](https://github.com/TUMFTM/racetrack-database) which contains center lines, track widths, and race lines for a variety of automotive racetracks across the world. According to the readme file, The original center lines were fetched as GPS points from the OpenStreetMap project, and the author applied a smoothing algorithm to the center lines of the track.
 
-As I've mentioned in a few previous articles, I've been doing quite a lot of experimenting with [iRacing telemetry](https://markjames.dev/2021-02-09-iracing-telemetry-fsharp/) lately. In keeping with the theme of racing, I decided to create a small program which creates a PNG map of my hometown Formula 1 circuit, Circuit Gilles Villeneuve in Montreal. The end result looked like this:
+As I've mentioned in a few previous articles, I've been doing quite a lot of experimenting with [iRacing telemetry](https://markjames.dev/2021-02-09-iracing-telemetry-fsharp/) lately. In keeping with the theme of racing, I decided to create a small program which creates a PNG map of my hometown Formula 1 circuit, Circuit Gilles Villeneuve in Montreal, Quebec. The end result looked like this:
 
 <img src="/img/posts/gilles-villeneuve-trackmap-crop.png" width="700" height="1053" alt="The Gilles Villeneuve Racetrack created from GPS coordinates">
 
@@ -95,7 +95,7 @@ Success!
 
 ## Conclusion 
 
-The process of reading a CSV file of GPS coordinates and then drawing them and saving to a file was a painless process in C#, and this was a fun project to get my brain used to the syntax of C#  after having spent the past few months working in F#. Going forward, it could be interesting to take into account the track widths and plot the ideal racing line inside of them, but that's a project for another day! 
+The process of reading a CSV file of GPS coordinates, drawing them, and then saving the result to a file was a painless process in C#, and this was a fun project to get my brain used to the syntax of C# again after having spent the past few months working in F#. Going forward, it could be interesting to take into account the track widths and plot the ideal racing line inside of them, but that's a project for another day! 
 
 One additional item to note is that System.Drawing is not recommended for use in ASP.NET projects, as per Microsoft:
 
