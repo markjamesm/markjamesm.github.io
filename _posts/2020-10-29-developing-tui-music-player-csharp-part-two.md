@@ -11,7 +11,7 @@ Since the last part of this guide, I've been working quite a bit on refining the
 
 After making a test branch in Git, I made some major modifications to the code, namely getting rid of the Player class and renaming Gui.cs to Player.cs. With these changes in place, we now have a simple player which plays a preset audio file. Let's go one level further by Implementing some actual playback controls! 
 
-Before we do so however, let's start by adding a file open dialog to our existing File--Open dialog. This will come in handy when we create the play button later on. In order to better follow along, I recommend you take a look at this commit <a href="https://github.com/markjamesm/MusicSharp/commit/ee8cc5e146e81ceb5bc8759c9dc24a7c1bc82533" target=_blank>repo here on Github</a> (and support the project with a star!). 
+Before we do so however, let's start by adding a file open dialog to our existing File--Open dialog. This will come in handy when we create the play button later on. In order to better follow along, I recommend you take a look at this commit <a href="https://github.com/markjamesm/MusicSharp/commit/ee8cc5e146e81ceb5bc8759c9dc24a7c1bc82533">repo here on Github</a> (and support the project with a star!). 
 
 ## Adding an Open File dialog
 

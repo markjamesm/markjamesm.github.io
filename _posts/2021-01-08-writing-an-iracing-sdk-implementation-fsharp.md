@@ -13,11 +13,11 @@ Having a dedicated table really helps, as in my old apartment it was fairly diff
 
 <img src="/img/posts/irsdk-fsharp/iracing-win.jpg" width="500" height="279" alt="Photo of my iRacing first win certificate">
 
-Inspired by setting everything up and doing some laps to practice for an eventual return to comeptition, I started thinking about how I once experimented with using the <a href="https://github.com/kutu/pyirsdk" target=_blank>Python implementation</a> of the iRacing SDK to connect to an arduino and display a speedometer readout in realtime on a small screen. In reminiscing about the experience, I thought about how I could look into writing an F# implementation of the SDK as a learning project. In addition to learning through the project, it also has the benefit of being of use in a future project involving an iRacing stats tracker web app that I've been thinking about writing as a project for my upcoming [cloud computing courses](/2020-12-09-back-to-school/). 
+Inspired by setting everything up and doing some laps to practice for an eventual return to comeptition, I started thinking about how I once experimented with using the <a href="https://github.com/kutu/pyirsdk">Python implementation</a> of the iRacing SDK to connect to an arduino and display a speedometer readout in realtime on a small screen. In reminiscing about the experience, I thought about how I could look into writing an F# implementation of the SDK as a learning project. In addition to learning through the project, it also has the benefit of being of use in a future project involving an iRacing stats tracker web app that I've been thinking about writing as a project for my upcoming [cloud computing courses](/2020-12-09-back-to-school/). 
 
 ## Getting Started
 
-I tend to learn best when projects are slightly outside of my comfort zone, and this would be both my first time writing a library, as well as writing one in a functional language! Having used an array of libraries at this point, I had some confidence in choosing an organizational structure, and the Python implementation is only <a href="https://github.com/kutu/pyirsdk/blob/master/irsdk.py" target=_blank>739 lines of code</a> which felt doable compared to some of the larger libraries out there.
+I tend to learn best when projects are slightly outside of my comfort zone, and this would be both my first time writing a library, as well as writing one in a functional language! Having used an array of libraries at this point, I had some confidence in choosing an organizational structure, and the Python implementation is only <a href="https://github.com/kutu/pyirsdk/blob/master/irsdk.py">739 lines of code</a> which felt doable compared to some of the larger libraries out there.
 
 Moreover, the python implementation of the SDK has the ability to: 
 
@@ -29,7 +29,7 @@ and I figured that this would be a good featureset to aim for in the final versi
 
 ## Creating the Library
 
-After coming up with some desired features, the first step was to create a new FSharp solution called iRacingFSharp. Inside the solution, I created two projects. One was our actual library, called iRacingFSharp, and the other was a basic console app called SDKReader (located in the Examples Folder) to test the functionality of the library as I worked on it. Note, if you'd like to see the full codebase you can <a href="https://github.com/markjamesm/irsdk-fsharp" target=_blank>here on github</a>.
+After coming up with some desired features, the first step was to create a new FSharp solution called iRacingFSharp. Inside the solution, I created two projects. One was our actual library, called iRacingFSharp, and the other was a basic console app called SDKReader (located in the Examples Folder) to test the functionality of the library as I worked on it. Note, if you'd like to see the full codebase you can <a href="https://github.com/markjamesm/irsdk-fsharp">here on github</a>.
 
 ## The First Function
 
@@ -46,7 +46,7 @@ var simStatus={
 };
 ```
 
-I decided to make use of the <a href="https://fsharp.github.io/FSharp.Data/library/Http.html" target=_blank>F# Data HTTP library</a> in order to download the response and so I installed it from NuGet at this point. 
+I decided to make use of the <a href="https://fsharp.github.io/FSharp.Data/library/Http.html">F# Data HTTP library</a> in order to download the response and so I installed it from NuGet at this point. 
 
 Next, inside my iRacingFSharp project I created a file called Irsdk.fs and wrote the following code: 
 
@@ -94,4 +94,4 @@ Success! With this method working, we now have the very beginnings of an F# impl
 
 iRacing’s API telemetry comes in three variations; data written to a .ibt file 60 times a second, live data exposed to the telemetry API 60 times per second, and a session string in YAML format that contains more or less static information about the session. The YAML string is appended to the end of the .ibt file but only a small portion of that data is exposed. This means that going forward, I'll need to look into parsing the YAML as well as mapping more of the API endpoints. The iRacing API appears to be nonstandard and so it may take a little more work than just a typical REST API.
 
-Stay tuned for Part Two where I plan to implement some telemetry functions and look into parsing the aforementioned YAML. In addition, be sure to follow along with the <a href="https://github.com/markjamesm/irsdk-fsharp" target=_blank>Github Repo here</a> if you're interested in seeing how to project progresses (or would like to contribute)!
+Stay tuned for Part Two where I plan to implement some telemetry functions and look into parsing the aforementioned YAML. In addition, be sure to follow along with the <a href="https://github.com/markjamesm/irsdk-fsharp">Github Repo here</a> if you're interested in seeing how to project progresses (or would like to contribute)!

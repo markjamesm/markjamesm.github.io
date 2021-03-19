@@ -7,9 +7,9 @@ header-img: "img/posts/cu-libraries-og.png"
 
 [![Build](https://github.com/markjamesm/cu-libraries/workflows/build/badge.svg?branch=master)](https://github.com/markjamesm/cu-libraries/actions) [![Platforms](https://img.shields.io/badge/platforms-iOS-blue.svg)](https://apple.com/ios) [![Swift](https://img.shields.io/badge/Swift-5.1-orange.svg)](https://swift.org) [![License](https://img.shields.io/badge/License-GPL-red.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
-CU Libraries is an <a href="https://github.com/markjamesm/CU-Libraries" target="_blank">open source</a> iOS app I created to check the status of various resources at the Concordia University libraries in Montreal, Quebec. Built using SwiftUI and the <a href="https://github.com/opendataConcordiaU/documentation" target="_blank">Concordia University Open Data API</a>. 
+CU Libraries is an <a href="https://github.com/markjamesm/CU-Libraries">open source</a> iOS app I created to check the status of various resources at the Concordia University libraries in Montreal, Quebec. Built using SwiftUI and the <a href="https://github.com/opendataConcordiaU/documentation">Concordia University Open Data API</a>. 
 
-Note: CU Libraries was available on the App Store until November 2020. Unfortunately, due to the pandemic, several of the Concordia APIs are no longer working properly, disabling most of the app's functionality. See <a href="https://github.com/opendataConcordiaU/documentation/issues/10" target="_blank">this ticket on Github</a> for more information. 
+Note: CU Libraries was available on the App Store until November 2020. Unfortunately, due to the pandemic, several of the Concordia APIs are no longer working properly, disabling most of the app's functionality. See <a href="https://github.com/opendataConcordiaU/documentation/issues/10">this ticket on Github</a> for more information. 
 
 ## Features
 

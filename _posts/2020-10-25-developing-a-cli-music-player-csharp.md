@@ -17,11 +17,11 @@ After a brainstorming session, I came up with the name MusicSharp and a core lis
 - Be CLI-based
 - Cross-platform support
 
-Moreover, I also wanted to make sure that I made use of Test Driven Development and code linting within the project. For this project, I'm making use of Stylecop to enfore proper code style. For the curious, you can view the entire MusicSharp code repository in its current state <a href="https://github.com/markjamesm/MusicSharp" target="_blank">on Github</a>. I highly recommend following the repo to keep up to date with the latest commits (and a star wouldn't be too bad either :-P)!
+Moreover, I also wanted to make sure that I made use of Test Driven Development and code linting within the project. For this project, I'm making use of Stylecop to enfore proper code style. For the curious, you can view the entire MusicSharp code repository in its current state <a href="https://github.com/markjamesm/MusicSharp">on Github</a>. I highly recommend following the repo to keep up to date with the latest commits (and a star wouldn't be too bad either :-P)!
 
 ## Getting Started
 
-Armed with a name and an idea, the next thing I needed was to settle on was which C# libraries I would use to implement the UI and audio functionality. After doing some research, I decided that the optimal solution would be to use <a href="https://github.com/migueldeicaza/gui.cs" target="_blank">Terminal.Gui</a> for the UI elements and <a href="https://github.com/naudio/NAudio" target="_blank">NAudio</a> to handle the audio side of things. Created by Miuel de Icaza (the creator of Mono and Xamarin), Terminal.Gui is a cross-platform library for building console-based applications that work on monochrome terminals as well as modern terminals with mouse support. Leveraging Termnial.Gui to build the UI, I chose NAudio to handle the audio playing capabilities of MusicSharp as its a mature C# library.
+Armed with a name and an idea, the next thing I needed was to settle on was which C# libraries I would use to implement the UI and audio functionality. After doing some research, I decided that the optimal solution would be to use <a href="https://github.com/migueldeicaza/gui.cs">Terminal.Gui</a> for the UI elements and <a href="https://github.com/naudio/NAudio">NAudio</a> to handle the audio side of things. Created by Miuel de Icaza (the creator of Mono and Xamarin), Terminal.Gui is a cross-platform library for building console-based applications that work on monochrome terminals as well as modern terminals with mouse support. Leveraging Termnial.Gui to build the UI, I chose NAudio to handle the audio playing capabilities of MusicSharp as its a mature C# library.
 
 ## Mocking up a simple UI
 
@@ -193,4 +193,4 @@ In Part One of this guide, we learned how to implement a simple UI using Termina
 
 <img src="/img/posts/music-sharp/MusicSharp-macOS-Catalina.png" width="750" height="473" alt="MusicSharp first build running on macOS Catalina">
 
-In these early stages of testing, MusicSharp is currently consuming 15mb of memory and negligible CPU usage while running in debug mode, and it'll be interesting to see where the performance numbers end up as the player functionality gets more fleshed out. Be sure to check out <a href="https://github.com/naudio/NAudio/blob/master/Docs/PlayAudioFileWinForms.md" target=_blank>part two of this guide</a>, as we will refactor our current code and then implement some playback controls!
+In these early stages of testing, MusicSharp is currently consuming 15mb of memory and negligible CPU usage while running in debug mode, and it'll be interesting to see where the performance numbers end up as the player functionality gets more fleshed out. Be sure to check out <a href="https://github.com/naudio/NAudio/blob/master/Docs/PlayAudioFileWinForms.md">part two of this guide</a>, as we will refactor our current code and then implement some playback controls!
