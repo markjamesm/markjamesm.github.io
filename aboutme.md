@@ -3,7 +3,7 @@ layout: page
 title: About me
 subtitle: Get to know me
 ---
-Hi there! My name is Mark-James McDougall, and I'm a Developer from Montreal, Canada. I currently work as a Webmaster at my alma mater <a href="https://mcgill.ca" target="_blank">McGill University</a> (BA'15) and enjoy working on open source projects in my spare time. In addition to my day job, I also work part time as a Software Developer for <a href="https://www.linkedin.com/company/hh-development-limited/about/">HH Development Limited</a>, a company which provides software solutions and technical services to clients in the motorsport industry. You can view my <a href="https://markjames.dev/resume">full resume here</a>.
+Hi there! My name is Mark-James McDougall, and I'm a Developer from Montreal, Canada. I currently work as a Webmaster at my alma mater <a href="https://mcgill.ca" target="_blank">McGill University</a> (BA'15). In addition to my day job, I also work part time as a Software Developer for <a href="https://www.linkedin.com/company/hh-development-limited/about/">HH Development Limited</a>, a company which provides software solutions and technical services to clients in the motorsport industry. You can view my <a href="https://markjames.dev/resume">full resume here</a>.
 
 <a href="https://github.com/markjamesm" target=_blank><img src="https://github-readme-stats.vercel.app/api?username=markjamesm&count_private=true&show_icons=true" width="495" height="195" alt="Mark-James' github stats" title="Mark-James' github"></a>
 
