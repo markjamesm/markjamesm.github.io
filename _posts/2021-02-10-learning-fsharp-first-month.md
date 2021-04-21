@@ -62,7 +62,7 @@ The final thing to note is the order of the code. In F#, the order of code and f
 
 ## Going Forward
 
-At work, I've been increasingly working on analytics and performance benchmarking, and I see F# as being an excellent tool in these domains. So far, Type Providers have made loading CSV files a breeze, and I'm currently looking into using [Deedle](http://bluemountaincapital.github.io/Deedle/index.html) to create dataframes for further exploratory analysis. To this end, I've been using .NET Interactive Notebooks and have also experimented with [iRacing Telemetry in F#](/2021-02-09-iracing-telemetry-fsharp/) which has helped me get used to using them.
+At work, I've been increasingly working on analytics and performance benchmarking, and I see F# as being an excellent tool in these domains. So far, Type Providers have made loading CSV files a breeze, and I'm currently looking into using [Deedle](https://bluemountaincapital.github.io/Deedle/index.html) to create dataframes for further exploratory analysis. To this end, I've been using .NET Interactive Notebooks and have also experimented with [iRacing Telemetry in F#](/2021-02-09-iracing-telemetry-fsharp/) which has helped me get used to using them.
 
 ## Some Tips
 

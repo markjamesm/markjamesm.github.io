@@ -9,6 +9,6 @@ Hi there! My name is Mark-James McDougall, and I'm a Developer from Montreal, Ca
 
 ## Fun fact
 
-I'm passionate about music and release tracks under the name <a href="https://open.spotify.com/artist/04h01WGkLNuHzSzCBGbjCR">Zhund</a>. My favorite instrument is the <a href="http://linnstrument.com">Linnstrument</a>, an expressive MIDI controller created by the legendary Roger Linn. Here's a clip of me playing some improv jazz on Linnstrument:
+I'm passionate about music and release tracks under the name <a href="https://open.spotify.com/artist/04h01WGkLNuHzSzCBGbjCR">Zhund</a>. My favorite instrument is the <a href="https://linnstrument.com">Linnstrument</a>, an expressive MIDI controller created by the legendary Roger Linn. Here's a clip of me playing some improv jazz on Linnstrument:
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/njY9xBz9M18' frameborder='0' allowfullscreen></iframe></div>

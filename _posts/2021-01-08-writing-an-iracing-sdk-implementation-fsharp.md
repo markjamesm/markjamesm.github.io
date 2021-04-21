@@ -36,7 +36,7 @@ After coming up with some desired features, the first step was to create a new F
 Starting small, I decided that a good first function would be to find out the state of the simulator. Fortunately, the iRacing SDK allows you to check if the sim is running using the following URL which points to a localhost server:
 
 ```
-http://127.0.0.1:32034/get_sim_status?object=simStatus
+https://127.0.0.1:32034/get_sim_status?object=simStatus
 ```
 Getting this URL in Postman returns a JSON object which looks like this:
 
@@ -60,7 +60,7 @@ module IrsdkFS =
 
     ///<summary>Returns the simStatus in string format</summary>
     let SimStatus() =
-        let simStatusURL = "http://127.0.0.1:32034/get_sim_status?object=simStatus"
+        let simStatusURL = "https://127.0.0.1:32034/get_sim_status?object=simStatus"
         let simStatusObject = Http.RequestString(simStatusURL)
         simStatusObject
 ```

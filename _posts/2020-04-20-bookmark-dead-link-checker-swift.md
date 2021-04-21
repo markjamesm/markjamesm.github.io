@@ -41,7 +41,7 @@ https://www.youtube.com/
 https://developer.apple.com/swift/
 https://www.wikipedia.org/
 https://www.google.com/
-http://brokenwebsitelink.com/
+https://brokenwebsitelink.com/
 
 Program ended with exit code: 0
 ````

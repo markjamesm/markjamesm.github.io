@@ -26,7 +26,7 @@ For the purposes of this exercise, I'll be using the [Spotify Dataset](https://w
 
 # Reading a CSV File
 
-After creating a new F# console project in Visual Studio, the first step was to load the CSV file so that we can feed the data to XPlot. This can be done using the CSV type provider in the [F# Data library](http://fsprojects.github.io/FSharp.Data/).
+After creating a new F# console project in Visual Studio, the first step was to load the CSV file so that we can feed the data to XPlot. This can be done using the CSV type provider in the [F# Data library](https://fsprojects.github.io/FSharp.Data/).
 
 Next, I created a new module called CSVRead inside a new file called CSVRead.fs. Inside the module, I place the first few lines of code:
 
