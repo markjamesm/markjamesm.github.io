@@ -3,7 +3,7 @@ layout: page
 title: About me
 subtitle: Get to know me
 ---
-Hi there! My name is Mark-James McDougall, and I'm a Developer from Montreal, Canada. I work as a Digital COmmunications Officer at my alma mater <a href="https://mcgill.ca" target="_blank">McGill University</a> (BA'15).
+Hi there! My name is Mark-James McDougall, and I'm a Developer from Montreal, Canada. I work as a Digital Communications Officer at my alma mater <a href="https://mcgill.ca" target="_blank">McGill University</a> (BA'15).
 
 I also work part time as a Software Developer for <a href="https://www.linkedin.com/company/hh-development-limited/about/">HH Development Limited</a>, a company which provides software solutions and technical services to clients in the motorsport industry. 
 
